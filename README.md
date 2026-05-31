@@ -19,10 +19,11 @@ filter pills, reading drawer, and data pipeline — is complete. Authored book
 analyses currently cover:
 
 - ✅ **The Prophecies Begin** (books 1–6)
+- ✅ **The New Prophecy** (books 7–12)
 
-Future arcs (The New Prophecy, Power of Three, and the rest, plus Super Editions
-and Novellas) appear in the filter bar marked "soon" and are added in subsequent
-updates. Each new arc is a single `data/books/arc-*.js` file.
+Future arcs (Power of Three, Omen of the Stars, and the rest, plus Super
+Editions and Novellas) appear in the filter bar marked "soon" and are added in
+subsequent updates. Each new arc is a single `data/books/arc-*.js` file.
 
 ## Run it locally
 
