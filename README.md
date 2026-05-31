@@ -18,12 +18,18 @@ This site is built and populated **arc by arc**. The full app — 3D world,
 filter pills, reading drawer, and data pipeline — is complete. Authored book
 analyses currently cover:
 
-- ✅ **The Prophecies Begin** (books 1–6)
-- ✅ **The New Prophecy** (books 7–12)
-- ✅ **Power of Three** (books 13–18)
-- ✅ **Omen of the Stars** (books 19–24)
+- ✅ **The Prophecies Begin** (publication order 1–6)
+- ✅ **The New Prophecy** (7–12)
+- ✅ **Power of Three** (13–18)
+- ✅ **Omen of the Stars** (19–24)
+- ✅ **Dawn of the Clans** (the prequel — published 25–30, but *chronologically first*)
 
-Future arcs (Dawn of the Clans, A Vision of Shadows, and the rest, plus Super
+Books are tagged with both a publication order and a **saga (chronological)
+order**. Dawn of the Clans, though published fifth, is the earliest story in the
+saga (the founding of the Clans), so it sorts first in the "All" view and shows
+saga order #1–6.
+
+Future arcs (A Vision of Shadows, The Broken Code, A Starless Clan, plus Super
 Editions and Novellas) appear in the filter bar marked "soon" and are added in
 subsequent updates. Each new arc is a single `data/books/arc-*.js` file.
 

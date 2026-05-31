@@ -10,13 +10,18 @@ import { prophecies } from "./arc-prophecies.js";
 import { newProphecy } from "./arc-new-prophecy.js";
 import { powerOfThree } from "./arc-power-of-three.js";
 import { omenOfTheStars } from "./arc-omen-of-the-stars.js";
+import { dawnOfTheClans } from "./arc-dawn-of-the-clans.js";
 
-// As future arcs are authored, import and spread them here.
+// As future arcs are authored, import and spread them here. Order here does not
+// matter — the UI sorts by timelineOrder (chronological) and arcOrder (within
+// an arc). Dawn of the Clans is the chronological prequel (timelineOrder 1–6)
+// even though it was published fifth.
 export const BOOKS = [
   ...prophecies,
   ...newProphecy,
   ...powerOfThree,
-  ...omenOfTheStars
+  ...omenOfTheStars,
+  ...dawnOfTheClans
 ];
 
 // Books grouped by arc key, in arc order, with books sorted by arcOrder.
