@@ -13,6 +13,7 @@ import { powerOfThree } from "./arc-power-of-three.js";
 import { omenOfTheStars } from "./arc-omen-of-the-stars.js";
 import { dawnOfTheClans } from "./arc-dawn-of-the-clans.js";
 import { visionOfShadows } from "./arc-vision-of-shadows.js";
+import { brokenCode } from "./arc-broken-code.js";
 
 // As future arcs are authored, import and spread them here. Order here does not
 // matter — the UI sorts by timelineOrder (chronological) and arcOrder (within
@@ -24,7 +25,8 @@ export const BOOKS = [
   ...powerOfThree,
   ...omenOfTheStars,
   ...dawnOfTheClans,
-  ...visionOfShadows
+  ...visionOfShadows,
+  ...brokenCode
 ];
 
 // Books grouped by arc key, in arc order, with books sorted by arcOrder.

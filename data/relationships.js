@@ -683,5 +683,109 @@ export const RELATIONSHIPS = {
       { a: "tigerstar2", b: "leafstar", type: "ally" },
       { a: "violetshine", b: "tigerstar2", type: "ally" }
     ]
+  },
+
+  // ===================== THE BROKEN CODE =====================
+  "tbc-1-lost-stars": {
+    nodes: [
+      { id: "bristlepaw", name: "Bristlepaw", clan: "ThunderClan", role: "Apprentice" },
+      { id: "rootpaw", name: "Rootpaw", clan: "SkyClan", role: "Apprentice (sees ghosts)" },
+      { id: "shadowpaw", name: "Shadowpaw", clan: "ShadowClan", role: "Medicine apprentice" },
+      { id: "impostor", name: "'Bramblestar'", clan: "ThunderClan", role: "Leader (impostor)" },
+      { id: "bramblestar_ghost", name: "Bramblestar", clan: "StarClan", role: "Trapped spirit" },
+      { id: "tigerstar2", name: "Tigerstar", clan: "ShadowClan", role: "Leader (father)" }
+    ],
+    links: [
+      { a: "rootpaw", b: "bramblestar_ghost", type: "ally" },
+      { a: "impostor", b: "bramblestar_ghost", type: "rival" },
+      { a: "tigerstar2", b: "shadowpaw", type: "family" },
+      { a: "impostor", b: "shadowpaw", type: "rival" },
+      { a: "bristlepaw", b: "impostor", type: "ally" }
+    ]
+  },
+  "tbc-2-the-silent-thaw": {
+    nodes: [
+      { id: "rootspring", name: "Rootspring", clan: "SkyClan", role: "Warrior (sees ghosts)" },
+      { id: "bristlefrost", name: "Bristlefrost", clan: "ThunderClan", role: "Warrior" },
+      { id: "shadowsight", name: "Shadowsight", clan: "ShadowClan", role: "Medicine Cat" },
+      { id: "impostor", name: "'Bramblestar'", clan: "ThunderClan", role: "Leader (impostor)" },
+      { id: "bramblestar_ghost", name: "Bramblestar", clan: "StarClan", role: "Trapped spirit" },
+      { id: "squirrelflight", name: "Squirrelflight", clan: "ThunderClan", role: "Deputy" }
+    ],
+    links: [
+      { a: "rootspring", b: "bramblestar_ghost", type: "ally" },
+      { a: "impostor", b: "squirrelflight", type: "mate" },
+      { a: "impostor", b: "bramblestar_ghost", type: "rival" },
+      { a: "bristlefrost", b: "rootspring", type: "ally" },
+      { a: "impostor", b: "shadowsight", type: "rival" }
+    ]
+  },
+  "tbc-3-veil-of-shadows": {
+    nodes: [
+      { id: "bristlefrost", name: "Bristlefrost", clan: "ThunderClan", role: "Warrior (double agent)" },
+      { id: "rootspring", name: "Rootspring", clan: "SkyClan", role: "Warrior" },
+      { id: "shadowsight", name: "Shadowsight", clan: "ShadowClan", role: "Medicine Cat" },
+      { id: "impostor", name: "'Bramblestar'", clan: "ThunderClan", role: "Leader (impostor)" },
+      { id: "squirrelflight", name: "Squirrelflight", clan: "ThunderClan", role: "Deputy" },
+      { id: "tigerstar2", name: "Tigerstar", clan: "ShadowClan", role: "Leader" }
+    ],
+    links: [
+      { a: "bristlefrost", b: "impostor", type: "rival" },
+      { a: "bristlefrost", b: "rootspring", type: "ally" },
+      { a: "shadowsight", b: "impostor", type: "rival" },
+      { a: "tigerstar2", b: "impostor", type: "rival" },
+      { a: "impostor", b: "squirrelflight", type: "rival" }
+    ]
+  },
+  "tbc-4-darkness-within": {
+    nodes: [
+      { id: "ashfur", name: "Ashfur", clan: "Dark Forest", role: "Villain (in Bramblestar's body)" },
+      { id: "squirrelflight", name: "Squirrelflight", clan: "ThunderClan", role: "Deputy" },
+      { id: "bristlefrost", name: "Bristlefrost", clan: "ThunderClan", role: "Warrior (double agent)" },
+      { id: "rootspring", name: "Rootspring", clan: "SkyClan", role: "Warrior" },
+      { id: "shadowsight", name: "Shadowsight", clan: "ShadowClan", role: "Medicine Cat" },
+      { id: "bramblestar_ghost", name: "Bramblestar", clan: "StarClan", role: "Trapped spirit" }
+    ],
+    links: [
+      { a: "ashfur", b: "squirrelflight", type: "rival" },
+      { a: "ashfur", b: "bramblestar_ghost", type: "rival" },
+      { a: "bristlefrost", b: "ashfur", type: "rival" },
+      { a: "bristlefrost", b: "rootspring", type: "ally" },
+      { a: "shadowsight", b: "ashfur", type: "rival" },
+      { a: "squirrelflight", b: "bramblestar_ghost", type: "mate" }
+    ]
+  },
+  "tbc-5-the-place-of-no-stars": {
+    nodes: [
+      { id: "bristlefrost", name: "Bristlefrost", clan: "ThunderClan", role: "Warrior" },
+      { id: "rootspring", name: "Rootspring", clan: "SkyClan", role: "Warrior" },
+      { id: "shadowsight", name: "Shadowsight", clan: "ShadowClan", role: "Medicine Cat" },
+      { id: "ashfur", name: "Ashfur", clan: "Dark Forest", role: "Villain" },
+      { id: "bramblestar_ghost", name: "Bramblestar", clan: "StarClan", role: "Trapped spirit" }
+    ],
+    links: [
+      { a: "bristlefrost", b: "rootspring", type: "mate" },
+      { a: "bristlefrost", b: "ashfur", type: "rival" },
+      { a: "rootspring", b: "bramblestar_ghost", type: "ally" },
+      { a: "shadowsight", b: "ashfur", type: "rival" },
+      { a: "bristlefrost", b: "shadowsight", type: "ally" }
+    ]
+  },
+  "tbc-6-a-light-in-the-mist": {
+    nodes: [
+      { id: "bristlefrost", name: "Bristlefrost", clan: "ThunderClan", role: "Warrior (dies utterly)" },
+      { id: "rootspring", name: "Rootspring", clan: "SkyClan", role: "Warrior" },
+      { id: "shadowsight", name: "Shadowsight", clan: "ShadowClan", role: "Medicine Cat" },
+      { id: "ashfur", name: "Ashfur", clan: "Dark Forest", role: "Villain (defeated)" },
+      { id: "bramblestar", name: "Bramblestar", clan: "ThunderClan", role: "Leader (restored)" },
+      { id: "squirrelflight", name: "Squirrelflight", clan: "ThunderClan", role: "Deputy" }
+    ],
+    links: [
+      { a: "bristlefrost", b: "ashfur", type: "rival" },
+      { a: "bristlefrost", b: "rootspring", type: "mate" },
+      { a: "bramblestar", b: "squirrelflight", type: "mate" },
+      { a: "ashfur", b: "squirrelflight", type: "rival" },
+      { a: "shadowsight", b: "bristlefrost", type: "ally" }
+    ]
   }
 };
