@@ -11,6 +11,11 @@ gives each book a full **SparkNotes / CliffsNotes–style literary analysis**.
   Themes, Motifs, Critical Analysis, Character Analysis, Study Questions,
   "Most Intriguing", **Quote Cards**, Timeline placement, and Comparisons to
   other famous books — all in full, complete-sentence prose.
+- Every book ends with a **Relationship Map**: a clan-grouped SVG graph of that
+  book's key cats, colour-coded by Clan and connected by relationship type
+  (family, mates, mentor, ally, rival). Hover a cat to highlight its ties. The
+  per-book graph data lives in `data/relationships.js`; the renderer is
+  `js/graph.js`.
 
 ## Status
 
@@ -18,14 +23,22 @@ This site is built and populated **arc by arc**. The full app — 3D world,
 filter pills, reading drawer, and data pipeline — is complete. Authored book
 analyses currently cover:
 
-- ✅ **The Prophecies Begin** (books 1–6)
-- ✅ **The New Prophecy** (books 7–12)
-- ✅ **Power of Three** (books 13–18)
-- ✅ **Omen of the Stars** (books 19–24)
+- ✅ **The Prophecies Begin** (publication order 1–6)
+- ✅ **The New Prophecy** (7–12)
+- ✅ **Power of Three** (13–18)
+- ✅ **Omen of the Stars** (19–24)
+- ✅ **Dawn of the Clans** (the prequel — published 25–30, but *chronologically first*)
+- ✅ **A Vision of Shadows** (31–36)
+- ✅ **The Broken Code** (37–42)
 
-Future arcs (Dawn of the Clans, A Vision of Shadows, and the rest, plus Super
-Editions and Novellas) appear in the filter bar marked "soon" and are added in
-subsequent updates. Each new arc is a single `data/books/arc-*.js` file.
+Books are tagged with both a publication order and a **saga (chronological)
+order**. Dawn of the Clans, though published fifth, is the earliest story in the
+saga (the founding of the Clans), so it sorts first in the "All" view and shows
+saga order #1–6.
+
+Future arcs (A Starless Clan, plus Super Editions and Novellas) appear in the
+filter bar marked "soon" and are added in subsequent updates. Each new arc is a
+single `data/books/arc-*.js` file.
 
 ## Run it locally
 
