@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>The Warriors Atlas — A Literary Map of Erin Hunter's Clans</title>
+  <meta name="description" content="An immersive 3D map and SparkNotes-style literary analysis of every Warrior Cats book by Erin Hunter: plot, themes, motifs, characters, quotes, timeline, and comparisons." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Babylon.js via pinned UMD CDN (core + GUI). No build step. -->
+  <script src="https://cdn.jsdelivr.net/npm/babylonjs@7.54.3/babylon.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babylonjs-gui@7.54.3/babylon.gui.min.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- 3D world (decorative for assistive tech; the pill list is the real index) -->
+  <canvas id="renderCanvas" aria-hidden="true" touch-action="none"></canvas>
+  <p id="webgl-fallback" hidden role="status">
+    The 3D map could not load, but every book is still fully available from the list above.
+  </p>
+  <p class="visually-hidden">
+    This site features a 3D map of the Warrior Cats world. The map is decorative;
+    use the filter pills and book list below to browse and open any book's analysis.
+  </p>
+
+  <!-- Top overlay: title + filter pills -->
+  <header id="pills">
+    <div class="masthead">
+      <h1 class="site-title">The Warriors Atlas</h1>
+      <p class="site-tagline">A literary map of Erin Hunter's Clans — click the map or pick a book.</p>
+    </div>
+
+    <nav id="arc-pills" class="arc-pills" aria-label="Filter by series arc"></nav>
+
+    <div class="cloud-wrap">
+      <label class="visually-hidden" for="book-search">Search books by title</label>
+      <input id="book-search" type="search" placeholder="Search books…" autocomplete="off" />
+      <div id="book-pills" class="book-pills" role="list" aria-label="Books"></div>
+    </div>
+  </header>
+
+  <!-- Slide-in reading drawer (the analysis "pop-up") -->
+  <aside id="panel" class="panel" role="dialog" aria-modal="true"
+         aria-labelledby="panel-title" aria-hidden="true">
+    <button id="panel-close" class="panel-close" aria-label="Close analysis">×</button>
+    <div id="panel-body" class="panel-body" tabindex="-1"></div>
+  </aside>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
