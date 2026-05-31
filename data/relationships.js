@@ -573,5 +573,115 @@ export const RELATIONSHIPS = {
       { a: "graywing", b: "riverstar", type: "ally" },
       { a: "graywing", b: "shadowstar", type: "ally" }
     ]
+  },
+
+  // ===================== A VISION OF SHADOWS =====================
+  "avos-1-the-apprentices-quest": {
+    nodes: [
+      { id: "alderpaw", name: "Alderpaw", clan: "ThunderClan", role: "Medicine apprentice" },
+      { id: "bramblestar", name: "Bramblestar", clan: "ThunderClan", role: "Leader (father)" },
+      { id: "squirrelflight", name: "Squirrelflight", clan: "ThunderClan", role: "Deputy (mother)" },
+      { id: "needlepaw", name: "Needlepaw", clan: "ShadowClan", role: "Apprentice" },
+      { id: "twigkit", name: "Twigkit", clan: "ThunderClan", role: "Found kit" },
+      { id: "violetkit", name: "Violetkit", clan: "ShadowClan", role: "Found kit" }
+    ],
+    links: [
+      { a: "bramblestar", b: "alderpaw", type: "family" },
+      { a: "squirrelflight", b: "alderpaw", type: "family" },
+      { a: "bramblestar", b: "squirrelflight", type: "mate" },
+      { a: "alderpaw", b: "needlepaw", type: "ally" },
+      { a: "twigkit", b: "violetkit", type: "family" },
+      { a: "alderpaw", b: "twigkit", type: "ally" }
+    ]
+  },
+  "avos-2-thunder-and-shadow": {
+    nodes: [
+      { id: "twigpaw", name: "Twigpaw", clan: "ThunderClan", role: "Apprentice" },
+      { id: "violetpaw", name: "Violetpaw", clan: "ShadowClan", role: "Apprentice" },
+      { id: "alderheart", name: "Alderheart", clan: "ThunderClan", role: "Medicine Cat" },
+      { id: "needlepaw", name: "Needlepaw", clan: "ShadowClan", role: "Apprentice" },
+      { id: "rowanstar", name: "Rowanstar", clan: "ShadowClan", role: "Leader (failing)" },
+      { id: "darktail", name: "Darktail", clan: "Loner / Rogue", role: "Rogue leader" }
+    ],
+    links: [
+      { a: "twigpaw", b: "violetpaw", type: "family" },
+      { a: "alderheart", b: "twigpaw", type: "ally" },
+      { a: "violetpaw", b: "needlepaw", type: "ally" },
+      { a: "darktail", b: "violetpaw", type: "rival" },
+      { a: "darktail", b: "rowanstar", type: "rival" },
+      { a: "violetpaw", b: "rowanstar", type: "ally" }
+    ]
+  },
+  "avos-3-shattered-sky": {
+    nodes: [
+      { id: "alderheart", name: "Alderheart", clan: "ThunderClan", role: "Medicine Cat" },
+      { id: "twigpaw", name: "Twigpaw", clan: "ThunderClan", role: "Apprentice" },
+      { id: "violetpaw", name: "Violetpaw", clan: "ShadowClan", role: "Apprentice" },
+      { id: "needletail", name: "Needletail", clan: "ShadowClan", role: "Warrior (dies)" },
+      { id: "sandstorm", name: "Sandstorm", clan: "ThunderClan", role: "Elder (dies)" },
+      { id: "darktail", name: "Darktail", clan: "Loner / Rogue", role: "Leader of the Kin" },
+      { id: "leafstar", name: "Leafstar", clan: "SkyClan", role: "Leader" }
+    ],
+    links: [
+      { a: "twigpaw", b: "violetpaw", type: "family" },
+      { a: "violetpaw", b: "needletail", type: "ally" },
+      { a: "darktail", b: "needletail", type: "rival" },
+      { a: "alderheart", b: "leafstar", type: "ally" },
+      { a: "darktail", b: "leafstar", type: "rival" },
+      { a: "alderheart", b: "sandstorm", type: "family" }
+    ]
+  },
+  "avos-4-darkest-night": {
+    nodes: [
+      { id: "alderheart", name: "Alderheart", clan: "ThunderClan", role: "Medicine Cat" },
+      { id: "twigpaw", name: "Twigpaw", clan: "ThunderClan", role: "Apprentice" },
+      { id: "violetpaw", name: "Violetpaw", clan: "SkyClan", role: "Apprentice" },
+      { id: "hawkwing", name: "Hawkwing", clan: "SkyClan", role: "Warrior (father)" },
+      { id: "leafstar", name: "Leafstar", clan: "SkyClan", role: "Leader" },
+      { id: "darktail", name: "Darktail", clan: "Loner / Rogue", role: "Leader of the Kin" }
+    ],
+    links: [
+      { a: "twigpaw", b: "violetpaw", type: "family" },
+      { a: "hawkwing", b: "twigpaw", type: "family" },
+      { a: "hawkwing", b: "violetpaw", type: "family" },
+      { a: "leafstar", b: "hawkwing", type: "ally" },
+      { a: "alderheart", b: "leafstar", type: "ally" },
+      { a: "darktail", b: "hawkwing", type: "rival" }
+    ]
+  },
+  "avos-5-river-of-fire": {
+    nodes: [
+      { id: "onestar", name: "Onestar", clan: "WindClan", role: "Leader (dies)" },
+      { id: "darktail", name: "Darktail", clan: "Loner / Rogue", role: "Leader of the Kin (son)" },
+      { id: "alderheart", name: "Alderheart", clan: "ThunderClan", role: "Medicine Cat" },
+      { id: "violetshine", name: "Violetshine", clan: "SkyClan", role: "Warrior" },
+      { id: "twigpaw", name: "Twigpaw", clan: "ThunderClan", role: "Apprentice" },
+      { id: "tigerheart", name: "Tigerheart", clan: "ShadowClan", role: "Warrior" }
+    ],
+    links: [
+      { a: "onestar", b: "darktail", type: "family" },
+      { a: "onestar", b: "darktail", type: "rival" },
+      { a: "twigpaw", b: "violetshine", type: "family" },
+      { a: "alderheart", b: "violetshine", type: "ally" },
+      { a: "darktail", b: "tigerheart", type: "rival" }
+    ]
+  },
+  "avos-6-the-raging-storm": {
+    nodes: [
+      { id: "twigbranch", name: "Twigbranch", clan: "ThunderClan", role: "Warrior" },
+      { id: "violetshine", name: "Violetshine", clan: "SkyClan", role: "Warrior" },
+      { id: "alderheart", name: "Alderheart", clan: "ThunderClan", role: "Medicine Cat" },
+      { id: "tigerstar2", name: "Tigerheart → Tigerstar", clan: "ShadowClan", role: "Leader" },
+      { id: "leafstar", name: "Leafstar", clan: "SkyClan", role: "Leader" },
+      { id: "tree", name: "Tree", clan: "Loner / Rogue", role: "Loner (sees the dead)" }
+    ],
+    links: [
+      { a: "twigbranch", b: "violetshine", type: "family" },
+      { a: "violetshine", b: "tree", type: "mate" },
+      { a: "alderheart", b: "twigbranch", type: "ally" },
+      { a: "leafstar", b: "violetshine", type: "ally" },
+      { a: "tigerstar2", b: "leafstar", type: "ally" },
+      { a: "violetshine", b: "tigerstar2", type: "ally" }
+    ]
   }
 };
