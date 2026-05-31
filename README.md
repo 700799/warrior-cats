@@ -20,8 +20,9 @@ analyses currently cover:
 
 - ✅ **The Prophecies Begin** (books 1–6)
 - ✅ **The New Prophecy** (books 7–12)
+- ✅ **Power of Three** (books 13–18)
 
-Future arcs (Power of Three, Omen of the Stars, and the rest, plus Super
+Future arcs (Omen of the Stars, Dawn of the Clans, and the rest, plus Super
 Editions and Novellas) appear in the filter bar marked "soon" and are added in
 subsequent updates. Each new arc is a single `data/books/arc-*.js` file.
 
