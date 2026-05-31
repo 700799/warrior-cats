@@ -9,12 +9,14 @@ import { LOCATIONS } from "../locations.js";
 import { prophecies } from "./arc-prophecies.js";
 import { newProphecy } from "./arc-new-prophecy.js";
 import { powerOfThree } from "./arc-power-of-three.js";
+import { omenOfTheStars } from "./arc-omen-of-the-stars.js";
 
 // As future arcs are authored, import and spread them here.
 export const BOOKS = [
   ...prophecies,
   ...newProphecy,
-  ...powerOfThree
+  ...powerOfThree,
+  ...omenOfTheStars
 ];
 
 // Books grouped by arc key, in arc order, with books sorted by arcOrder.
