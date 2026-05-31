@@ -11,6 +11,11 @@ gives each book a full **SparkNotes / CliffsNotes–style literary analysis**.
   Themes, Motifs, Critical Analysis, Character Analysis, Study Questions,
   "Most Intriguing", **Quote Cards**, Timeline placement, and Comparisons to
   other famous books — all in full, complete-sentence prose.
+- Every book ends with a **Relationship Map**: a clan-grouped SVG graph of that
+  book's key cats, colour-coded by Clan and connected by relationship type
+  (family, mates, mentor, ally, rival). Hover a cat to highlight its ties. The
+  per-book graph data lives in `data/relationships.js`; the renderer is
+  `js/graph.js`.
 
 ## Status
 

@@ -6,6 +6,7 @@
 
 import { ARCS } from "../arcs.js";
 import { LOCATIONS } from "../locations.js";
+import { RELATIONSHIPS } from "../relationships.js";
 import { prophecies } from "./arc-prophecies.js";
 import { newProphecy } from "./arc-new-prophecy.js";
 import { powerOfThree } from "./arc-power-of-three.js";
@@ -74,6 +75,18 @@ export function validateBooks() {
         const v = book.analysis[key];
         const present = Array.isArray(v) ? v.length > 0 : Boolean(v);
         console.assert(present, `${where}: missing or empty analysis.${key}`);
+      }
+    }
+
+    // Relationship graph: every book should have one, and every link must
+    // reference real nodes.
+    const rel = RELATIONSHIPS[book.id];
+    console.assert(rel, `${where}: missing relationship graph`);
+    if (rel) {
+      const ids = new Set(rel.nodes.map((n) => n.id));
+      for (const lk of rel.links || []) {
+        console.assert(ids.has(lk.a) && ids.has(lk.b),
+          `${where}: relationship link references unknown node (${lk.a} -> ${lk.b})`);
       }
     }
   }

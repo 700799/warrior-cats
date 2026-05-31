@@ -8,6 +8,8 @@ import { store } from "./store.js";
 import { BOOK_BY_ID, BOOKS_BY_LOCATION } from "../data/books/index.js";
 import { LOCATIONS } from "../data/locations.js";
 import { ARC_BY_KEY } from "../data/arcs.js";
+import { RELATIONSHIPS } from "../data/relationships.js";
+import { renderRelationshipGraph } from "./graph.js";
 
 const panel = document.getElementById("panel");
 const body = document.getElementById("panel-body");
@@ -44,12 +46,14 @@ function renderBook(book) {
   const a = book.analysis;
   const arc = ARC_BY_KEY[book.arcKey];
 
+  const hasGraph = Boolean(RELATIONSHIPS[book.id]);
   const toc = [
     ["plot", "Plot Summary"], ["themes", "Themes"], ["motifs", "Motifs"],
     ["critical", "Critical Analysis"], ["characters", "Character Analysis"],
     ["questions", "Study Questions"], ["intriguing", "Most Intriguing"],
     ["quotes", "Quote Cards"], ["timeline", "Timeline"], ["comparisons", "Comparisons"]
   ];
+  if (hasGraph) toc.push(["relationships", "Relationship Map"]);
 
   const meta = `
     <p class="book-arc">${esc(book.arc)} · Book ${book.arcOrder}</p>
@@ -94,8 +98,23 @@ function renderBook(book) {
     section("intriguing", "Most Intriguing", paras(a.mostIntriguing)) +
     section("quotes", "Quote Cards", `<div class="quote-grid">${quotes}</div>`) +
     section("timeline", "Timeline Placement", paras(a.timelinePlacement)) +
-    section("comparisons", "Compared to Famous Books", comparisons)
+    section("comparisons", "Compared to Famous Books", comparisons) +
+    (hasGraph
+      ? section(
+          "relationships",
+          "Relationship Map",
+          `<p class="rel-caption">Cats grouped by Clan. Edge colour shows the kind of tie; hover a cat to highlight its connections.</p>
+           <div id="rel-graph-mount" class="relgraph"></div>`
+        )
+      : "")
   );
+}
+
+// Renders the SVG graph into its mount after the drawer HTML is in the DOM.
+function mountGraph(book) {
+  const data = RELATIONSHIPS[book.id];
+  const mount = document.getElementById("rel-graph-mount");
+  if (data && mount) renderRelationshipGraph(mount, data);
 }
 
 function renderChooser(bookIds, locationKey) {
@@ -148,6 +167,7 @@ export function initPanel() {
       const book = BOOK_BY_ID[s.selectedBookId];
       if (!panel.classList.contains("open")) lastFocused = document.activeElement;
       body.innerHTML = renderBook(book);
+      mountGraph(book);
       openDrawer(book.accentColor);
     } else if (s.chooserBookIds && s.chooserBookIds.length > 1) {
       if (!panel.classList.contains("open")) lastFocused = document.activeElement;

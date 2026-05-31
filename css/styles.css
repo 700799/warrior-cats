@@ -326,6 +326,27 @@ html, body {
 .chooser-item:hover { border-color: var(--accent); }
 .chooser-item span { color: var(--ink-soft); font-size: 0.82rem; }
 
+/* --- relationship map (SVG graph) --- */
+.rel-caption { color: var(--ink-soft); font-size: 0.86rem; margin: 0 0 0.6rem; }
+.relgraph {
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.relgraph-svg { width: 100%; height: auto; display: block; }
+.relgraph-header { font-size: 11px; font-weight: 700; fill: #14202a; }
+.relgraph-name { font-size: 12px; font-weight: 600; fill: var(--ink); }
+.relgraph-role { font-size: 9px; fill: var(--ink-soft); }
+.relgraph-legend { font-size: 11px; fill: var(--ink-soft); }
+.relgraph-node { cursor: default; }
+.relgraph-node:focus { outline: none; }
+.relgraph-link { transition: opacity 0.12s; }
+/* hover/focus highlight: dim everything except the active node + its ties */
+.relgraph-focus .relgraph-node:not(.active) { opacity: 0.22; }
+.relgraph-focus .relgraph-link:not(.active) { opacity: 0.08; }
+.relgraph-focus .relgraph-node.active .relgraph-name { font-weight: 700; }
+
 /* focus visibility everywhere */
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 
