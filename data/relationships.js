@@ -787,5 +787,106 @@ export const RELATIONSHIPS = {
       { a: "ashfur", b: "squirrelflight", type: "rival" },
       { a: "shadowsight", b: "bristlefrost", type: "ally" }
     ]
+  },
+
+  // ===================== A STARLESS CLAN =====================
+  "asc-1-river": {
+    nodes: [
+      { id: "frostpaw", name: "Frostpaw", clan: "RiverClan", role: "Medicine apprentice" },
+      { id: "mothwing", name: "Mothwing", clan: "RiverClan", role: "Medicine Cat (no StarClan)" },
+      { id: "mistystar", name: "Mistystar", clan: "RiverClan", role: "Leader (dies)" },
+      { id: "splashtail", name: "Splashtail", clan: "RiverClan", role: "Warrior (ambitious)" },
+      { id: "nightheart", name: "Nightheart", clan: "ThunderClan", role: "Warrior (Firestar's kin)" },
+      { id: "sunbeam", name: "Sunbeam", clan: "ShadowClan", role: "Warrior" }
+    ],
+    links: [
+      { a: "mothwing", b: "frostpaw", type: "mentor" },
+      { a: "frostpaw", b: "splashtail", type: "mate" },
+      { a: "mistystar", b: "frostpaw", type: "ally" },
+      { a: "nightheart", b: "sunbeam", type: "mate" },
+      { a: "splashtail", b: "frostpaw", type: "rival" }
+    ]
+  },
+  "asc-2-sky": {
+    nodes: [
+      { id: "nightheart", name: "Nightheart", clan: "SkyClan", role: "Warrior (left ThunderClan)" },
+      { id: "frostpaw", name: "Frostpaw", clan: "RiverClan", role: "Medicine apprentice" },
+      { id: "sunbeam", name: "Sunbeam", clan: "ShadowClan", role: "Warrior" },
+      { id: "splashtail", name: "Splashtail", clan: "RiverClan", role: "Warrior (scheming)" },
+      { id: "sparkpelt", name: "Sparkpelt", clan: "ThunderClan", role: "Warrior (mother)" },
+      { id: "leafstar", name: "Leafstar", clan: "SkyClan", role: "Leader" }
+    ],
+    links: [
+      { a: "sparkpelt", b: "nightheart", type: "family" },
+      { a: "nightheart", b: "sunbeam", type: "mate" },
+      { a: "leafstar", b: "nightheart", type: "ally" },
+      { a: "frostpaw", b: "splashtail", type: "mate" },
+      { a: "splashtail", b: "frostpaw", type: "rival" }
+    ]
+  },
+  "asc-3-shadow": {
+    nodes: [
+      { id: "sunbeam", name: "Sunbeam", clan: "ShadowClan", role: "Warrior" },
+      { id: "tigerstar", name: "Tigerstar", clan: "ShadowClan", role: "Leader" },
+      { id: "nightheart", name: "Nightheart", clan: "SkyClan", role: "Warrior" },
+      { id: "frostpaw", name: "Frostpaw", clan: "RiverClan", role: "Medicine apprentice" },
+      { id: "splashtail", name: "Splashtail", clan: "RiverClan", role: "Warrior (tyrant rising)" }
+    ],
+    links: [
+      { a: "tigerstar", b: "sunbeam", type: "ally" },
+      { a: "nightheart", b: "sunbeam", type: "mate" },
+      { a: "splashtail", b: "frostpaw", type: "rival" },
+      { a: "tigerstar", b: "splashtail", type: "rival" },
+      { a: "sunbeam", b: "frostpaw", type: "ally" }
+    ]
+  },
+  "asc-4-thunder": {
+    nodes: [
+      { id: "splashtail", name: "Splashtail", clan: "RiverClan", role: "Usurper / self-named leader" },
+      { id: "frostpaw", name: "Frostpaw", clan: "RiverClan", role: "Medicine apprentice" },
+      { id: "curlfeather", name: "Curlfeather", clan: "RiverClan", role: "Warrior (mother, dies)" },
+      { id: "harelight", name: "Harelight", clan: "RiverClan", role: "Warrior (slain)" },
+      { id: "nightheart", name: "Nightheart", clan: "SkyClan", role: "Warrior" },
+      { id: "sunbeam", name: "Sunbeam", clan: "ShadowClan", role: "Warrior" }
+    ],
+    links: [
+      { a: "splashtail", b: "harelight", type: "rival" },
+      { a: "splashtail", b: "frostpaw", type: "rival" },
+      { a: "curlfeather", b: "frostpaw", type: "family" },
+      { a: "splashtail", b: "curlfeather", type: "rival" },
+      { a: "nightheart", b: "sunbeam", type: "mate" }
+    ]
+  },
+  "asc-5-wind": {
+    nodes: [
+      { id: "frostpaw", name: "Frostpaw", clan: "RiverClan", role: "Medicine apprentice (resists)" },
+      { id: "splashtail", name: "Splashtail", clan: "RiverClan", role: "Usurper" },
+      { id: "tigerstar", name: "Tigerstar", clan: "ShadowClan", role: "Leader (intervenes)" },
+      { id: "nightheart", name: "Nightheart", clan: "SkyClan", role: "Warrior" },
+      { id: "sunbeam", name: "Sunbeam", clan: "ShadowClan", role: "Warrior" }
+    ],
+    links: [
+      { a: "splashtail", b: "frostpaw", type: "rival" },
+      { a: "tigerstar", b: "splashtail", type: "rival" },
+      { a: "nightheart", b: "sunbeam", type: "mate" },
+      { a: "frostpaw", b: "nightheart", type: "ally" },
+      { a: "tigerstar", b: "frostpaw", type: "ally" }
+    ]
+  },
+  "asc-6-star": {
+    nodes: [
+      { id: "frostpaw", name: "Frostpaw", clan: "RiverClan", role: "Medicine Cat" },
+      { id: "splashtail", name: "Splashtail", clan: "RiverClan", role: "Usurper (defeated)" },
+      { id: "tigerstar", name: "Tigerstar", clan: "ShadowClan", role: "Leader" },
+      { id: "nightheart", name: "Nightheart", clan: "SkyClan", role: "Warrior" },
+      { id: "sunbeam", name: "Sunbeam", clan: "ShadowClan", role: "Warrior" }
+    ],
+    links: [
+      { a: "frostpaw", b: "splashtail", type: "rival" },
+      { a: "tigerstar", b: "splashtail", type: "rival" },
+      { a: "nightheart", b: "sunbeam", type: "mate" },
+      { a: "frostpaw", b: "tigerstar", type: "ally" },
+      { a: "frostpaw", b: "nightheart", type: "ally" }
+    ]
   }
 };
