@@ -7,12 +7,12 @@
 import { ARCS } from "../arcs.js";
 import { LOCATIONS } from "../locations.js";
 import { prophecies } from "./arc-prophecies.js";
+import { newProphecy } from "./arc-new-prophecy.js";
 
-// As future arcs are authored, import and spread them here:
-//   import { newProphecy } from "./arc-new-prophecy.js";
-//   ...then add `...newProphecy` to the array below.
+// As future arcs are authored, import and spread them here.
 export const BOOKS = [
-  ...prophecies
+  ...prophecies,
+  ...newProphecy
 ];
 
 // Books grouped by arc key, in arc order, with books sorted by arcOrder.
