@@ -39,13 +39,19 @@ export function buildMarkers(scene, ui, LOCATIONS) {
       pin.position.y = 3.0 + Math.sin(t) * 0.18;
     });
 
-    // Floating label that tracks the pin as the camera moves.
+    // Floating label that tracks the pin as the camera moves. The label is also
+    // a large, reliable tap/click target (the pin cones are small, especially on
+    // mobile), so clicking it opens the location's book(s).
     const rect = new BABYLON.GUI.Rectangle("label-" + key);
     rect.adaptWidthToChildren = true;
-    rect.height = "26px";
-    rect.cornerRadius = 7;
-    rect.thickness = 0;
-    rect.background = "rgba(8, 14, 18, 0.72)";
+    rect.height = "30px";
+    rect.cornerRadius = 8;
+    rect.thickness = 2;
+    rect.color = loc.color;
+    rect.background = "rgba(8, 14, 18, 0.82)";
+    rect.isPointerBlocker = true;
+    rect.hoverCursor = "pointer";
+    rect.onPointerUpObservable.add(() => store.selectLocation(key, bookIds));
     ui.addControl(rect);
 
     const text = new BABYLON.GUI.TextBlock();

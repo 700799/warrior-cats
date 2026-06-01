@@ -38,9 +38,12 @@ saga (the founding of the Clans), so it sorts first in the "All" view and shows
 saga order #1–6.
 
 All eight main arcs and **all 17 Super Editions** are complete, and the
-**Novellas** are being added in batches (6 so far: Hollyleaf's Story, Mistystar's
-Omen, Cloudstar's Journey, Mapleshade's Vengeance, Goosefeather's Curse,
-Ravenpaw's Farewell — 71 books). Remaining novellas are added in later updates.
+**Novellas** are being added in batches (12 so far — 77 books). Remaining
+novellas are added in later updates.
+
+A clickable **Book Map** (button in the header) shows every book as a node
+threaded in saga order; tap a node to read it — a reliable, touch-friendly
+companion to the 3D map.
 
 Beyond browsing by arc, the filter bar includes curated **"Best of" categories**
 (Top 5 Rated, Most Humorous, Most Suspenseful, Most Unique, Best Plot) — each a

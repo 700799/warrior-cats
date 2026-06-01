@@ -7,6 +7,7 @@ import { createWorld } from "./scene.js";
 import { initPanel } from "./panel.js";
 import { initPills } from "./pills.js";
 import { coverArt } from "./art.js";
+import { initBookMap } from "./bookmap.js";
 import { BOOK_BY_ID, validateBooks } from "../data/books/index.js";
 
 // Illustrated cover splash on the landing view; hides once a book is open.
@@ -64,6 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
   initPills();
   initPanel();
   initCover();
+  initBookMap();
   buildSeoIndex();
   bootHashRouting();
 });

@@ -333,5 +333,329 @@ export const novellas = [
         { work: "The Hobbit (Bilbo's later years)", author: "J. R. R. Tolkien", text: "The honoring of a quiet, unassuming hero in the peaceful twilight of a life that once brushed against great events parallels Ravenpaw's gentle send-off." }
       ]
     }
+  },
+
+  {
+    id: "nov-thunderstars-echo",
+    title: "Thunderstar's Echo",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 81,
+    arcOrder: 12,
+    timelineOrder: 6.12, // founding era, just after the Clans are named
+    publicationYear: 2016,
+    povCharacter: "Thunderstar",
+    locationKey: "forest-thunderclan",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "Set in the earliest days of the newly founded Clans, this novella follows Thunderstar — once the cast-out kit Thunder, now the first leader of ThunderClan — as he settles into the responsibilities of leadership and the still-fragile customs of the young Clan. When a crisis threatens his Clan and tests the bonds and boundaries the founders have only just established, Thunderstar must navigate the demands of leadership, loyalty, and the new traditions taking shape, drawing on the lessons of compassion he learned from Gray Wing and tempering the ambition he inherited from his father, Clear Sky. The novella deepens the founding mythology of Dawn of the Clans by showing one of the first leaders growing into his role, and it explores how the warrior code and Clan customs were forged not as abstractions but through the concrete choices of the founding generation. It closes a chapter of the founding era, affirming Thunderstar's compassionate, principled vision of leadership and the character he gives to ThunderClan for all the generations to come.",
+      themes: [
+        { name: "Forging Leadership and Custom", text: "Thunderstar's growth into his role makes the forging of leadership and custom the novella's central theme, showing how the young Clans' traditions were shaped by the concrete choices of their first leaders." },
+        { name: "Inheritance Tempered", text: "Thunderstar's balancing of Gray Wing's compassion and Clear Sky's ambition develops the theme of inheritance tempered by choice, the founder defining himself between the examples of his fathers." },
+        { name: "The Character of a Clan", text: "The novella explores how ThunderClan's enduring character — its compassion and loyalty — was given by its first leader, rooting a Clan's nature in its founder." }
+      ],
+      motifs: [
+        { name: "The Young Clan", text: "ThunderClan in its founding days recurs as the novella's setting, the fragile new community whose customs are still being forged." },
+        { name: "Two Fathers", text: "The examples of Gray Wing and Clear Sky recur as a motif of inheritance, the compassion and ambition Thunderstar balances." },
+        { name: "First Leadership", text: "Thunderstar's growth into his role recurs as a motif of the forging of leadership, the first leader defining what a leader should be." }
+      ],
+      criticalAnalysis:
+        "Thunderstar's Echo extends the founding mythology of Dawn of the Clans by following one of the first leaders into the early days of his reign, deepening the origins of ThunderClan and its enduring character. The novella's chief value is its continuation of the prequel arc's central insight — that the Clans' revered customs were forged through ordinary choices — by showing Thunderstar navigating a crisis with the compassion he learned from Gray Wing and the ambition he tempers from Clear Sky, defining himself between his two fathers. As a compact companion to Dawn of the Clans, it grounds ThunderClan's enduring nature in its founder's character, a satisfying piece of world-building for readers invested in the saga's deep history. Its stakes are modest and its setting removed from the main saga, which may make it slight for those uninvested in the founding era, but it is a worthwhile deepening of the prequel mythology, affirming the compassionate, principled vision of leadership that defines ThunderClan across the generations.",
+      characterAnalysis: [
+        { name: "Thunderstar", text: "Once the cast-out kit Thunder, now ThunderClan's first leader, who grows into his role by balancing Gray Wing's compassion and Clear Sky's ambition, giving ThunderClan its enduring character." },
+        { name: "ThunderClan", text: "The young Clan in its founding days, whose customs and character are forged through its first leader's choices." },
+        { name: "The Founding Generation", text: "Gray Wing, Clear Sky, and the other founders whose examples shape Thunderstar's vision of leadership." }
+      ],
+      studyQuestions: [
+        "How does the novella show that the Clans' customs were forged through concrete choices rather than as abstractions?",
+        "How does Thunderstar balance the compassion of Gray Wing and the ambition of Clear Sky?",
+        "How does the novella root ThunderClan's enduring character in its founder?",
+        "Why is it significant that the saga continues to deepen its founding mythology in the novellas?",
+        "How does Thunderstar's principled leadership define the Clan for generations to come?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novella's portrait of a Clan's character being deliberately chosen: Thunderstar, son of the ambitious Clear Sky and foster-son of the compassionate Gray Wing, defines ThunderClan's enduring nature by choosing which inheritance to embody. That a Clan's whole identity flows from its first leader's choice between his two fathers' examples gives the founding mythology a satisfying psychological depth.",
+      quoteCards: [
+        { quote: "I will lead as Gray Wing taught me, not as my blood demands — and ThunderClan will be the better for it.", speaker: "Thunderstar", context: "His choice to embody compassion over ambition, giving ThunderClan its enduring character." }
+      ],
+      timelinePlacement:
+        "Thunderstar's Echo is set in the founding era alongside Dawn of the Clans, shortly after the Clans are named in Path of Stars. It deepens ThunderClan's origins and its first leader, complementing the prequel arc and the founding stories Moth Flight's Vision and Riverstar's Home.",
+      comparisons: [
+        { work: "The Once and Future King", author: "T. H. White", text: "The education of a young, destined leader who must choose what kind of ruler to be, shaping a realm's character by his example, parallels Thunderstar's forging of ThunderClan." },
+        { work: "The Aeneid", author: "Virgil", text: "The founding figure who defines a people's enduring character through his choices and leadership echoes Thunderstar's role in shaping ThunderClan." }
+      ]
+    }
+  },
+
+  {
+    id: "nov-pinestars-choice",
+    title: "Pinestar's Choice",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 80,
+    arcOrder: 11,
+    timelineOrder: 6.28, // ThunderClan, generation before the original arc
+    publicationYear: 2016,
+    povCharacter: "Pinestar",
+    locationKey: "forest-thunderclan",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "This novella tells the unusual story of Pinestar, the ThunderClan leader before Sunstar, who made the almost unthinkable choice to abandon Clan life. Weary of the endless cycle of battle and bloodshed, and increasingly drawn to the comfort and peace he glimpses in the life of kittypets, the aging Pinestar — still possessing lives remaining as leader — comes to a quiet, scandalous decision: to give up his leadership, his Clan, and the warrior life entirely to live as a Twoleg's pet. The novella explores the disillusionment that drives him, his longing for a gentler existence, and the wrenching cost of his choice, including leaving behind his Clan and his kin — most notably his son Tigerkit, who would grow into the tyrant Tigerstar. Pinestar's decision, scorned by his Clanmates as a betrayal, is presented with sympathy as the choice of a cat exhausted by violence and honest about his own desires, and the novella examines the tension between duty and personal happiness, and the courage and the cost of choosing peace over the warrior code.",
+      themes: [
+        { name: "Disillusionment with the Warrior Life", text: "Pinestar's weariness of battle makes disillusionment the novella's central theme, exploring a leader's loss of faith in the endless cycle of Clan violence and his longing for a gentler way to live." },
+        { name: "Duty Versus Personal Happiness", text: "Pinestar's choice develops the tension between duty and personal happiness, the wrenching question of whether a cat may abandon his obligations for his own peace." },
+        { name: "The Cost of Choosing Peace", text: "Pinestar's leaving of his Clan and kin frames the theme of the cost of choosing peace, the betrayal his Clanmates perceive and the family — including the future Tigerstar — he leaves behind." }
+      ],
+      motifs: [
+        { name: "The Kittypet Life", text: "The comfort and peace of the Twoleg's home recur as the novella's defining lure, the gentle existence Pinestar chooses over the warrior life." },
+        { name: "Weariness of Battle", text: "Pinestar's exhaustion with bloodshed recurs as the motif driving his disillusionment and his choice." },
+        { name: "The Abandoned Son", text: "Pinestar's leaving of Tigerkit recurs as a motif of the cost of his choice, the son he abandons who becomes the saga's great villain." }
+      ],
+      criticalAnalysis:
+        "Pinestar's Choice is among the most thematically provocative Warriors novellas, dramatizing a decision almost unthinkable within the saga's value system: a Clan leader voluntarily abandoning the warrior life for the comfort of a kittypet's existence. The novella's chief strength is its sympathetic, non-judgmental treatment of disillusionment: rather than condemning Pinestar as a coward or traitor, it takes seriously his weariness of endless bloodshed and his honest longing for peace, presenting his choice as a difficult act of self-knowledge rather than mere weakness — a genuinely subversive perspective in a series built on the glory of the warrior code. The tension between duty and personal happiness gives the short work real moral weight, and the revelation that the son Pinestar abandons is Tigerkit, the future Tigerstar, adds a layer of tragic irony, suggesting that the leader's flight from violence helped shape the saga's most violent villain. Its compact length suits the focused moral fable. As a companion piece, it enriches ThunderClan's history before the original arc and offers a rare, sympathetic critique of the warrior life from within, making it one of the more intellectually interesting novellas.",
+      characterAnalysis: [
+        { name: "Pinestar", text: "The ThunderClan leader who abandons the warrior life for a kittypet's existence, weary of bloodshed and honest about his longing for peace; presented sympathetically as a cat making a difficult choice of self-knowledge rather than cowardice." },
+        { name: "Tigerkit / Tigerstar", text: "Pinestar's son, abandoned when his father leaves the Clan, who grows into the saga's great tyrant — a tragic irony suggesting the leader's flight from violence helped shape its greatest perpetrator." },
+        { name: "ThunderClan", text: "Pinestar's Clan, which scorns his choice as a betrayal, embodying the value system against which his disillusionment and longing for peace are measured." }
+      ],
+      studyQuestions: [
+        "Pinestar abandons the warrior life for a kittypet's comfort. How does the novella treat his disillusionment sympathetically rather than as cowardice?",
+        "How does the novella explore the tension between duty and personal happiness?",
+        "What is the significance of the son Pinestar abandons being the future Tigerstar?",
+        "Why is Pinestar's choice subversive within a series built on the glory of the warrior code?",
+        "How does the novella frame the cost of choosing peace over duty?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novella's sympathetic critique of the warrior code from within: in a saga that glorifies the warrior life, Pinestar's voluntary abandonment of leadership for a kittypet's peace is treated not as betrayal but as honest self-knowledge, a leader admitting he is weary of bloodshed. That the series allows one of its leaders to reject its central value system — and that the son he leaves behind becomes its greatest villain — gives the novella a subversive, tragic depth rare in the franchise.",
+      quoteCards: [
+        { quote: "I have given my Clan eight of my nine lives. The last one, at last, I will give to myself.", speaker: "Pinestar", context: "His scandalous choice to abandon leadership and the warrior life for the peace of a kittypet's existence." }
+      ],
+      timelinePlacement:
+        "Pinestar's Choice is set in the generation before The Prophecies Begin, before Sunstar's and Bluestar's leaderships. It supplies the backstory for Tigerstar's abandonment by his father and offers a sympathetic critique of the warrior life, deepening ThunderClan's history around the era of Bluestar's Prophecy.",
+      comparisons: [
+        { work: "Siddhartha", author: "Hermann Hesse", text: "The story of a figure who renounces his established life and role in search of peace and a truer existence, treated as a sympathetic spiritual choice, resonates with Pinestar's abandonment of the warrior life." },
+        { work: "The Death of Ivan Ilyich", author: "Leo Tolstoy", text: "The reckoning of a figure who questions the value of the life and duties he has lived by and longs for something more authentic parallels Pinestar's disillusionment." }
+      ]
+    }
+  },
+
+  {
+    id: "nov-spottedleafs-heart",
+    title: "Spottedleaf's Heart",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 79,
+    arcOrder: 10,
+    timelineOrder: 6.45, // ThunderClan, ends near the start of the original arc
+    publicationYear: 2016,
+    povCharacter: "Spottedleaf",
+    locationKey: "forest-thunderclan",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "This novella tells the youth of Spottedleaf, the gentle ThunderClan medicine cat whose death and lingering spirit haunt the original arc. As a young cat, Spottedpaw is drawn to two paths and two loves: the medicine-cat vocation, toward which her gifts and visions pull her, and the warrior life, embodied by the ambitious, charismatic, and dangerous Thistleclaw, for whom she develops a powerful infatuation. The novella traces her growing awareness of Thistleclaw's cruelty and his hunger for violence — including his mentorship of the young Tigerpaw toward darkness — and her painful recognition that the cat she loves is not the cat she believed him to be. Choosing her vocation and her conscience over her infatuation, Spottedpaw commits fully to the medicine-cat path, becoming Spottedleaf and forswearing love, a renunciation that shapes the compassionate, wise healer the original arc knows. The novella deepens a beloved but lightly sketched character, exploring first love, disillusionment, and the choice of vocation over passion, and it enriches the reader's understanding of the medicine cat whose prophecy and spirit guide Firestar.",
+      themes: [
+        { name: "First Love and Disillusionment", text: "Spottedpaw's infatuation with Thistleclaw and her recognition of his cruelty make first love and disillusionment the novella's central theme, the painful awakening to the truth of a beloved." },
+        { name: "Vocation Over Passion", text: "Spottedleaf's choice of the medicine-cat path develops the theme of vocation over passion, the renunciation of love in favor of a calling and a conscience." },
+        { name: "Recognizing Cruelty", text: "Spottedpaw's growing awareness of Thistleclaw's hunger for violence frames the theme of recognizing cruelty behind charm, the moral clarity that lets her choose rightly." }
+      ],
+      motifs: [
+        { name: "Two Paths", text: "The medicine-cat vocation and the warrior life recur as the two paths between which Spottedpaw must choose, embodied in her gifts and in Thistleclaw." },
+        { name: "Charm and Cruelty", text: "Thistleclaw's charismatic surface and violent heart recur as a motif of hidden cruelty, the disillusionment at the novella's center." },
+        { name: "Renunciation", text: "Spottedleaf's forswearing of love recurs as a motif of vocational sacrifice, the choice that shapes the compassionate healer of the original arc." }
+      ],
+      criticalAnalysis:
+        "Spottedleaf's Heart deepens one of the original arc's most beloved but lightly drawn characters, the gentle medicine cat whose murder and lingering spirit shape Firestar's story, by giving her a youth of first love, disillusionment, and vocational choice. The novella's chief strength is its treatment of Spottedpaw's infatuation with Thistleclaw and her painful awakening to his cruelty: by showing the saintly healer of the original arc as a young cat capable of being charmed by a dangerous warrior, and then choosing her conscience and vocation over her passion, the novella grants her a fuller humanity and a meaningful origin for her wisdom and compassion. The exploration of Thistleclaw's hunger for violence — and his corrupting mentorship of the young Tigerpaw — ties the novella to the darker currents of ThunderClan history. Its compact length suits the focused coming-of-age, though the outcome (Spottedleaf's gentle path) is foreordained. As a companion piece, it enriches a character readers have loved since the first book and offers a thoughtful study of choosing vocation over passion, making it a worthwhile deepening of the original arc's mythology.",
+      characterAnalysis: [
+        { name: "Spottedleaf", text: "The gentle ThunderClan medicine cat of the original arc, given a youth of first love and disillusionment; her infatuation with Thistleclaw and her choice of vocation over passion shape the compassionate, wise healer readers know." },
+        { name: "Thistleclaw", text: "The ambitious, charismatic, and cruel warrior Spottedpaw loves before recognizing his hunger for violence; his corrupting influence, including on the young Tigerpaw, ties the novella to ThunderClan's darker history." },
+        { name: "Tigerpaw / Tigerstar", text: "The young apprentice Thistleclaw mentors toward darkness, his presence linking Spottedleaf's youth to the rise of the saga's great villain." }
+      ],
+      studyQuestions: [
+        "How does the novella use Spottedpaw's infatuation with Thistleclaw and her disillusionment to explore first love?",
+        "How does Spottedleaf's choice of the medicine-cat path develop the theme of vocation over passion?",
+        "How does the novella treat the recognition of cruelty behind Thistleclaw's charm?",
+        "How does giving the saintly Spottedleaf a youth of infatuation grant her fuller humanity?",
+        "How does Thistleclaw's mentorship of Tigerpaw tie the novella to the saga's darker currents?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novella's willingness to give the beloved, saintly Spottedleaf a youthful infatuation with a cruel cat: by showing the gentle healer of the original arc as a young cat charmed by the dangerous Thistleclaw before she recognizes his violence and chooses her conscience, the novella grants her a fuller, more relatable humanity and roots her wisdom in a hard-won disillusionment rather than innate perfection.",
+      quoteCards: [
+        { quote: "I loved who I thought he was — and choosing the truth over that love is the hardest thing I have ever done.", speaker: "Spottedleaf", context: "Her recognition of Thistleclaw's cruelty and her choice of the medicine-cat vocation over her infatuation." }
+      ],
+      timelinePlacement:
+        "Spottedleaf's Heart is set in the generation before The Prophecies Begin, ending near the start of the original arc, and deepens the medicine cat whose prophecy and spirit guide Firestar in Into the Wild and beyond. It enriches ThunderClan's history around Bluestar's youth and the rise of Tigerstar.",
+      comparisons: [
+        { work: "Sense and Sensibility", author: "Jane Austen", text: "The painful education of a young heart that must distinguish charm from worth and choose conscience over an infatuation with a dangerous figure resonates with Spottedpaw's awakening." },
+        { work: "Jane Eyre", author: "Charlotte Brontë", text: "The depiction of a principled young woman choosing her conscience and vocation over a passionate attachment to a flawed, dangerous figure parallels Spottedleaf's choice." }
+      ]
+    }
+  },
+
+  {
+    id: "nov-tigerclaws-fury",
+    title: "Tigerclaw's Fury",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 76,
+    arcOrder: 7,
+    timelineOrder: 9.5, // original arc, after Tigerclaw's exile in Forest of Secrets
+    publicationYear: 2014,
+    povCharacter: "Tigerclaw",
+    locationKey: "forest-shadowclan",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "Set after his exposure and exile from ThunderClan, this novella follows Tigerclaw — the murderous, ambitious warrior of the original arc — as he plots his revenge and his return to power from the perspective of the villain himself. Cast out for his treachery, consumed by fury at his downfall and by hatred for Fireheart, who exposed him, Tigerclaw gathers a band of rogues, schemes to seize power, and maneuvers toward the leadership of ShadowClan, the position that will let him threaten the Clans that rejected him. The novella offers a rare interior view of the saga's archetypal villain, dramatizing his ambition, his rage, his contempt for the warrior code's constraints, and his unwavering conviction in his own right to rule, as he lays the groundwork for the schemes that will culminate in The Darkest Hour. By inhabiting Tigerclaw's perspective, the novella illuminates the psychology of the saga's defining antagonist — his ruthlessness, his self-justification, and the fury that drives him — and bridges his exile in Forest of Secrets to his rise as Tigerstar of ShadowClan.",
+      themes: [
+        { name: "Ambition and Rage", text: "Tigerclaw's consuming hunger for power and his fury at his downfall make ambition and rage the novella's central theme, dramatizing the inner life of a villain driven by both." },
+        { name: "Self-Justification", text: "Tigerclaw's unwavering conviction in his own right to rule develops the theme of self-justification, the villain's refusal to see himself as anything but wronged and deserving." },
+        { name: "Contempt for the Code", text: "Tigerclaw's scorn for the warrior code's constraints frames the theme of the villain who sees law as weakness, a perspective that defines his ruthlessness." }
+      ],
+      motifs: [
+        { name: "Fury", text: "Tigerclaw's rage at his downfall recurs as the novella's defining motif, the fury that drives his scheming and his hatred of Fireheart." },
+        { name: "The Gathering of Rogues", text: "Tigerclaw's recruitment of rogues recurs as a motif of his rebuilding of power, the band that will serve his designs." },
+        { name: "Ambition for ShadowClan", text: "Tigerclaw's maneuvering toward ShadowClan's leadership recurs as the motif of his path back to power and revenge." }
+      ],
+      criticalAnalysis:
+        "Tigerclaw's Fury offers something rare in the saga: an extended interior view of its archetypal villain, dramatizing the psychology of ambition, rage, and self-justification that drives the cat behind the original arc's central menace. The novella's chief interest is perspectival — by inhabiting Tigerclaw's point of view as he plots his revenge and his return to power after his exile, it illuminates the inner life of a villain the main arc presents only from outside, revealing the fury at his downfall, his contempt for the warrior code, and his unshakable conviction in his own right to rule. This interiority risks humanizing or even glamorizing a monster, but the novella largely avoids that trap, presenting Tigerclaw's self-justification as chilling rather than sympathetic, a study in the psychology of ruthlessness rather than a redemption. As a bridge between his exile in Forest of Secrets and his rise as Tigerstar, the novella does useful connective work, and its villain's-eye view of scheming and rage gives it a dark fascination. Its compact length suits the focused character study, though readers seeking a sympathetic protagonist will find none here — which is precisely the point.",
+      characterAnalysis: [
+        { name: "Tigerclaw / Tigerstar", text: "The saga's archetypal villain, exiled from ThunderClan and consumed by fury and ambition; the novella's interior view reveals his rage, his self-justification, and his ruthless conviction in his right to rule as he schemes toward ShadowClan's leadership." },
+        { name: "Fireheart (as antagonist)", text: "The cat who exposed Tigerclaw, the object of his hatred and the focus of his desire for revenge, seen here from the villain's resentful perspective." },
+        { name: "The Rogues", text: "The band of lawless cats Tigerclaw gathers to rebuild his power, instruments of his scheming and his contempt for the warrior code." }
+      ],
+      studyQuestions: [
+        "How does the novella's interior view of Tigerclaw illuminate the psychology of the saga's archetypal villain?",
+        "How does the novella present Tigerclaw's self-justification as chilling rather than sympathetic?",
+        "How does Tigerclaw's contempt for the warrior code define his ruthlessness?",
+        "What are the risks of inhabiting a villain's perspective, and how does the novella avoid glamorizing him?",
+        "How does the novella bridge Tigerclaw's exile in Forest of Secrets to his rise as Tigerstar?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novella's villain's-eye view: by inhabiting Tigerclaw's perspective as he schemes and rages, it reveals the chilling self-justification of a cat who sees himself not as a murderer but as a wronged figure entitled to rule. That the saga grants its archetypal villain an interior voice — and uses it to deepen his menace rather than to redeem him — gives the novella a dark fascination and a clear-eyed study of the psychology of ambition and ruthlessness.",
+      quoteCards: [
+        { quote: "They called me traitor and cast me out. They will learn that they only made me free to take what is mine.", speaker: "Tigerclaw", context: "His fury and self-justification after his exile, as he schemes toward revenge and the leadership of ShadowClan." }
+      ],
+      timelinePlacement:
+        "Tigerclaw's Fury is set during the original arc, after Tigerclaw's exposure and exile in Forest of Secrets and before his rise as Tigerstar of ShadowClan in Rising Storm and A Dangerous Path. It bridges his downfall to his return to power, offering a villain's-eye view of the schemes that culminate in The Darkest Hour.",
+      comparisons: [
+        { work: "Paradise Lost", author: "John Milton", text: "The interior portrait of a fallen, ambitious figure consumed by rage at his downfall and unshakable in his self-justification, plotting his return, echoes Milton's Satan and resonates with Tigerclaw's fury." },
+        { work: "Richard III", author: "William Shakespeare", text: "The villain's confiding, self-justifying interior voice as he schemes toward power he believes is his due parallels the perspective of Tigerclaw's Fury." }
+      ]
+    }
+  },
+
+  {
+    id: "nov-leafpools-wish",
+    title: "Leafpool's Wish",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 77,
+    arcOrder: 8,
+    timelineOrder: 18.5, // between The New Prophecy and Power of Three
+    publicationYear: 2015,
+    povCharacter: "Leafpool",
+    locationKey: "lake-thunderclan",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "This novella fills in the hidden chapter behind one of the saga's central secrets: Leafpool's pregnancy and the birth of the Three. Having returned to her medicine-cat duties after her brief flight with the WindClan warrior Crowfeather, Leafpool discovers that she is expecting his kits — a catastrophe for a medicine cat sworn to celibacy, whose secret, if revealed, would shatter her, disgrace her, and endanger the kits. The novella dramatizes the anguish of her concealment: hiding her pregnancy from her Clan, confiding only in her sister Squirrelflight, and devising the desperate plan by which Squirrelflight will claim the kits as her own so that Leafpool can keep her vocation and the kits can be raised safely within ThunderClan. It traces Leafpool's secret labor, the birth of Jaykit, Lionkit, and Hollykit, and the wrenching sacrifice of giving up her own kits to be raised by her sister — the buried truth that will detonate, years later, in Power of Three. The novella is an intimate study of forbidden motherhood, secrecy, and sacrifice, deepening the hidden history at the heart of two arcs.",
+      themes: [
+        { name: "Forbidden Motherhood and Sacrifice", text: "Leafpool's secret pregnancy and the surrender of her kits make forbidden motherhood and sacrifice the novella's central theme, the anguish of a mother who must give up her own kits to keep her vocation and protect them." },
+        { name: "Secrecy and Its Burden", text: "Leafpool's concealment of her pregnancy develops the theme of secrecy and its burden, the weight of a hidden truth that isolates and endangers." },
+        { name: "Sisterly Loyalty", text: "Squirrelflight's agreement to claim the kits frames the theme of sisterly loyalty, the bond that makes the desperate plan possible and shares its burden." }
+      ],
+      motifs: [
+        { name: "The Hidden Pregnancy", text: "Leafpool's concealed pregnancy recurs as the novella's defining situation, the secret that drives its anguish and its plan." },
+        { name: "The Surrendered Kits", text: "Leafpool's giving up of Jaykit, Lionkit, and Hollykit recurs as the motif of her sacrifice, the buried truth that will later detonate." },
+        { name: "Two Sisters", text: "The bond between Leafpool and Squirrelflight recurs as a motif of shared burden, the loyalty that enables the concealment." }
+      ],
+      criticalAnalysis:
+        "Leafpool's Wish dramatizes the hidden chapter behind one of the saga's most consequential secrets — the true parentage of the Three — giving intimate, anguished texture to events that Power of Three and its aftermath treat largely as revelation. The novella's chief value is emotional: by inhabiting Leafpool's concealment of her forbidden pregnancy, her secret labor, and the wrenching surrender of her own kits to her sister, it transforms a plot mechanism into a moving study of forbidden motherhood and sacrifice, deepening the reader's sympathy for a character whose secret would later bring catastrophe. The depiction of sisterly loyalty between Leafpool and Squirrelflight, who shares and enables the deception, adds warmth and complexity to the desperate plan. Its compact length suits the focused, intimate drama, and its outcome is foreordained by the arcs it underlies, but that inevitability lends it a tragic weight, as the reader watches the loving sacrifice that will one day shatter the family it was meant to protect. As a companion piece, it enriches both The New Prophecy and Power of Three considerably, recasting a central revelation as a tale of a mother's impossible love.",
+      characterAnalysis: [
+        { name: "Leafpool", text: "The ThunderClan medicine cat whose forbidden pregnancy and secret surrender of her kits the novella dramatizes; an intimate, anguished study of a mother forced to give up her own kits to keep her vocation and protect them." },
+        { name: "Squirrelflight", text: "Leafpool's sister, who agrees to claim the kits as her own, sharing and enabling the deception; her loyalty makes the desperate plan possible and the secret bearable." },
+        { name: "The Three (as kits)", text: "Jaykit, Lionkit, and Hollykit, born of Leafpool and Crowfeather and given to Squirrelflight to raise, the secret whose eventual revelation drives Power of Three." }
+      ],
+      studyQuestions: [
+        "How does the novella transform a plot mechanism — the secret parentage of the Three — into a moving study of forbidden motherhood?",
+        "How does Leafpool's concealment develop the theme of secrecy and its burden?",
+        "How does Squirrelflight's loyalty enable the plan and share its burden?",
+        "How does the foreordained catastrophe lend the novella a tragic weight?",
+        "How does the novella deepen the reader's sympathy for Leafpool ahead of the revelations of Power of Three?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is how the novella recasts a central plot twist as a mother's impossible love: the secret parentage that Power of Three treats as a shattering revelation becomes here a tale of forbidden motherhood and wrenching sacrifice, as Leafpool gives up her own kits to keep her vocation and protect them. Knowing the catastrophe this loving deception will one day cause lends the intimate story a tragic poignancy, transforming a buried plot point into one of the saga's most affecting personal dramas.",
+      quoteCards: [
+        { quote: "I will give my kits to my sister and call them hers, so that they may live — even if it means they will never know me as their mother.", speaker: "Leafpool", context: "Her wrenching plan to surrender Jaykit, Lionkit, and Hollykit to Squirrelflight to keep her vocation and protect them." }
+      ],
+      timelinePlacement:
+        "Leafpool's Wish is set between The New Prophecy and Power of Three, dramatizing Leafpool's hidden pregnancy after her flight with Crowfeather in Sunset and the secret birth of the Three. It fills the gap behind the central revelation of Power of Three, deepening the hidden history at the heart of two arcs.",
+      comparisons: [
+        { work: "The Scarlet Letter", author: "Nathaniel Hawthorne", text: "The anguish of a forbidden pregnancy concealed within a strict moral community, and the burden of a secret that shapes a life, resonates with Leafpool's hidden motherhood." },
+        { work: "Sophie's Choice", author: "William Styron", text: "The unbearable sacrifice of giving up one's own child, and the lifelong burden of that loss, parallels Leafpool's surrender of her kits to her sister." }
+      ]
+    }
+  },
+
+  {
+    id: "nov-dovewings-silence",
+    title: "Dovewing's Silence",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 78,
+    arcOrder: 9,
+    timelineOrder: 30.4, // immediately after the Great Battle (The Last Hope)
+    publicationYear: 2015,
+    povCharacter: "Dovewing",
+    locationKey: "lake-thunderclan",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "Set in the immediate aftermath of the Great Battle, this novella follows Dovewing — one of the prophesied Three — as she grapples with grief, trauma, and the unsettling fading of the extraordinary power that defined her. With the Dark Forest defeated at terrible cost, the Clans turn to mourning and rebuilding, and Dovewing finds that her far-reaching senses, so central to her identity and her role in the prophecy, are diminishing now that the great threat has passed, leaving her uncertain of who she is without them. The novella dramatizes her struggle to process the losses of the battle, to find her place in a Clan no longer defined by the looming war, and to imagine a future and an ordinary life beyond her fading destiny. It also develops her complicated feelings for Tigerheart, the ShadowClan cat she loves across Clan lines, planting the seeds of the relationship that Tigerheart's Shadow would later explore. The novella is a quiet study of trauma, identity, and adjustment in the wake of catastrophe, giving emotional closure to the aftermath of Omen of the Stars.",
+      themes: [
+        { name: "Identity Beyond a Gift", text: "The fading of Dovewing's power makes identity beyond a gift the novella's central theme, exploring who a cat is when the extraordinary ability that defined her diminishes, and the uncertain search for a self beyond destiny." },
+        { name: "Trauma and Mourning", text: "Dovewing's struggle to process the battle's losses develops the theme of trauma and mourning, the aftermath of catastrophe and the work of healing." },
+        { name: "Adjustment to an Ordinary Life", text: "Dovewing's search for a future beyond her destiny frames the theme of adjustment to an ordinary life, the uncertain transition from a prophesied role to a normal one." }
+      ],
+      motifs: [
+        { name: "Fading Senses", text: "The diminishing of Dovewing's far-reaching power recurs as the novella's defining motif, the loss of the gift that defined her and the identity crisis it brings." },
+        { name: "Aftermath and Mourning", text: "The Clans' mourning and rebuilding after the Great Battle recur as the motif of aftermath, the trauma Dovewing must process." },
+        { name: "Forbidden Love", text: "Dovewing's feelings for Tigerheart recur as a motif of cross-Clan love, planting the seeds of the relationship explored in Tigerheart's Shadow." }
+      ],
+      criticalAnalysis:
+        "Dovewing's Silence gives quiet, valuable emotional closure to the aftermath of Omen of the Stars, following one of the Three as she processes the trauma of the Great Battle and the unsettling fading of her defining power. The novella's chief insight is its treatment of identity beyond a gift: where most of the saga is concerned with cats discovering and wielding extraordinary abilities, this story dwells on the disorienting experience of losing one, as Dovewing's far-reaching senses diminish and she must reckon with who she is without the power that gave her purpose and a place in the prophecy. This focus on aftermath, trauma, and adjustment lends the novella a reflective, melancholy tone unusual in the series and welcome after the apocalyptic climax of the arc. The development of Dovewing's cross-Clan love for Tigerheart provides forward momentum, seeding the relationship that Tigerheart's Shadow would later explore. Its compact length suits the introspective character study, and while its stakes are emotional rather than dramatic — which may make it feel slight after the Great Battle — its thoughtful engagement with trauma, identity, and the search for an ordinary life makes it a quietly resonant coda to the saga's first four arcs.",
+      characterAnalysis: [
+        { name: "Dovewing", text: "One of the prophesied Three, grappling in the battle's aftermath with grief, trauma, and the fading of the far-reaching power that defined her; an introspective study of identity beyond a gift and the search for an ordinary life." },
+        { name: "Tigerheart", text: "The ShadowClan cat Dovewing loves across Clan lines, whose developing relationship with her the novella seeds, anticipating Tigerheart's Shadow." },
+        { name: "The Clans (in mourning)", text: "The communities rebuilding after the Great Battle, embodying the aftermath and trauma Dovewing must process and the ordinary life she seeks within them." }
+      ],
+      studyQuestions: [
+        "How does the fading of Dovewing's power explore the theme of identity beyond a gift?",
+        "How does the novella treat trauma and mourning in the aftermath of the Great Battle?",
+        "How does Dovewing's search for an ordinary life frame her transition from a prophesied role?",
+        "How does the novella's reflective, melancholy tone differ from the rest of the saga?",
+        "How does the development of Dovewing's love for Tigerheart seed the events of Tigerheart's Shadow?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novella's inversion of the saga's usual concerns: where the series is built on cats discovering and wielding extraordinary powers, Dovewing's Silence dwells on the disorienting experience of losing one, as Dovewing's defining senses fade and she must find a self beyond her destiny. That the saga pauses after its apocalyptic climax to explore the quiet, melancholy aftermath of a power's loss — and the search for an ordinary life beyond prophecy — gives the novella an unexpected reflective depth.",
+      quoteCards: [
+        { quote: "For so long I was the cat who could hear everything. Now, in the silence, I must learn who I am without it.", speaker: "Dovewing", context: "Her reckoning with the fading of her far-reaching power and the search for an identity beyond her destiny." }
+      ],
+      timelinePlacement:
+        "Dovewing's Silence is set immediately after the Great Battle of Omen of the Stars' The Last Hope, in the mourning and rebuilding that follow. It gives emotional closure to the arc's aftermath, develops Dovewing's fading power and her love for Tigerheart, and seeds the relationship explored in the Super Edition Tigerheart's Shadow.",
+      comparisons: [
+        { work: "The Hurt Locker", author: "Mark Boal (screenplay)", text: "The study of a figure struggling to adjust to ordinary life and identity after the intensity and trauma of a defining conflict resonates with Dovewing's post-battle reckoning." },
+        { work: "Flowers for Algernon", author: "Daniel Keyes", text: "The poignant exploration of identity and loss as an extraordinary mental gift fades, leaving the protagonist to reckon with who they are without it, parallels Dovewing's fading power." }
+      ]
+    }
   }
 ];

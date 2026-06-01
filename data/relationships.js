@@ -1245,5 +1245,94 @@ export const RELATIONSHIPS = {
       { a: "ravenpaw", b: "bella", type: "mentor" },
       { a: "leafstar", b: "riley", type: "ally" }
     ]
+  },
+  "nov-thunderstars-echo": {
+    nodes: [
+      { id: "thunderstar", name: "Thunderstar", clan: "ThunderClan", role: "First leader" },
+      { id: "violetdawn", name: "Violet Dawn", clan: "ThunderClan", role: "Mate" },
+      { id: "lightningtail", name: "Lightning Tail", clan: "ThunderClan", role: "Deputy / friend" },
+      { id: "clearsky", name: "Clear Sky", clan: "SkyClan", role: "Father" },
+      { id: "graywing", name: "Gray Wing", clan: "ThunderClan", role: "Foster father" }
+    ],
+    links: [
+      { a: "thunderstar", b: "violetdawn", type: "mate" },
+      { a: "thunderstar", b: "lightningtail", type: "ally" },
+      { a: "clearsky", b: "thunderstar", type: "family" },
+      { a: "graywing", b: "thunderstar", type: "family" }
+    ]
+  },
+  "nov-pinestars-choice": {
+    nodes: [
+      { id: "pinestar", name: "Pinestar", clan: "ThunderClan", role: "Leader (leaves)" },
+      { id: "leopardfoot", name: "Leopardfoot", clan: "ThunderClan", role: "Mate" },
+      { id: "tigerkit", name: "Tigerkit", clan: "ThunderClan", role: "Son (→ Tigerstar)" },
+      { id: "sunfall", name: "Sunfall", clan: "ThunderClan", role: "Deputy (→ Sunstar)" }
+    ],
+    links: [
+      { a: "pinestar", b: "leopardfoot", type: "mate" },
+      { a: "pinestar", b: "tigerkit", type: "family" },
+      { a: "pinestar", b: "sunfall", type: "mentor" }
+    ]
+  },
+  "nov-spottedleafs-heart": {
+    nodes: [
+      { id: "spottedleaf", name: "Spottedpaw", clan: "ThunderClan", role: "Medicine apprentice" },
+      { id: "thistleclaw", name: "Thistleclaw", clan: "ThunderClan", role: "Infatuation (cruel)" },
+      { id: "redtail", name: "Redtail", clan: "ThunderClan", role: "Brother" },
+      { id: "bluefur", name: "Bluefur", clan: "ThunderClan", role: "Friend (→ Bluestar)" },
+      { id: "tigerpaw", name: "Tigerpaw", clan: "ThunderClan", role: "Thistleclaw's apprentice" }
+    ],
+    links: [
+      { a: "spottedleaf", b: "thistleclaw", type: "mate" },
+      { a: "spottedleaf", b: "thistleclaw", type: "rival" },
+      { a: "spottedleaf", b: "redtail", type: "family" },
+      { a: "spottedleaf", b: "bluefur", type: "ally" },
+      { a: "thistleclaw", b: "tigerpaw", type: "mentor" }
+    ]
+  },
+  "nov-tigerclaws-fury": {
+    nodes: [
+      { id: "tigerclaw", name: "Tigerclaw", clan: "ThunderClan", role: "Exiled warrior" },
+      { id: "fireheart", name: "Fireheart", clan: "ThunderClan", role: "Rival (exposed him)" },
+      { id: "blackfoot", name: "Blackfoot", clan: "ShadowClan", role: "Ally" },
+      { id: "rogues", name: "The rogues", clan: "Loner / Rogue", role: "His followers" }
+    ],
+    links: [
+      { a: "tigerclaw", b: "fireheart", type: "rival" },
+      { a: "tigerclaw", b: "blackfoot", type: "ally" },
+      { a: "tigerclaw", b: "rogues", type: "mentor" }
+    ]
+  },
+  "nov-leafpools-wish": {
+    nodes: [
+      { id: "leafpool", name: "Leafpool", clan: "ThunderClan", role: "Medicine Cat (secret mother)" },
+      { id: "squirrelflight", name: "Squirrelflight", clan: "ThunderClan", role: "Sister (claims kits)" },
+      { id: "crowfeather", name: "Crowfeather", clan: "WindClan", role: "Father" },
+      { id: "thethree", name: "Jay, Lion & Holly", clan: "ThunderClan", role: "The kits" },
+      { id: "cinderpelt", name: "Cinderpelt", clan: "ThunderClan", role: "Mentor" }
+    ],
+    links: [
+      { a: "leafpool", b: "crowfeather", type: "mate" },
+      { a: "leafpool", b: "thethree", type: "family" },
+      { a: "crowfeather", b: "thethree", type: "family" },
+      { a: "squirrelflight", b: "thethree", type: "family" },
+      { a: "leafpool", b: "squirrelflight", type: "family" },
+      { a: "cinderpelt", b: "leafpool", type: "mentor" }
+    ]
+  },
+  "nov-dovewings-silence": {
+    nodes: [
+      { id: "dovewing", name: "Dovewing", clan: "ThunderClan", role: "Warrior (fading power)" },
+      { id: "tigerheart", name: "Tigerheart", clan: "ShadowClan", role: "Love (cross-Clan)" },
+      { id: "ivypool", name: "Ivypool", clan: "ThunderClan", role: "Sister" },
+      { id: "bumblestripe", name: "Bumblestripe", clan: "ThunderClan", role: "Suitor" },
+      { id: "lionblaze", name: "Lionblaze", clan: "ThunderClan", role: "Fellow of the Three" }
+    ],
+    links: [
+      { a: "dovewing", b: "tigerheart", type: "mate" },
+      { a: "dovewing", b: "ivypool", type: "family" },
+      { a: "dovewing", b: "bumblestripe", type: "rival" },
+      { a: "dovewing", b: "lionblaze", type: "ally" }
+    ]
   }
 };
