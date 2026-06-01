@@ -5,7 +5,7 @@
 // has several books, and closes otherwise.
 
 import { store } from "./store.js";
-import { BOOK_BY_ID, BOOKS_BY_LOCATION } from "../data/books/index.js";
+import { BOOK_BY_ID, BOOKS_BY_LOCATION, BOOKS, SAGA_RANK } from "../data/books/index.js";
 import { LOCATIONS } from "../data/locations.js";
 import { ARC_BY_KEY } from "../data/arcs.js";
 import { RELATIONSHIPS } from "../data/relationships.js";
@@ -62,7 +62,7 @@ function renderBook(book) {
       <li><span>Published</span> ${esc(book.publicationYear)}</li>
       <li><span>Point of view</span> ${esc(book.povCharacter)}</li>
       <li><span>Setting</span> ${esc(LOCATIONS[book.locationKey]?.name || "—")}</li>
-      <li><span>Saga order</span> #${book.timelineOrder}</li>
+      <li><span>Saga order</span> #${SAGA_RANK[book.id]} of ${BOOKS.length}</li>
     </ul>
     <nav class="toc" aria-label="Sections">
       ${toc.map(([id, label]) => `<a href="#sec-${id}">${esc(label)}</a>`).join("")}

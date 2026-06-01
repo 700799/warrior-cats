@@ -37,9 +37,15 @@ order**. Dawn of the Clans, though published fifth, is the earliest story in the
 saga (the founding of the Clans), so it sorts first in the "All" view and shows
 saga order #1–6.
 
-All eight main arcs are now complete. **Super Editions** and **Novellas** appear
-in the filter bar marked "soon" and are added in subsequent updates. Each new
-batch is a single `data/books/*.js` file.
+All eight main arcs are now complete, and the **Super Editions** are being added
+in batches (Firestar's Quest, Bluestar's Prophecy, SkyClan's Destiny,
+Crookedstar's Promise, Yellowfang's Secret so far). Remaining Super Editions and
+the **Novellas** appear in the filter bar marked "soon" and are added in
+subsequent updates. Each new batch is a single `data/books/*.js` file.
+
+Super Editions slot into their true chronological place in the saga (via
+fractional `timelineOrder` values), so the "Saga order" shown for each book is a
+clean computed rank across the whole catalogue.
 
 ## Run it locally
 
