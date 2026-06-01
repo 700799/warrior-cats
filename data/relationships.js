@@ -1157,5 +1157,93 @@ export const RELATIONSHIPS = {
       { a: "ivypool", b: "dovewing", type: "family" },
       { a: "ivypool", b: "whistlepaw", type: "ally" }
     ]
+  },
+
+  // ===================== NOVELLAS =====================
+  "nov-mapleshades-vengeance": {
+    nodes: [
+      { id: "mapleshade", name: "Mapleshade", clan: "ThunderClan", role: "Warrior → exile → Dark Forest" },
+      { id: "appledusk", name: "Appledusk", clan: "RiverClan", role: "Love (betrays her)" },
+      { id: "kits", name: "Her kits", clan: "ThunderClan", role: "Kits (drown)" },
+      { id: "ravenwing", name: "Ravenwing", clan: "ThunderClan", role: "Medicine cat (exposes her)" },
+      { id: "perchpaw", name: "Perchpaw", clan: "RiverClan", role: "Apprentice (kills her)" }
+    ],
+    links: [
+      { a: "mapleshade", b: "appledusk", type: "mate" },
+      { a: "mapleshade", b: "appledusk", type: "rival" },
+      { a: "mapleshade", b: "kits", type: "family" },
+      { a: "ravenwing", b: "mapleshade", type: "rival" },
+      { a: "mapleshade", b: "perchpaw", type: "rival" }
+    ]
+  },
+  "nov-cloudstars-journey": {
+    nodes: [
+      { id: "cloudstar", name: "Cloudstar", clan: "SkyClan", role: "Leader" },
+      { id: "birdflight", name: "Birdflight", clan: "SkyClan", role: "Mate" },
+      { id: "buzzardtail", name: "Buzzardtail", clan: "SkyClan", role: "Deputy" },
+      { id: "fourclans", name: "The four Clans", clan: "Other", role: "Refuse to help" }
+    ],
+    links: [
+      { a: "cloudstar", b: "birdflight", type: "mate" },
+      { a: "cloudstar", b: "buzzardtail", type: "ally" },
+      { a: "fourclans", b: "cloudstar", type: "rival" }
+    ]
+  },
+  "nov-goosefeathers-curse": {
+    nodes: [
+      { id: "goosefeather", name: "Goosefeather", clan: "ThunderClan", role: "Medicine Cat (seer)" },
+      { id: "daisytoe", name: "Daisytoe", clan: "ThunderClan", role: "Mother" },
+      { id: "moonflower", name: "Moonflower", clan: "ThunderClan", role: "Sister (Bluestar's mother)" },
+      { id: "doestar", name: "Doestar", clan: "ThunderClan", role: "Leader" }
+    ],
+    links: [
+      { a: "daisytoe", b: "goosefeather", type: "family" },
+      { a: "goosefeather", b: "moonflower", type: "family" },
+      { a: "goosefeather", b: "doestar", type: "ally" }
+    ]
+  },
+  "nov-hollyleafs-story": {
+    nodes: [
+      { id: "hollyleaf", name: "Hollyleaf", clan: "ThunderClan", role: "Warrior (in hiding)" },
+      { id: "dovewing", name: "Dovewing", clan: "ThunderClan", role: "Warrior" },
+      { id: "ivypool", name: "Ivypool", clan: "ThunderClan", role: "Warrior (spy)" },
+      { id: "cherrypaw", name: "Cherrypaw", clan: "ThunderClan", role: "Apprentice (saved)" },
+      { id: "molepaw", name: "Molepaw", clan: "ThunderClan", role: "Apprentice (saved)" }
+    ],
+    links: [
+      { a: "hollyleaf", b: "dovewing", type: "ally" },
+      { a: "hollyleaf", b: "ivypool", type: "ally" },
+      { a: "hollyleaf", b: "cherrypaw", type: "ally" },
+      { a: "hollyleaf", b: "molepaw", type: "ally" }
+    ]
+  },
+  "nov-mistystars-omen": {
+    nodes: [
+      { id: "mistystar", name: "Mistystar", clan: "RiverClan", role: "New Leader" },
+      { id: "mothwing", name: "Mothwing", clan: "RiverClan", role: "Medicine Cat (faithless)" },
+      { id: "reedwhisker", name: "Reedwhisker", clan: "RiverClan", role: "Deputy" },
+      { id: "leopardstar", name: "Leopardstar", clan: "RiverClan", role: "Former leader (dies)" }
+    ],
+    links: [
+      { a: "mistystar", b: "reedwhisker", type: "mentor" },
+      { a: "mistystar", b: "mothwing", type: "rival" },
+      { a: "mistystar", b: "mothwing", type: "ally" },
+      { a: "leopardstar", b: "mistystar", type: "ally" }
+    ]
+  },
+  "nov-ravenpaws-farewell": {
+    nodes: [
+      { id: "ravenpaw", name: "Ravenpaw", clan: "Loner / Rogue", role: "Former ThunderClan (elder)" },
+      { id: "barley", name: "Barley", clan: "Loner / Rogue", role: "Companion" },
+      { id: "riley", name: "Riley", clan: "Kittypet", role: "Hopeful kit → SkyClan" },
+      { id: "bella", name: "Bella", clan: "Kittypet", role: "Hopeful kit → SkyClan" },
+      { id: "leafstar", name: "Leafstar", clan: "SkyClan", role: "Leader" }
+    ],
+    links: [
+      { a: "ravenpaw", b: "barley", type: "mate" },
+      { a: "ravenpaw", b: "riley", type: "mentor" },
+      { a: "ravenpaw", b: "bella", type: "mentor" },
+      { a: "leafstar", b: "riley", type: "ally" }
+    ]
   }
 };

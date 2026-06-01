@@ -37,8 +37,10 @@ order**. Dawn of the Clans, though published fifth, is the earliest story in the
 saga (the founding of the Clans), so it sorts first in the "All" view and shows
 saga order #1–6.
 
-All eight main arcs and **all 17 Super Editions** are now complete (65 books).
-The **Novellas** appear in the filter bar marked "soon" and will be added later.
+All eight main arcs and **all 17 Super Editions** are complete, and the
+**Novellas** are being added in batches (6 so far: Hollyleaf's Story, Mistystar's
+Omen, Cloudstar's Journey, Mapleshade's Vengeance, Goosefeather's Curse,
+Ravenpaw's Farewell — 71 books). Remaining novellas are added in later updates.
 
 Beyond browsing by arc, the filter bar includes curated **"Best of" categories**
 (Top 5 Rated, Most Humorous, Most Suspenseful, Most Unique, Best Plot) — each a
