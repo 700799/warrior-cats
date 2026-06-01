@@ -15,11 +15,13 @@ import { dawnOfTheClans } from "./arc-dawn-of-the-clans.js";
 import { visionOfShadows } from "./arc-vision-of-shadows.js";
 import { brokenCode } from "./arc-broken-code.js";
 import { starlessClan } from "./arc-starless-clan.js";
+import { superEditions } from "./super-editions.js";
 
 // As future arcs are authored, import and spread them here. Order here does not
 // matter — the UI sorts by timelineOrder (chronological) and arcOrder (within
 // an arc). Dawn of the Clans is the chronological prequel (timelineOrder 1–6)
-// even though it was published fifth.
+// even though it was published fifth. Super Editions use fractional
+// timelineOrder values to slot into their chronological place among the arcs.
 export const BOOKS = [
   ...prophecies,
   ...newProphecy,
@@ -28,8 +30,18 @@ export const BOOKS = [
   ...dawnOfTheClans,
   ...visionOfShadows,
   ...brokenCode,
-  ...starlessClan
+  ...starlessClan,
+  ...superEditions
 ];
+
+// Saga (chronological) rank: a clean 1..N integer per book, computed by sorting
+// every book by its timelineOrder. This lets timelineOrder use fractional values
+// for precise chronological insertion (e.g. a Super Edition at 6.4) while the UI
+// still shows a tidy "#7 of 53".
+export const SAGA_RANK = (() => {
+  const ranked = BOOKS.slice().sort((a, b) => a.timelineOrder - b.timelineOrder);
+  return Object.fromEntries(ranked.map((b, i) => [b.id, i + 1]));
+})();
 
 // Books grouped by arc key, in arc order, with books sorted by arcOrder.
 // Arcs with no authored books yet still appear (value is an empty array) so the

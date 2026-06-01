@@ -888,5 +888,91 @@ export const RELATIONSHIPS = {
       { a: "frostpaw", b: "tigerstar", type: "ally" },
       { a: "frostpaw", b: "nightheart", type: "ally" }
     ]
+  },
+
+  // ===================== SUPER EDITIONS =====================
+  "se-firestars-quest": {
+    nodes: [
+      { id: "firestar", name: "Firestar", clan: "ThunderClan", role: "Leader" },
+      { id: "sandstorm", name: "Sandstorm", clan: "ThunderClan", role: "Warrior (mate)" },
+      { id: "leafstar", name: "Leafstar", clan: "SkyClan", role: "New leader" },
+      { id: "skywatcher", name: "Skywatcher", clan: "SkyClan", role: "Elder (lore-keeper)" },
+      { id: "echosong", name: "Echosong", clan: "SkyClan", role: "Medicine Cat" }
+    ],
+    links: [
+      { a: "firestar", b: "sandstorm", type: "mate" },
+      { a: "firestar", b: "leafstar", type: "mentor" },
+      { a: "firestar", b: "skywatcher", type: "ally" },
+      { a: "leafstar", b: "echosong", type: "ally" },
+      { a: "leafstar", b: "skywatcher", type: "ally" }
+    ]
+  },
+  "se-bluestars-prophecy": {
+    nodes: [
+      { id: "bluefur", name: "Bluefur", clan: "ThunderClan", role: "Warrior → Leader" },
+      { id: "snowfur", name: "Snowfur", clan: "ThunderClan", role: "Sister (dies)" },
+      { id: "thistleclaw", name: "Thistleclaw", clan: "ThunderClan", role: "Warrior (rival)" },
+      { id: "oakheart", name: "Oakheart", clan: "RiverClan", role: "Warrior (mate)" },
+      { id: "mistykit", name: "Mistykit", clan: "RiverClan", role: "Kit (given up)" },
+      { id: "sunstar", name: "Sunstar", clan: "ThunderClan", role: "Leader" }
+    ],
+    links: [
+      { a: "bluefur", b: "snowfur", type: "family" },
+      { a: "bluefur", b: "oakheart", type: "mate" },
+      { a: "bluefur", b: "mistykit", type: "family" },
+      { a: "oakheart", b: "mistykit", type: "family" },
+      { a: "thistleclaw", b: "bluefur", type: "rival" },
+      { a: "sunstar", b: "bluefur", type: "mentor" }
+    ]
+  },
+  "se-skyclans-destiny": {
+    nodes: [
+      { id: "leafstar", name: "Leafstar", clan: "SkyClan", role: "Leader" },
+      { id: "sharpclaw", name: "Sharpclaw", clan: "SkyClan", role: "Deputy" },
+      { id: "echosong", name: "Echosong", clan: "SkyClan", role: "Medicine Cat" },
+      { id: "stranger", name: "Disruptive newcomer", clan: "Loner / Rogue", role: "Agitator" },
+      { id: "daylight", name: "Daylight-warriors", clan: "SkyClan", role: "Part-kittypet warriors" }
+    ],
+    links: [
+      { a: "leafstar", b: "sharpclaw", type: "ally" },
+      { a: "leafstar", b: "echosong", type: "ally" },
+      { a: "stranger", b: "leafstar", type: "rival" },
+      { a: "leafstar", b: "daylight", type: "ally" }
+    ]
+  },
+  "se-crookedstars-promise": {
+    nodes: [
+      { id: "crookedstar", name: "Crookedstar", clan: "RiverClan", role: "Kit → Leader" },
+      { id: "mapleshade", name: "Mapleshade", clan: "Dark Forest", role: "Manipulating spirit" },
+      { id: "oakheart", name: "Oakheart", clan: "RiverClan", role: "Brother" },
+      { id: "rainflower", name: "Rainflower", clan: "RiverClan", role: "Mother (rejects him)" },
+      { id: "willowbreeze", name: "Willowbreeze", clan: "RiverClan", role: "Mate" },
+      { id: "silverstream", name: "Silverstream", clan: "RiverClan", role: "Daughter (dies)" }
+    ],
+    links: [
+      { a: "mapleshade", b: "crookedstar", type: "rival" },
+      { a: "crookedstar", b: "oakheart", type: "family" },
+      { a: "rainflower", b: "crookedstar", type: "family" },
+      { a: "rainflower", b: "crookedstar", type: "rival" },
+      { a: "crookedstar", b: "willowbreeze", type: "mate" },
+      { a: "crookedstar", b: "silverstream", type: "family" }
+    ]
+  },
+  "se-yellowfangs-secret": {
+    nodes: [
+      { id: "yellowfang", name: "Yellowfang", clan: "ShadowClan", role: "Warrior → Medicine Cat" },
+      { id: "raggedstar", name: "Raggedstar", clan: "ShadowClan", role: "Leader (mate)" },
+      { id: "brokenstar", name: "Brokenstar", clan: "ShadowClan", role: "Son (tyrant)" },
+      { id: "brightflower", name: "Brightflower", clan: "ShadowClan", role: "Mother" },
+      { id: "brackenfoot", name: "Brackenfoot", clan: "ShadowClan", role: "Father" }
+    ],
+    links: [
+      { a: "yellowfang", b: "raggedstar", type: "mate" },
+      { a: "yellowfang", b: "brokenstar", type: "family" },
+      { a: "yellowfang", b: "brokenstar", type: "rival" },
+      { a: "raggedstar", b: "brokenstar", type: "family" },
+      { a: "brightflower", b: "yellowfang", type: "family" },
+      { a: "brackenfoot", b: "yellowfang", type: "family" }
+    ]
   }
 };
