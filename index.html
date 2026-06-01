@@ -73,32 +73,40 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- 3D world (decorative for assistive tech; the pill list is the real index) -->
-  <canvas id="renderCanvas" aria-hidden="true" touch-action="none"></canvas>
-  <p id="webgl-fallback" hidden role="status">
-    The 3D map could not load, but every book is still fully available from the list above.
-  </p>
-  <p class="visually-hidden">
-    This site features a 3D map of the Warrior Cats world. The map is decorative;
-    use the filter pills and book list below to browse and open any book's analysis.
-  </p>
+  <a class="skip-link" href="#content">Skip to the books</a>
 
-  <!-- Top overlay: title + filter pills -->
-  <header id="pills">
+  <!-- Top bar: title + page navigation (solid, high-contrast, in normal flow) -->
+  <header id="topbar">
     <div class="masthead">
       <h1 class="site-title">The Warriors Atlas</h1>
-      <p class="site-tagline">A literary map of Erin Hunter's Clans — click the map or pick a book.</p>
+      <p class="site-tagline">A study guide &amp; map of Erin Hunter's Clans.</p>
     </div>
-
-    <nav id="arc-pills" class="arc-pills" aria-label="Filter by series arc"></nav>
-
-    <div class="cloud-wrap">
-      <label class="visually-hidden" for="book-search">Search books by title</label>
-      <input id="book-search" type="search" placeholder="Search books…" autocomplete="off" />
-      <p id="cloud-heading" class="cloud-heading" aria-live="polite"></p>
-      <div id="book-pills" class="book-pills" role="list" aria-label="Books"></div>
-    </div>
+    <nav id="page-nav" class="page-nav" aria-label="Pages"></nav>
   </header>
+
+  <!-- 3D world, now a CONTAINED banner section (not a background) -->
+  <section class="map-section" aria-label="3D map of the Clan territories">
+    <canvas id="renderCanvas" aria-hidden="true" touch-action="none"></canvas>
+    <p class="map-hint">Tap a glowing label on the 3D map to open the books set there — or use <strong>Saga Map</strong> above for a full clickable index.</p>
+    <p id="webgl-fallback" hidden role="status">
+      The 3D map could not load, but every book is still fully available below.
+    </p>
+  </section>
+
+  <!-- Main content: filters + book list, in a single vertical column -->
+  <main id="content">
+    <section id="pills">
+      <h2 class="section-title">Browse the books</h2>
+      <nav id="arc-pills" class="arc-pills" aria-label="Filter by series arc"></nav>
+
+      <div class="cloud-wrap">
+        <label class="visually-hidden" for="book-search">Search books by title</label>
+        <input id="book-search" type="search" placeholder="Search books…" autocomplete="off" />
+        <p id="cloud-heading" class="cloud-heading" aria-live="polite"></p>
+        <div id="book-pills" class="book-pills" role="list" aria-label="Books"></div>
+      </div>
+    </section>
+  </main>
 
   <!-- Slide-in reading drawer (the analysis "pop-up") -->
   <aside id="panel" class="panel" role="dialog" aria-modal="true"

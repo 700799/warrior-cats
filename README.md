@@ -109,3 +109,22 @@ Settings → Pages → **Deploy from a branch** → branch `main`, folder `/ (ro
 A `.nojekyll` file is included so all files serve as-is. All asset paths are
 relative, so the site works from a project subpath
 (`https://<user>.github.io/warrior-cats/`).
+
+## Pages & readability
+
+The site is a **vertical, page-by-page document** with solid, high-contrast
+backgrounds (text never sits over the moving 3D map). The top bar navigates
+between pages:
+
+- **3D Map** — the contained interactive map banner (tap a glowing label to open
+  the books set there).
+- **Saga Map** — a clickable graph of every book in chronological order.
+- **Timeline** — every book by era, in saga order.
+- **Clans** — analysis of the five Clans and the great factions (territory,
+  temperament, values, strengths, flaws, notable leaders).
+- **Characters** — in-depth profiles with 1–5 ratings (power, bravery, strength,
+  leadership, loyalty — each with the *why*), character arc, strengths,
+  weaknesses, fears, study questions, a famous look-alike, three most- and three
+  least-similar characters (clickable cross-links), and best quotes. Data in
+  `data/characters.js` and `data/clans.js`; rendering in `js/pages.js`.
+

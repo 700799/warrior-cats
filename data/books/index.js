@@ -8,6 +8,7 @@ import { ARCS } from "../arcs.js";
 import { LOCATIONS } from "../locations.js";
 import { RELATIONSHIPS } from "../relationships.js";
 import { CATEGORIES } from "../categories.js";
+import { CHARACTERS, CHARACTER_BY_ID } from "../characters.js";
 import { prophecies } from "./arc-prophecies.js";
 import { newProphecy } from "./arc-new-prophecy.js";
 import { powerOfThree } from "./arc-power-of-three.js";
@@ -116,6 +117,15 @@ export function validateBooks() {
   for (const cat of CATEGORIES) {
     for (const pick of cat.picks) {
       console.assert(BOOK_BY_ID[pick.id], `Category "${cat.name}": unknown book id "${pick.id}"`);
+    }
+  }
+
+  // Character cross-links: every most/least-similar id must reference a real
+  // character (so the clickable links never dead-end).
+  for (const ch of CHARACTERS) {
+    for (const s of [...(ch.mostSimilar || []), ...(ch.leastSimilar || [])]) {
+      console.assert(CHARACTER_BY_ID[s.id] && s.id !== ch.id,
+        `Character "${ch.name}": invalid similar-link "${s.id}"`);
     }
   }
 }
