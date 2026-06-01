@@ -6,7 +6,20 @@ import { store } from "./store.js";
 import { createWorld } from "./scene.js";
 import { initPanel } from "./panel.js";
 import { initPills } from "./pills.js";
+import { coverArt } from "./art.js";
 import { BOOK_BY_ID, validateBooks } from "../data/books/index.js";
+
+// Illustrated cover splash on the landing view; hides once a book is open.
+function initCover() {
+  const el = document.createElement("div");
+  el.id = "cover-splash";
+  el.innerHTML = coverArt() +
+    `<p class="cover-caption">A literary atlas of the Clans — pick a book above or click a pin on the map.</p>`;
+  document.body.appendChild(el);
+  store.subscribe((s) => {
+    el.classList.toggle("hidden", Boolean(s.selectedBookId) || (s.chooserBookIds && s.chooserBookIds.length > 1));
+  });
+}
 
 function bootHashRouting() {
   // hash -> store (guarded so echoing our own hash write is a no-op)
@@ -50,5 +63,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   initPills();
   initPanel();
+  initCover();
   bootHashRouting();
 });

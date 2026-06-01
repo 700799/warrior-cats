@@ -974,5 +974,83 @@ export const RELATIONSHIPS = {
       { a: "brightflower", b: "yellowfang", type: "family" },
       { a: "brackenfoot", b: "yellowfang", type: "family" }
     ]
+  },
+  "se-moth-flights-vision": {
+    nodes: [
+      { id: "mothflight", name: "Moth Flight", clan: "WindClan", role: "First Medicine Cat" },
+      { id: "windstar", name: "Windstar", clan: "WindClan", role: "Leader (mother)" },
+      { id: "micah", name: "Micah", clan: "SkyClan", role: "Love (forbidden)" },
+      { id: "dappledpelt", name: "Dappled Pelt", clan: "RiverClan", role: "First medicine cat" },
+      { id: "cloudspots", name: "Cloud Spots", clan: "ThunderClan", role: "First medicine cat" }
+    ],
+    links: [
+      { a: "windstar", b: "mothflight", type: "family" },
+      { a: "mothflight", b: "micah", type: "mate" },
+      { a: "mothflight", b: "dappledpelt", type: "ally" },
+      { a: "mothflight", b: "cloudspots", type: "ally" }
+    ]
+  },
+  "se-tallstars-revenge": {
+    nodes: [
+      { id: "talltail", name: "Talltail", clan: "WindClan", role: "Apprentice → Leader" },
+      { id: "sandgorse", name: "Sandgorse", clan: "WindClan", role: "Father (dies)" },
+      { id: "jake", name: "Jake", clan: "Kittypet", role: "Friend (Firestar's father)" },
+      { id: "sparrow", name: "Sparrow", clan: "Loner / Rogue", role: "Blamed rogue" },
+      { id: "shrewclaw", name: "Shrewclaw", clan: "WindClan", role: "Rival Clanmate" }
+    ],
+    links: [
+      { a: "sandgorse", b: "talltail", type: "family" },
+      { a: "talltail", b: "jake", type: "ally" },
+      { a: "talltail", b: "sparrow", type: "rival" },
+      { a: "talltail", b: "shrewclaw", type: "rival" }
+    ]
+  },
+  "se-bramblestars-storm": {
+    nodes: [
+      { id: "bramblestar", name: "Bramblestar", clan: "ThunderClan", role: "Leader" },
+      { id: "squirrelflight", name: "Squirrelflight", clan: "ThunderClan", role: "Deputy (mate)" },
+      { id: "jayfeather", name: "Jayfeather", clan: "ThunderClan", role: "Medicine Cat" },
+      { id: "lionblaze", name: "Lionblaze", clan: "ThunderClan", role: "Warrior" },
+      { id: "firestar_mem", name: "Firestar", clan: "StarClan", role: "Predecessor (memory)" }
+    ],
+    links: [
+      { a: "bramblestar", b: "squirrelflight", type: "mate" },
+      { a: "bramblestar", b: "jayfeather", type: "ally" },
+      { a: "bramblestar", b: "lionblaze", type: "ally" },
+      { a: "firestar_mem", b: "bramblestar", type: "ally" }
+    ]
+  },
+  "se-hawkwings-journey": {
+    nodes: [
+      { id: "hawkwing", name: "Hawkwing", clan: "SkyClan", role: "Warrior → leader of refugees" },
+      { id: "leafstar", name: "Leafstar", clan: "SkyClan", role: "Leader" },
+      { id: "darktail", name: "Darktail", clan: "Loner / Rogue", role: "Conqueror of the gorge" },
+      { id: "pebbleshine", name: "Pebble Shine", clan: "SkyClan", role: "Mate (lost)" },
+      { id: "twigkit", name: "Twigkit", clan: "SkyClan", role: "Daughter (lost)" },
+      { id: "violetkit", name: "Violetkit", clan: "SkyClan", role: "Daughter (lost)" }
+    ],
+    links: [
+      { a: "hawkwing", b: "pebbleshine", type: "mate" },
+      { a: "hawkwing", b: "twigkit", type: "family" },
+      { a: "hawkwing", b: "violetkit", type: "family" },
+      { a: "leafstar", b: "hawkwing", type: "ally" },
+      { a: "darktail", b: "hawkwing", type: "rival" },
+      { a: "darktail", b: "leafstar", type: "rival" }
+    ]
+  },
+  "se-tigerhearts-shadow": {
+    nodes: [
+      { id: "tigerheart", name: "Tigerheart", clan: "ShadowClan", role: "Warrior → Tigerstar" },
+      { id: "dovewing", name: "Dovewing", clan: "ThunderClan", role: "Mate (forbidden)" },
+      { id: "rowanstar", name: "Rowanstar", clan: "ShadowClan", role: "Father / failing leader" },
+      { id: "spire", name: "Spire", clan: "Loner / Rogue", role: "City-cat ally" },
+      { id: "tigerstar1", name: "Tigerstar (I)", clan: "Dark Forest", role: "Grandfather (legacy)" }
+    ],
+    links: [
+      { a: "tigerheart", b: "dovewing", type: "mate" },
+      { a: "rowanstar", b: "tigerheart", type: "family" },
+      { a: "tigerheart", b: "spire", type: "ally" },
+      { a: "tigerstar1", b: "tigerheart", type: "family" }
+    ]
   }
 };

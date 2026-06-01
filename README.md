@@ -38,10 +38,17 @@ saga (the founding of the Clans), so it sorts first in the "All" view and shows
 saga order #1–6.
 
 All eight main arcs are now complete, and the **Super Editions** are being added
-in batches (Firestar's Quest, Bluestar's Prophecy, SkyClan's Destiny,
-Crookedstar's Promise, Yellowfang's Secret so far). Remaining Super Editions and
-the **Novellas** appear in the filter bar marked "soon" and are added in
-subsequent updates. Each new batch is a single `data/books/*.js` file.
+in batches (10 so far: Firestar's Quest, Bluestar's Prophecy, SkyClan's Destiny,
+Crookedstar's Promise, Yellowfang's Secret, Tallstar's Revenge, Bramblestar's
+Storm, Moth Flight's Vision, Hawkwing's Journey, Tigerheart's Shadow). Remaining
+Super Editions and the **Novellas** appear in the filter bar marked "soon" and
+are added in subsequent updates. Each new batch is a single `data/books/*.js`
+file.
+
+Each book's drawer opens with a **hand-coded SVG illustration** (vector cats in
+an action pose that ties into the story, tinted to the book's Clan colour) and a
+**"Find this book on warriorcats.com" link**. The landing view shows an
+illustrated **cover splash**. Art lives in `js/art.js` (no external image files).
 
 Super Editions slot into their true chronological place in the saga (via
 fractional `timelineOrder` values), so the "Saga order" shown for each book is a

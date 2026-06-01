@@ -4,11 +4,12 @@
 // every book (the WebGL canvas is invisible to assistive tech).
 
 import { store } from "./store.js";
-import { ARCS } from "../data/arcs.js";
+import { ARCS, ARC_BY_KEY } from "../data/arcs.js";
 import { BOOKS, BOOKS_BY_ARC } from "../data/books/index.js";
 
 const arcBar = document.getElementById("arc-pills");
 const cloud = document.getElementById("book-pills");
+const cloudHeading = document.getElementById("cloud-heading");
 const search = document.getElementById("book-search");
 
 function arcPill(key, label, color, active) {
@@ -58,6 +59,16 @@ function renderCloud(activeArc, query) {
   cloud.innerHTML = "";
   const list = visibleBooks(activeArc, query);
 
+  // Obvious "now showing" heading so it's clear a new set appeared on filter.
+  if (cloudHeading) {
+    const arcName = activeArc === "all" ? "All books" : (ARC_BY_KEY[activeArc]?.name || activeArc);
+    const color = activeArc === "all" ? "#cbb994" : (ARC_BY_KEY[activeArc]?.color || "#cbb994");
+    cloudHeading.style.setProperty("--accent", color);
+    cloudHeading.innerHTML = query
+      ? `Showing <strong>${list.length}</strong> result${list.length === 1 ? "" : "s"} for “${query}” in <strong>${arcName}</strong>`
+      : `Showing <strong>${arcName}</strong> — <strong>${list.length}</strong> book${list.length === 1 ? "" : "s"}. Tap any title to read.`;
+  }
+
   if (list.length === 0) {
     const note = document.createElement("p");
     note.className = "cloud-note";
@@ -66,9 +77,14 @@ function renderCloud(activeArc, query) {
         ? "Full analyses for this arc are coming in a future update."
         : "No books match your search.";
     cloud.appendChild(note);
-    return;
+  } else {
+    for (const book of list) cloud.appendChild(bookPill(book));
   }
-  for (const book of list) cloud.appendChild(bookPill(book));
+
+  // Flash the cloud so the change is visually obvious.
+  cloud.classList.remove("flash");
+  void cloud.offsetWidth; // restart the animation
+  cloud.classList.add("flash");
 }
 
 export function initPills() {

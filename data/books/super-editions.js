@@ -285,5 +285,280 @@ export const superEditions = [
         { work: "Beloved", author: "Toni Morrison", text: "The depiction of motherhood shadowed by impossible choices, loss, and the haunting consequences of a child given up under unbearable circumstances resonates with Yellowfang's secret and its grief." }
       ]
     }
+  },
+
+  {
+    id: "se-moth-flights-vision",
+    title: "Moth Flight's Vision",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 58,
+    arcOrder: 8,
+    timelineOrder: 6.05, // just after the Clans are founded (Path of Stars)
+    publicationYear: 2015,
+    povCharacter: "Moth Flight",
+    locationKey: "highstones",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "Set in the earliest days of the newly founded Clans, this prequel follows Moth Flight, a dreamy, distractible young WindClan cat — daughter of the founder Wind Runner (Windstar) — who struggles to find her place as a warrior because her mind is always wandering. When she begins to receive vivid, troubling visions, she comes to understand that her distraction is in fact a gift: she is being called by StarClan to a wholly new role that does not yet exist. Through a quest to the Moonstone and a revelation from the ancestors, Moth Flight learns that the Clans need cats devoted not to fighting but to healing and to communion with StarClan, and she becomes the first medicine cat, journeying to share this revelation with all five Clans so that each may have a healer of its own. Along the way she falls in love with a cat from another Clan and bears kits, a forbidden union that forces the establishment of the medicine cat's vow of celibacy, born from the pain of her own divided heart. The novel dramatizes the founding of one of the saga's most central institutions, ending with the role of medicine cat — and the customs and sacrifices it entails — established for all the generations to come.",
+      themes: [
+        { name: "Founding an Institution", text: "The novel's central theme is the creation of the medicine-cat role, dramatizing how one of the saga's most important institutions was founded by a single cat's vision, and how the customs later generations take for granted were once new and hard-won." },
+        { name: "Difference as Gift", text: "Moth Flight's distractibility, a flaw as a warrior, becomes the very sensitivity that makes her a visionary, developing the theme that what marks a cat as different may be the source of her truest purpose." },
+        { name: "Love and Sacrifice", text: "Moth Flight's forbidden love and the vow of celibacy it produces frame the theme of personal sacrifice in service of a role, the medicine cat's renunciation born from her own painful experience." }
+      ],
+      motifs: [
+        { name: "Visions", text: "Moth Flight's visions recur as the novel's defining motif, the gift that calls her to found the medicine-cat role and links the living Clans to StarClan." },
+        { name: "The Moonstone", text: "The sacred Moonstone recurs as the site of revelation, the place where Moth Flight receives StarClan's call and the medicine cats' communion is established." },
+        { name: "The First of a Kind", text: "Moth Flight's status as the first medicine cat recurs as a motif of origins, every later healer in the saga descending from the role she founds." }
+      ],
+      criticalAnalysis:
+        "Moth Flight's Vision is among the most significant Super Editions for the saga's mythology, dramatizing the founding of the medicine-cat role — one of the institutions most central to every arc — and rooting it in the early days of the Clans established in Dawn of the Clans. The novel's great achievement is to make an origin story personal and affecting: Moth Flight is no grand hero but a distractible, well-meaning young cat whose perceived flaw turns out to be her gift, and the book's thematic insight, that difference can be a source of purpose rather than shame, gives the founding genuine emotional resonance. Hunter ties the institution's customs to character, most pointedly in deriving the medicine cat's vow of celibacy from the pain of Moth Flight's own forbidden love and motherhood, so that a rule the saga has always assumed is shown to be born from a specific cat's sacrifice — a poignant act of world-building that recontextualizes every medicine cat who follows, from Spottedleaf to Jayfeather to Frostpaw. As a standalone set in the deep past, the novel is somewhat removed from the saga's main characters and ongoing stakes, and its outcome is a foregone institution, but its tender protagonist and its illumination of a foundational tradition make it a rewarding and important entry, demonstrating the Super Editions' power to enrich the saga's roots.",
+      characterAnalysis: [
+        { name: "Moth Flight", text: "A dreamy, distractible WindClan cat whose perceived flaw proves to be the sensitivity of a visionary, Moth Flight becomes the first medicine cat, founding a role through which every later healer in the saga is defined; her love and sacrifice give the institution its customs." },
+        { name: "Wind Runner / Windstar", text: "Moth Flight's mother and a founder of WindClan, Windstar embodies the new Clans' first generation and the expectations Moth Flight struggles against before finding her true calling." },
+        { name: "Micah", text: "The cat from another Clan whom Moth Flight loves, the father of her kits; their forbidden union and the grief it brings give rise to the medicine cat's vow of celibacy." },
+        { name: "The First Medicine Cats", text: "The cats of the other Clans whom Moth Flight calls to share her revelation, together founding the order of medicine cats that will serve the Clans for all the generations the saga depicts." }
+      ],
+      studyQuestions: [
+        "Moth Flight founds the medicine-cat role. How does the novel dramatize the creation of an institution the saga otherwise takes for granted?",
+        "Moth Flight's distractibility becomes her gift. How does the novel develop the theme that difference can be a source of purpose?",
+        "The medicine cat's vow of celibacy is derived from Moth Flight's own forbidden love. How does tying a custom to a character's sacrifice recontextualize it?",
+        "How does making the first medicine cat a humble, flawed cat rather than a grand hero shape the novel's emotional resonance?",
+        "How does this origin story enrich the reader's understanding of every later medicine cat in the saga?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the derivation of the medicine cat's vow of celibacy from Moth Flight's own painful experience: the rule that every later healer in the saga must forswear love and kits is shown to be born not from abstract doctrine but from one cat's heartbreak, her forbidden love and the kits she could not keep. By rooting a custom the saga has always assumed in a specific, personal sacrifice, the novel transforms an institution into a living legacy of loss, and it casts the renunciations of every medicine cat from Yellowfang to Leafpool to Jayfeather in a newly poignant light.",
+      quoteCards: [
+        { quote: "I am not meant to fight. I am meant to heal — and to walk with StarClan where no warrior can follow.", speaker: "Moth Flight", context: "Her recognition of the wholly new role she is called to found as the first medicine cat of the Clans." }
+      ],
+      timelinePlacement:
+        "Moth Flight's Vision is set in the earliest days of the Clans, shortly after their founding in Dawn of the Clans, and depicts the creation of the medicine-cat role that every subsequent arc depends upon. It establishes the institution, customs, and vows of the medicine cats — from the Moonstone communion to the vow of celibacy — that shape characters across the entire saga, making it a foundational companion to the prequel arc.",
+      comparisons: [
+        { work: "The Book of Exodus", author: "Hebrew Bible", text: "The founding of a people's central religious institutions and laws through a single chosen figure's communion with the divine, establishing customs for all later generations, parallels Moth Flight's founding of the medicine cats." },
+        { work: "The Mists of Avalon", author: "Marion Zimmer Bradley", text: "The depiction of a woman called to a sacred, visionary, healing role apart from the warrior world, and the personal sacrifices that calling demands, resonates with Moth Flight's vocation and its costs." }
+      ]
+    }
+  },
+
+  {
+    id: "se-tallstars-revenge",
+    title: "Tallstar's Revenge",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 56,
+    arcOrder: 6,
+    timelineOrder: 6.35, // WindClan, generation before the original arc
+    publicationYear: 2013,
+    povCharacter: "Tallstar (Tallpaw / Talltail)",
+    locationKey: "forest-windclan",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "This prequel traces the life of Tallstar, the long-serving WindClan leader, from his youth as the apprentice Tallpaw. Born to the moor-dwelling WindClan, Tallpaw idolizes his father Sandgorse, and when a tunnel collapse during a mining accident kills Sandgorse, the grief-stricken young cat becomes consumed by a desire for vengeance against Sparrow, the rogue he blames for his father's death. Against the counsel of his Clan and the principles of the warrior code, Talltail abandons WindClan to pursue Sparrow far from home, embarking on a long journey through the world beyond the moor in pursuit of a justice that curdles into obsession. Along the way he travels with a band of loners and forms an unexpected, deep friendship with the kindly rogue Jake — a kittypet who, the saga's readers come to realize, is the father of Firestar — a bond that gradually heals Talltail's bitterness. When Talltail at last confronts Sparrow, he discovers that the truth of his father's death is more complicated than his grief had allowed, and he learns to release his vengeance, returning to WindClan transformed. The novel ends with Talltail's hatred relinquished and his path toward the wise, peaceable leadership of Tallstar — and toward the deputy choice that shapes WindClan's future — set in motion.",
+      themes: [
+        { name: "Vengeance and Its Release", text: "Tallstar's consuming desire for revenge makes vengeance the novel's central theme, dramatizing how grief can curdle into obsession and how true healing comes only from the difficult act of releasing the need for retribution." },
+        { name: "Grief and Idealized Memory", text: "Tallpaw's idolization of his father and his devastation at his death develop the theme of grief and the danger of idealized memory, the way mourning can distort the truth and demand a vengeance the facts do not justify." },
+        { name: "Friendship and Healing", text: "Talltail's bond with the kindly Jake frames the theme of friendship as a healing force, the unexpected companionship that gradually dissolves his bitterness and restores his capacity for peace." }
+      ],
+      motifs: [
+        { name: "Tunnels", text: "The tunnels in which Sandgorse dies recur as a motif of WindClan's old tunneling tradition and of buried grief, the dark underground where the novel's tragedy begins." },
+        { name: "The Journey", text: "Talltail's long journey beyond the moor recurs as a motif of the quest for vengeance that becomes a quest for healing, the road that takes him far from home and brings him back transformed." },
+        { name: "Unexpected Friendship", text: "The bond with Jake recurs as a motif of grace, the kindly rogue whose friendship heals what vengeance could not, and whose hidden significance (as Firestar's father) ties the prequel to the saga's heart." }
+      ],
+      criticalAnalysis:
+        "Tallstar's Revenge deepens a long-present but lightly sketched figure of the original arc, transforming WindClan's venerable leader into a young cat consumed by grief and vengeance whose journey toward peace illuminates the saga's values. The novel's emotional engine is the corrosive power of revenge: Talltail's pursuit of Sparrow, born from his idolization of a father whose death he cannot accept, dramatizes how grief can distort truth and demand a retribution that ultimately poisons the grieving cat himself, and the book's resolution — Talltail's release of his vengeance — affirms the saga's recurring conviction that healing lies in letting go. The novel's most delightful stroke is the friendship with Jake, a warm, peaceable rogue whom attentive readers recognize as the father of Firestar, a connection that ties this WindClan prequel to the saga's central hero and adds a layer of dramatic irony. As a standalone, the book benefits from its focused character study and its road-trip structure, though its stakes are personal rather than world-shaking, and its outcome (Tallstar's wise leadership) is foreordained. Still, its thoughtful treatment of vengeance and forgiveness, and its enrichment of both WindClan history and Firestar's lineage, make it a satisfying and resonant entry among the prequel Super Editions.",
+      characterAnalysis: [
+        { name: "Tallstar / Talltail", text: "WindClan's future leader, transformed in this prequel from a young cat consumed by grief and the desire for vengeance into one who learns to release his hatred; his journey toward peace illuminates the path to the wise, peaceable Tallstar of the original arc." },
+        { name: "Jake", text: "The kindly kittypet-rogue whose friendship heals Talltail's bitterness, and whom readers recognize as the father of Firestar, tying this WindClan prequel to the saga's central hero." },
+        { name: "Sandgorse", text: "Talltail's idolized father, a WindClan tunneler whose death in a collapse sets the protagonist's vengeance in motion and whose idealized memory distorts his son's grief." },
+        { name: "Sparrow", text: "The rogue Talltail blames for his father's death and pursues for vengeance; the eventual revelation of the truth about Sandgorse's death complicates Talltail's hatred and enables his healing." }
+      ],
+      studyQuestions: [
+        "Talltail's grief curdles into a consuming desire for vengeance. How does the novel dramatize the corrosive power of revenge?",
+        "How does Talltail's idolization of his father distort the truth and demand a vengeance the facts do not justify?",
+        "Talltail's friendship with Jake heals his bitterness. How does the novel frame friendship as a healing force?",
+        "Jake is revealed to be Firestar's father. How does this connection tie the WindClan prequel to the saga's central hero?",
+        "Talltail ultimately releases his vengeance. How does this resolution affirm the saga's values about grief and forgiveness?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the friendship between Talltail and Jake, the gentle rogue whom readers recognize as Firestar's father: this warm bond not only heals Talltail's vengeance but quietly links WindClan's future leader to the lineage of the saga's greatest hero, planting a connection that enriches both characters' histories. That the cat who fathered the forest's savior is also the friend who restores a grieving WindClan cat to peace gives the prequel a satisfying resonance and a hidden thread back to the heart of the saga.",
+      quoteCards: [
+        { quote: "I crossed the world for revenge, and found that the only thing it could ever cost me was myself.", speaker: "Talltail", context: "His recognition, on his long journey, that vengeance poisons the grieving cat more than the one it targets." }
+      ],
+      timelinePlacement:
+        "Tallstar's Revenge is a prequel set in the generation before The Prophecies Begin, tracing WindClan's leader across the years leading toward the original arc. It deepens WindClan history, reveals the father of Firestar (Jake), and sets up the deputy choice that shapes WindClan in the original series, making it a companion to the saga's early arcs.",
+      comparisons: [
+        { work: "Moby-Dick", author: "Herman Melville", text: "The consuming, self-destructive pursuit of vengeance against the figure blamed for a grievous loss, and the way obsession poisons the avenger, parallels Talltail's quest for Sparrow." },
+        { work: "The Count of Monte Cristo", author: "Alexandre Dumas", text: "The long journey driven by the desire for revenge, and the eventual reckoning with whether vengeance can ever heal the wound that inspired it, resonates with Tallstar's arc toward releasing his hatred." }
+      ]
+    }
+  },
+
+  {
+    id: "se-bramblestars-storm",
+    title: "Bramblestar's Storm",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 57,
+    arcOrder: 7,
+    timelineOrder: 30.5, // right after The Last Hope, before A Vision of Shadows
+    publicationYear: 2014,
+    povCharacter: "Bramblestar",
+    locationKey: "lake-thunderclan",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "Set in the immediate aftermath of the Great Battle, this novel follows Bramblestar in his first season as the newly appointed leader of ThunderClan, succeeding the fallen Firestar. As he settles into the immense responsibility of leadership and seeks to prove himself worthy of his predecessor, the lake territories are struck by a catastrophe of nature: a massive, sustained storm and a devastating flood that inundates the camps, drives the Clans from their homes, and threatens the survival of all the lakeside Clans. Bramblestar must lead ThunderClan through the disaster — evacuating cats, finding higher ground, rationing prey, and ultimately fostering an unprecedented cooperation among the Clans as they shelter together against the rising water. The crisis tests his leadership at every turn and forces the Clans to set aside their rivalries for mutual survival, echoing the unity-through-catastrophe that has shaped the saga since its founding. Interwoven are Bramblestar's reflections on Firestar's legacy, his bond with Squirrelflight, and the lingering shadow of the Dark Forest war. The novel ends with the flood receding, the Clans having endured through cooperation, and Bramblestar confirmed as a capable leader in his own right, ready for the new era the lake Clans are entering.",
+      themes: [
+        { name: "Leadership and Living Up to a Legacy", text: "Bramblestar's first season as leader makes the burden of leadership and the shadow of a great predecessor the novel's central theme, dramatizing his effort to prove himself worthy of Firestar while finding his own way to lead." },
+        { name: "Nature's Catastrophe and Cooperation", text: "The flood, an indifferent force of nature, develops the theme of cooperation forged by disaster, the Clans compelled to set aside rivalry and shelter together, echoing the unity-through-crisis that recurs across the saga." },
+        { name: "Endurance and Renewal", text: "The survival of the flood frames the theme of endurance and the renewal that follows catastrophe, the Clans emerging from disaster into a new era." }
+      ],
+      motifs: [
+        { name: "The Flood", text: "The rising water recurs as the novel's defining image, the indifferent natural catastrophe that drives the Clans from their homes and tests Bramblestar's leadership." },
+        { name: "Firestar's Shadow", text: "The legacy of the fallen Firestar recurs as a motif throughout, the predecessor whose example Bramblestar both honors and must step beyond to lead in his own right." },
+        { name: "Clans Sheltering Together", text: "The unprecedented cooperation among the flooded Clans recurs as a motif of unity born of shared survival, the rivalries dissolved by the common enemy of the water." }
+      ],
+      criticalAnalysis:
+        "Bramblestar's Storm serves as a crucial bridge between the saga's first four arcs and the lake era that follows, depicting Bramblestar's consolidation as ThunderClan's leader in the wake of Firestar's death and the Dark Forest war. The novel's central achievement is its portrait of leadership tested by catastrophe: by confronting the new leader with a natural disaster rather than a villain, the book lets Bramblestar prove himself through competence, compassion, and the fostering of cooperation rather than through battle, an apt trial for a cat whose whole arc has been about earning legitimacy. The flood is rendered with real urgency, and the enforced cooperation among the lakeside Clans revisits the saga's enduring theme that survival depends on unity, here driven by an indifferent force of nature rather than a common foe. Hunter uses Bramblestar's reflections on Firestar to explore the weight of legacy, giving the disaster narrative an emotional throughline. As a standalone, the novel's stakes are survival and consolidation rather than transformation, and it functions partly as connective tissue between arcs, but its satisfying confirmation of Bramblestar's leadership and its vivid disaster narrative make it a solid entry, easing the reader from the founding generation's conclusion into the new era of the lake Clans.",
+      characterAnalysis: [
+        { name: "Bramblestar", text: "Newly leader of ThunderClan after Firestar's death, Bramblestar proves himself through the flood crisis, leading with competence and compassion and stepping out of his predecessor's shadow into legitimate authority in his own right." },
+        { name: "Squirrelflight", text: "Bramblestar's mate and support, Squirrelflight's partnership grounds him through the disaster, their bond — tested across earlier arcs — a source of strength in the crisis." },
+        { name: "The Lakeside Clans", text: "Driven together by the flood, the Clans function collectively as a test of Bramblestar's diplomacy, their forced cooperation embodying the saga's theme of unity born of catastrophe." },
+        { name: "Firestar (in memory)", text: "The fallen leader's legacy pervades the novel as the standard against which Bramblestar measures himself, the predecessor he honors even as he learns to lead in his own way." }
+      ],
+      studyQuestions: [
+        "Bramblestar faces a natural disaster rather than a villain. How does this trial let him prove himself through competence and compassion rather than battle?",
+        "How does the flood develop the saga's recurring theme of cooperation forged by catastrophe?",
+        "How does Bramblestar's reflection on Firestar's legacy shape his struggle to lead in his own right?",
+        "Why is a story of consolidation and survival, rather than transformation, an apt bridge between the saga's eras?",
+        "How does the enforced cooperation among the flooded Clans echo earlier unity-through-crisis moments in the saga?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novel's choice to test its new leader against nature rather than a villain: rather than proving Bramblestar in battle, the flood forces him to lead through evacuation, rationing, and the delicate diplomacy of sheltering rival Clans together. This trial-by-catastrophe is a fitting culmination of Bramblestar's long arc about earning legitimacy, since it lets him demonstrate that true leadership is measured not in combat but in the capacity to keep a community alive and united through disaster — a quietly mature vision of what makes a worthy leader.",
+      quoteCards: [
+        { quote: "Firestar saved the Clans with fire and courage; I will save them with patience, and with every cat's paw beside my own.", speaker: "Bramblestar", context: "His resolve to lead ThunderClan through the flood in his own way, honoring Firestar's legacy without merely imitating it." }
+      ],
+      timelinePlacement:
+        "Bramblestar's Storm is set immediately after Omen of the Stars' finale, The Last Hope, in the first season of Bramblestar's leadership and before A Vision of Shadows. It bridges the saga's first super-saga and the later lake-era arcs, consolidating Bramblestar's authority and the lake Clans' stability ahead of the new generation's stories, and its events precede the impostor crisis that will later strike Bramblestar in The Broken Code.",
+      comparisons: [
+        { work: "The Old Man and the Sea", author: "Ernest Hemingway", text: "The depiction of endurance against an indifferent, overwhelming force of nature, and the proving of character through perseverance rather than conquest, resonates with Bramblestar's trial against the flood." },
+        { work: "Henry V", author: "William Shakespeare", text: "The portrait of a new ruler stepping out of a celebrated predecessor's shadow and proving his fitness to lead through a great trial echoes Bramblestar's consolidation of leadership after Firestar." }
+      ]
+    }
+  },
+
+  {
+    id: "se-hawkwings-journey",
+    title: "Hawkwing's Journey",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 59,
+    arcOrder: 9,
+    timelineOrder: 32.4, // SkyClan's gorge fall, concurrent with A Vision of Shadows
+    publicationYear: 2016,
+    povCharacter: "Hawkwing",
+    locationKey: "gorge",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "Set in the years when the lake Clans face the rise of Darktail, this novel follows Hawkwing, a young warrior of the SkyClan that Firestar rebuilt in the gorge. When the ruthless rogue Darktail and his Kin descend on SkyClan's gorge home, they shatter the Clan through violence and conquest, killing many — including those Hawkwing loves — and driving the survivors into exile. Hawkwing, devastated by loss and thrust into responsibility, becomes a leader among the scattered refugees, and he takes up a desperate mission: to lead the broken remnants of SkyClan on a long and perilous journey to find the other Clans by the distant lake, the only hope of safety and belonging for his homeless people. The journey tests Hawkwing with grief, danger, and the burden of keeping a shattered Clan together, and it interweaves with the arrival of the abandoned kits — including his own lost daughters Twigkit and Violetkit — whose fates connect to the lake Clans' story in A Vision of Shadows. The novel dramatizes the destruction of SkyClan's gorge home and the beginning of its great journey to the lake, ending with the displaced Clan still seeking its new home and Hawkwing forged by loss into a leader.",
+      themes: [
+        { name: "Displacement and the Search for Home", text: "The destruction of SkyClan's gorge and the journey to find the other Clans make displacement and the search for home the novel's central theme, echoing the Great Journey of The New Prophecy in a fresh, intimate key." },
+        { name: "Grief and Leadership", text: "Hawkwing's transformation from grieving young warrior into leader of the refugees develops the theme of leadership forged by loss, the burden of keeping a shattered people together through catastrophe." },
+        { name: "Family Scattered", text: "The separation of Hawkwing from his kin, including his lost daughters, frames the theme of family torn apart by disaster, the scattered bonds that the larger saga will work to restore." }
+      ],
+      motifs: [
+        { name: "The Gorge Destroyed", text: "The fall of SkyClan's gorge home recurs as the novel's defining catastrophe, the loss that drives the Clan into exile and the journey that follows." },
+        { name: "The Journey to the Lake", text: "The long trek to find the other Clans recurs as a motif of the search for refuge, echoing the saga's earlier great migration." },
+        { name: "Darktail's Kin", text: "Darktail and his Kin recur as the motif of lawless conquest, the rogue tyranny that shatters SkyClan and sets the journey in motion." }
+      ],
+      criticalAnalysis:
+        "Hawkwing's Journey functions as an essential companion to A Vision of Shadows, dramatizing from SkyClan's side the catastrophe — Darktail's conquest of the gorge and SkyClan's exodus to the lake — that the main arc presents largely from the lake Clans' perspective. The novel's chief value is this enrichment of the cross-arc story: by following Hawkwing through the destruction of SkyClan's home and the perilous journey to find the other Clans, the book gives weight and texture to events the main arc only glimpses, and it deepens the tragedy of the lost sisters Twigkit and Violetkit by revealing them as Hawkwing's own daughters. Thematically, the novel revisits the saga's foundational concern with displacement and the search for home, echoing the Great Journey of The New Prophecy while grounding it in Hawkwing's intimate grief and growth. Hunter handles the transformation of a young warrior into a leader of refugees with care, making loss the forge of leadership. As a standalone, the book is closely tied to A Vision of Shadows and may feel incomplete without it, functioning as one half of a larger story, but for readers of that arc it is a powerful and clarifying supplement, demonstrating how the Super Editions can illuminate the main saga from an alternate vantage.",
+      characterAnalysis: [
+        { name: "Hawkwing", text: "A young SkyClan warrior transformed by the destruction of his home into a leader of refugees, Hawkwing bears grief and responsibility as he leads SkyClan's survivors on the journey to the lake; his lost daughters tie him to the heart of A Vision of Shadows." },
+        { name: "Darktail", text: "The ruthless rogue whose conquest of the gorge shatters SkyClan and drives it into exile, Darktail is the catastrophe that sets Hawkwing's journey in motion, his menace shown here from his victims' side." },
+        { name: "Twigkit and Violetkit", text: "Hawkwing's daughters, separated from him in the chaos and later found abandoned by the lake Clans, whose fates connect this novel directly to the central story of A Vision of Shadows." },
+        { name: "Leafstar", text: "SkyClan's leader through the catastrophe and the journey, Leafstar shares with Hawkwing the burden of keeping the shattered Clan together and finding it a new home." }
+      ],
+      studyQuestions: [
+        "The novel dramatizes SkyClan's exodus from the side the main arc only glimpses. How does this alternate vantage enrich A Vision of Shadows?",
+        "How does the destruction of the gorge and the journey to the lake echo the Great Journey of The New Prophecy?",
+        "How does Hawkwing's transformation from grieving warrior to leader develop the theme of leadership forged by loss?",
+        "The revelation that Twigkit and Violetkit are Hawkwing's daughters deepens their story. How does it add to the tragedy of the lost sisters?",
+        "In what ways does the novel function as one half of a larger story told across two books?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the way the novel reframes a story the reader may already know: events that A Vision of Shadows presents from the lake Clans' perspective — Darktail's menace, the lost kits — are here lived from SkyClan's side, transforming background catastrophe into intimate tragedy. By revealing that the abandoned sisters Twigkit and Violetkit are Hawkwing's own daughters, lost in the chaos of his Clan's destruction, the book deepens the main arc retroactively and demonstrates how the Super Editions can turn a glimpsed event into a fully felt one.",
+      quoteCards: [
+        { quote: "Our home is gone, but SkyClan is not the gorge — SkyClan is us, and we will carry it to a new home or die trying.", speaker: "Hawkwing", context: "His resolve to lead SkyClan's survivors on the long journey to find the other Clans by the lake." }
+      ],
+      timelinePlacement:
+        "Hawkwing's Journey is set concurrently with the early events of A Vision of Shadows, depicting Darktail's destruction of SkyClan's gorge home and the Clan's exodus toward the lake. It is a direct companion to that arc, illuminating SkyClan's side of the story and the origins of the lost sisters Twigbranch and Violetshine, and it bridges Firestar's Quest (SkyClan's rebuilding) with the fifth Clan's return to the lake.",
+      comparisons: [
+        { work: "The Grapes of Wrath", author: "John Steinbeck", text: "The exodus of a people driven from their ruined home by a destructive force, undertaking a long, perilous journey toward an uncertain refuge, parallels SkyClan's flight from the gorge to the lake." },
+        { work: "Aeneid", author: "Virgil", text: "The survivor of a destroyed homeland leading his shattered people on a long journey to found a new home echoes Hawkwing's mission and Aeneas's flight from fallen Troy." }
+      ]
+    }
+  },
+
+  {
+    id: "se-tigerhearts-shadow",
+    title: "Tigerheart's Shadow",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 60,
+    arcOrder: 10,
+    timelineOrder: 35.4, // during A Vision of Shadows, Tigerheart toward Tigerstar
+    publicationYear: 2017,
+    povCharacter: "Tigerheart",
+    locationKey: "lake-shadowclan",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "Set during the upheavals of A Vision of Shadows, this novel follows Tigerheart, a ShadowClan warrior and grandson of the infamous Tigerstar, as his Clan crumbles around him and his life is bound up with the ThunderClan cat Dovewing, with whom he shares a forbidden, cross-Clan love. When Dovewing, pregnant with Tigerheart's kits, flees the chaos of the failing Clans to find a safe place to bear them far from the lake, Tigerheart follows, and much of the novel unfolds in a distant Twolegplace among a community of city cats, where the couple shelters and their kits are born. There Tigerheart must navigate an unfamiliar world, protect his family, and wrestle with his divided loyalties between his love for Dovewing and his duty to a ShadowClan that is disintegrating without him. Guided by StarClan and by his own dawning sense of destiny, Tigerheart comes to understand that he is meant to return and restore his broken Clan, and the novel charts his journey back to the lake and his path toward leadership. It ends with Tigerheart poised to become Tigerstar — the second leader to bear the name, redeeming it as a restorer rather than a tyrant — and his family and Clan reunited under his care.",
+      themes: [
+        { name: "Forbidden Love and Family", text: "Tigerheart and Dovewing's cross-Clan love and the kits it produces make forbidden love and the claims of family the novel's central theme, the bond that draws Tigerheart away from and ultimately back to his Clan." },
+        { name: "Divided Loyalty and Destiny", text: "Tigerheart's struggle between his love for Dovewing and his duty to ShadowClan develops the theme of divided loyalty resolved through destiny, his dawning understanding that he must restore his Clan reconciling heart and duty." },
+        { name: "Redeeming a Legacy", text: "Tigerheart's path toward becoming the second Tigerstar frames the theme of reclaiming a tainted legacy, the grandson of a tyrant taking up his name to restore rather than destroy." }
+      ],
+      motifs: [
+        { name: "The City Cats", text: "The community of Twolegplace cats among whom the kits are born recurs as a motif of an unfamiliar world, broadening the saga's geography and testing Tigerheart far from Clan life." },
+        { name: "The Shadow of Tigerstar", text: "The legacy of the infamous first Tigerstar recurs as a motif Tigerheart must reckon with, the name he will reclaim and redeem." },
+        { name: "Return and Restoration", text: "Tigerheart's journey back to the lake recurs as a motif of homecoming and restoration, the destiny that reconciles his love and his duty." }
+      ],
+      criticalAnalysis:
+        "Tigerheart's Shadow enriches A Vision of Shadows by following one of its most important figures — Tigerheart, the future second Tigerstar — through a journey the main arc largely keeps offstage, his departure with Dovewing and his return to restore ShadowClan. The novel's most interesting feature is its setting: much of it unfolds in a distant Twolegplace among a community of city cats, a marked departure from the Clan and wilderness settings that broadens the saga's world and tests Tigerheart in unfamiliar territory, while grounding the story in the intimate drama of a couple sheltering to bear their kits. Thematically, the book centers the forbidden cross-Clan love of Tigerheart and Dovewing and the divided loyalty it creates, resolving the tension through Tigerheart's dawning sense of destiny — that he must return to restore his broken Clan. The novel's most resonant stroke is its treatment of legacy: by charting Tigerheart's path to becoming the second Tigerstar, it redeems a name synonymous with the saga's greatest villainy, attaching it to a restorer, an inversion that exemplifies the series' interest in whether inherited names and bloodlines determine character. As a companion to A Vision of Shadows, the novel can feel dependent on that arc for full context, but its fresh setting, its central romance, and its redemption of the Tigerstar name make it a rich and rewarding entry.",
+      characterAnalysis: [
+        { name: "Tigerheart / Tigerstar", text: "A ShadowClan warrior and grandson of the infamous Tigerstar, Tigerheart navigates forbidden love, fatherhood in a strange world, and divided loyalty before embracing his destiny to restore ShadowClan as the second Tigerstar, redeeming a tainted name." },
+        { name: "Dovewing", text: "The ThunderClan cat Tigerheart loves, who flees to bear their kits far from the failing Clans; her forbidden love and her choices draw Tigerheart on the journey that defines the novel." },
+        { name: "The City Cats", text: "The community of Twolegplace cats who shelter Tigerheart and Dovewing, embodying an unfamiliar world that broadens the saga and tests Tigerheart away from Clan life." },
+        { name: "ShadowClan", text: "Tigerheart's disintegrating Clan, whose collapse during A Vision of Shadows creates the duty that pulls him home and the Clan he is destined to restore." }
+      ],
+      studyQuestions: [
+        "Much of the novel unfolds among city cats in a distant Twolegplace. How does this unfamiliar setting broaden the saga and test Tigerheart?",
+        "How does Tigerheart's divided loyalty between Dovewing and ShadowClan resolve through his sense of destiny?",
+        "Tigerheart becomes the second Tigerstar. How does the novel redeem a name synonymous with the saga's greatest villainy?",
+        "How does the forbidden cross-Clan love of Tigerheart and Dovewing drive the novel's events?",
+        "How does following Tigerheart's offstage journey enrich the reader's understanding of A Vision of Shadows?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the redemption of the Tigerstar name: by charting how Tigerheart, grandson of the saga's most infamous tyrant, comes to take up that very name as a restorer of his Clan, the novel stages a deliberate inversion of the series' darkest legacy. That the name 'Tigerstar' can belong to both a murderous usurper and a devoted leader who rebuilds his broken Clan dramatizes the saga's recurring conviction that a name and a bloodline carry only the meaning their bearer gives them, making Tigerheart's path a pointed answer to the inheritance anxieties that have run through the saga since Brambleclaw.",
+      quoteCards: [
+        { quote: "My grandfather made the name Tigerstar a curse. I will make it a promise.", speaker: "Tigerheart", context: "His resolve to reclaim and redeem the infamous name as he embraces his destiny to restore ShadowClan." }
+      ],
+      timelinePlacement:
+        "Tigerheart's Shadow is set during the events of A Vision of Shadows, following Tigerheart's journey with Dovewing and his return to restore ShadowClan as the second Tigerstar. It is a direct companion to that arc, depicting offstage the rise of the leader who restores ShadowClan, and it precedes The Broken Code, in which Tigerstar leads his Clan and his son Shadowsight becomes central.",
+      comparisons: [
+        { work: "The Odyssey", author: "Homer", text: "The long journey home through an unfamiliar world to restore one's rightful place and reunite with family, guided by the divine and tested by trials, parallels Tigerheart's path back to the lake and his Clan." },
+        { work: "Henry IV / Henry V", author: "William Shakespeare", text: "The transformation of a figure burdened by a troubled legacy into a worthy leader who redeems his inheritance through the assumption of a new role echoes Tigerheart's redemption of the Tigerstar name." }
+      ]
+    }
   }
 ];
