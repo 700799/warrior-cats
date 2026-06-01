@@ -4,6 +4,7 @@
 
 import { LOCATIONS } from "../data/locations.js";
 import { buildMarkers } from "./markers.js";
+import { store } from "./store.js";
 
 const prefersReducedMotion =
   window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -120,12 +121,27 @@ export function createWorld(canvas) {
   camera.lowerRadiusLimit = 34;
   camera.upperRadiusLimit = 120;
   camera.wheelDeltaPercentage = 0.02;
-  camera.panningSensibility = 0; // disable right-drag panning for simplicity
-  if (!prefersReducedMotion) {
-    camera.useAutoRotationBehavior = true;
-    camera.autoRotationBehavior.idleRotationSpeed = 0.08;
-    camera.autoRotationBehavior.idleRotationWaitTime = 4000;
-  }
+  // Allow gentle side-to-side panning (drag with right button / two fingers),
+  // and keep the orbit shallow so the view stays map-like rather than spinning.
+  camera.panningSensibility = 120;
+  camera.panningInertia = 0.85;
+  // No auto-rotation — a constantly spinning map is disorienting. The view holds
+  // still until the user moves it.
+
+  // Slide the map aside when a book drawer opens, so pins stay visible beside the
+  // panel instead of being hidden behind it. Animates the camera target on the x
+  // axis (left on wide screens; no shift on narrow screens where the drawer is a
+  // bottom sheet).
+  const baseTargetX = camera.target.x;
+  store.subscribe((s) => {
+    const drawerOpen = Boolean(s.selectedBookId) || (s.chooserBookIds && s.chooserBookIds.length > 1);
+    const wide = window.innerWidth > 640;
+    const targetX = drawerOpen && wide ? baseTargetX - 14 : baseTargetX;
+    BABYLON.Animation.CreateAndStartAnimation(
+      "slideMap", camera, "target.x", 60, 24, camera.target.x, targetX,
+      BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT
+    );
+  });
 
   const hemi = new BABYLON.HemisphericLight("hemi", new BABYLON.Vector3(0, 1, 0), scene);
   hemi.intensity = 0.9;

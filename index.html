@@ -3,9 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>The Warriors Atlas — A Literary Map of Erin Hunter's Clans</title>
-  <meta name="description" content="An immersive 3D map and SparkNotes-style literary analysis of every Warrior Cats book by Erin Hunter: plot, themes, motifs, characters, quotes, timeline, and comparisons." />
+
+  <!-- ===================== Primary SEO ===================== -->
+  <title>The Warriors Atlas — SparkNotes-Style Study Guide &amp; 3D Map of Every Warrior Cats Book by Erin Hunter</title>
+  <meta name="description" content="Free study guide to every Warrior Cats book by Erin Hunter: full plot summaries, themes, motifs, character analysis, study questions, quotes, relationship maps, and timeline — across all 8 arcs and the Super Editions, on an immersive 3D map of the Clans' territories." />
+  <meta name="keywords" content="Warrior Cats, Warriors, Erin Hunter, Warrior Cats books, Warrior Cats summary, Warrior Cats study guide, Warrior Cats analysis, Warrior Cats SparkNotes, Warrior Cats plot summary, Warrior Cats themes, Warrior Cats characters, Warrior Cats timeline, Warrior Cats order, ThunderClan, ShadowClan, RiverClan, WindClan, SkyClan, StarClan, Firestar, Bluestar, Tigerstar, Into the Wild, The Prophecies Begin, The New Prophecy, Power of Three, Omen of the Stars, Dawn of the Clans, A Vision of Shadows, The Broken Code, A Starless Clan, Warrior Cats Super Editions, Warrior Cats relationship chart, Warrior Cats character map, Warrior Cats book guide, Warrior Cats reading order, Warrior Cats wiki" />
+  <meta name="author" content="The Warriors Atlas" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://700799.github.io/warrior-cats/" />
+  <meta name="theme-color" content="#16222c" />
+  <meta name="application-name" content="The Warriors Atlas" />
+
+  <!-- ===================== Open Graph (Facebook, Discord, etc.) ===================== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Warriors Atlas" />
+  <meta property="og:title" content="The Warriors Atlas — Study Guide &amp; 3D Map of Every Warrior Cats Book" />
+  <meta property="og:description" content="Full literary analysis of every Warrior Cats book by Erin Hunter — plot, themes, characters, quotes, relationship maps, and timeline — on an immersive 3D map of the Clans." />
+  <meta property="og:url" content="https://700799.github.io/warrior-cats/" />
+  <meta property="og:image" content="https://700799.github.io/warrior-cats/assets/og-cover.svg" />
+  <meta property="og:image:alt" content="Illustrated warrior cats beneath a starry sky over the Clan territories" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ===================== Twitter / X Card ===================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Warriors Atlas — Study Guide &amp; 3D Map of Every Warrior Cats Book" />
+  <meta name="twitter:description" content="Free SparkNotes-style analysis of every Warrior Cats book by Erin Hunter: plot, themes, characters, quotes, relationship maps, and an interactive 3D map of the Clans." />
+  <meta name="twitter:image" content="https://700799.github.io/warrior-cats/assets/og-cover.svg" />
+
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- ===================== Structured data (JSON-LD) for Google / AI tools ===================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://700799.github.io/warrior-cats/#website",
+        "name": "The Warriors Atlas",
+        "description": "A SparkNotes-style study guide and interactive 3D map of every Warrior Cats book by Erin Hunter.",
+        "url": "https://700799.github.io/warrior-cats/",
+        "inLanguage": "en",
+        "about": { "@type": "BookSeries", "name": "Warriors", "author": { "@type": "Person", "name": "Erin Hunter" } }
+      },
+      {
+        "@type": "EducationalOccupationalProgram",
+        "name": "Warrior Cats Literary Study Guide",
+        "description": "Free literary analysis of every Warrior Cats book: plot summary, themes, motifs, critical analysis, character analysis, study questions, memorable quotes, timeline placement, and comparisons to famous books.",
+        "url": "https://700799.github.io/warrior-cats/",
+        "provider": { "@type": "Organization", "name": "The Warriors Atlas" }
+      },
+      {
+        "@type": "BookSeries",
+        "name": "Warriors (Warrior Cats)",
+        "author": { "@type": "Person", "name": "Erin Hunter" },
+        "genre": ["Children's fantasy", "Animal fantasy", "Adventure"],
+        "url": "https://700799.github.io/warrior-cats/",
+        "description": "Erin Hunter's Warriors saga follows the wild cats of ThunderClan, ShadowClan, RiverClan, WindClan, and SkyClan across eight arcs and many Super Editions."
+      }
+    ]
+  }
+  </script>
 
   <!-- Babylon.js via pinned UMD CDN (core + GUI). No build step. -->
   <script src="https://cdn.jsdelivr.net/npm/babylonjs@7.54.3/babylon.js"></script>
@@ -36,6 +95,7 @@
     <div class="cloud-wrap">
       <label class="visually-hidden" for="book-search">Search books by title</label>
       <input id="book-search" type="search" placeholder="Search books…" autocomplete="off" />
+      <p id="cloud-heading" class="cloud-heading" aria-live="polite"></p>
       <div id="book-pills" class="book-pills" role="list" aria-label="Books"></div>
     </div>
   </header>
@@ -46,6 +106,27 @@
     <button id="panel-close" class="panel-close" aria-label="Close analysis">×</button>
     <div id="panel-body" class="panel-body" tabindex="-1"></div>
   </aside>
+
+  <!-- Crawlable SEO content: a real, indexable summary of the whole catalogue
+       (visually hidden but present for search engines and AI tools). Populated
+       from the book data at load; a static intro is always present. -->
+  <section id="seo-index" class="visually-hidden">
+    <h2>Warrior Cats Books — Complete Study Guide and Summaries</h2>
+    <p>
+      The Warriors Atlas is a free, SparkNotes-style study guide to every Warrior
+      Cats book by Erin Hunter. For each novel it provides a full plot summary,
+      themes, motifs, critical analysis, character analysis, study questions,
+      memorable quotes, a relationship map of the cats and Clans, the book's
+      placement in the saga's timeline, and comparisons to other famous books.
+      The guide covers all eight arcs — The Prophecies Begin, The New Prophecy,
+      Power of Three, Omen of the Stars, Dawn of the Clans, A Vision of Shadows,
+      The Broken Code, and A Starless Clan — as well as the Super Editions such as
+      Bluestar's Prophecy, Firestar's Quest, Yellowfang's Secret, and
+      Crookedstar's Promise. Explore the Clans — ThunderClan, ShadowClan,
+      RiverClan, WindClan, SkyClan, and StarClan — on an interactive 3D map.
+    </p>
+    <div id="seo-book-list"></div>
+  </section>
 
   <script type="module" src="js/app.js"></script>
 </body>

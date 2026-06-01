@@ -7,6 +7,7 @@
 import { ARCS } from "../arcs.js";
 import { LOCATIONS } from "../locations.js";
 import { RELATIONSHIPS } from "../relationships.js";
+import { CATEGORIES } from "../categories.js";
 import { prophecies } from "./arc-prophecies.js";
 import { newProphecy } from "./arc-new-prophecy.js";
 import { powerOfThree } from "./arc-power-of-three.js";
@@ -16,11 +17,12 @@ import { visionOfShadows } from "./arc-vision-of-shadows.js";
 import { brokenCode } from "./arc-broken-code.js";
 import { starlessClan } from "./arc-starless-clan.js";
 import { superEditions } from "./super-editions.js";
+import { novellas } from "./novellas.js";
 
 // As future arcs are authored, import and spread them here. Order here does not
 // matter — the UI sorts by timelineOrder (chronological) and arcOrder (within
 // an arc). Dawn of the Clans is the chronological prequel (timelineOrder 1–6)
-// even though it was published fifth. Super Editions use fractional
+// even though it was published fifth. Super Editions and Novellas use fractional
 // timelineOrder values to slot into their chronological place among the arcs.
 export const BOOKS = [
   ...prophecies,
@@ -31,7 +33,8 @@ export const BOOKS = [
   ...visionOfShadows,
   ...brokenCode,
   ...starlessClan,
-  ...superEditions
+  ...superEditions,
+  ...novellas
 ];
 
 // Saga (chronological) rank: a clean 1..N integer per book, computed by sorting
@@ -106,6 +109,13 @@ export function validateBooks() {
         console.assert(ids.has(lk.a) && ids.has(lk.b),
           `${where}: relationship link references unknown node (${lk.a} -> ${lk.b})`);
       }
+    }
+  }
+
+  // Curated categories: every pick must reference a real book.
+  for (const cat of CATEGORIES) {
+    for (const pick of cat.picks) {
+      console.assert(BOOK_BY_ID[pick.id], `Category "${cat.name}": unknown book id "${pick.id}"`);
     }
   }
 }

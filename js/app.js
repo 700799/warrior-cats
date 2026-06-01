@@ -6,7 +6,21 @@ import { store } from "./store.js";
 import { createWorld } from "./scene.js";
 import { initPanel } from "./panel.js";
 import { initPills } from "./pills.js";
+import { coverArt } from "./art.js";
+import { initBookMap } from "./bookmap.js";
 import { BOOK_BY_ID, validateBooks } from "../data/books/index.js";
+
+// Illustrated cover splash on the landing view; hides once a book is open.
+function initCover() {
+  const el = document.createElement("div");
+  el.id = "cover-splash";
+  el.innerHTML = coverArt() +
+    `<p class="cover-caption">A literary atlas of the Clans — pick a book above or click a pin on the map.</p>`;
+  document.body.appendChild(el);
+  store.subscribe((s) => {
+    el.classList.toggle("hidden", Boolean(s.selectedBookId) || (s.chooserBookIds && s.chooserBookIds.length > 1));
+  });
+}
 
 function bootHashRouting() {
   // hash -> store (guarded so echoing our own hash write is a no-op)
@@ -50,5 +64,30 @@ window.addEventListener("DOMContentLoaded", () => {
 
   initPills();
   initPanel();
+  initCover();
+  initBookMap();
+  buildSeoIndex();
   bootHashRouting();
 });
+
+// Build a crawlable, indexable list of every book with its plot summary, so
+// search engines and AI tools can discover the catalogue (the canvas/JS UI is
+// otherwise opaque to crawlers). Visually hidden; semantically rich.
+function buildSeoIndex() {
+  const mount = document.getElementById("seo-book-list");
+  if (!mount) return;
+  const ordered = Object.values(BOOK_BY_ID).sort((a, b) => a.timelineOrder - b.timelineOrder);
+  const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+  mount.innerHTML = ordered
+    .map((b) => {
+      const a = b.analysis || {};
+      const themes = (a.themes || []).map((t) => t.name).join(", ");
+      return `<article>
+        <h3>${esc(b.title)} (${esc(b.arc)}, ${esc(b.publicationYear)})</h3>
+        <p><strong>Point of view:</strong> ${esc(b.povCharacter)}.
+           <strong>Themes:</strong> ${esc(themes)}.</p>
+        <p>${esc(a.plotSummary || "")}</p>
+      </article>`;
+    })
+    .join("");
+}

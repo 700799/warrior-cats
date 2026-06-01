@@ -10,6 +10,7 @@ import { LOCATIONS } from "../data/locations.js";
 import { ARC_BY_KEY } from "../data/arcs.js";
 import { RELATIONSHIPS } from "../data/relationships.js";
 import { renderRelationshipGraph } from "./graph.js";
+import { bookArt } from "./art.js";
 
 const panel = document.getElementById("panel");
 const body = document.getElementById("panel-body");
@@ -55,7 +56,14 @@ function renderBook(book) {
   ];
   if (hasGraph) toc.push(["relationships", "Relationship Map"]);
 
+  // Official Warriors site search for this title — gives every book a working
+  // outbound "Read more" link.
+  const officialUrl =
+    "https://warriorcats.com/pages/search-results-page?q=" +
+    encodeURIComponent(book.title);
+
   const meta = `
+    ${bookArt(book)}
     <p class="book-arc">${esc(book.arc)} · Book ${book.arcOrder}</p>
     <h1 id="panel-title">${esc(book.title)}</h1>
     <ul class="book-facts">
@@ -64,8 +72,13 @@ function renderBook(book) {
       <li><span>Setting</span> ${esc(LOCATIONS[book.locationKey]?.name || "—")}</li>
       <li><span>Saga order</span> #${SAGA_RANK[book.id]} of ${BOOKS.length}</li>
     </ul>
+    <p class="book-links">
+      <a class="ext-link" href="${esc(officialUrl)}" target="_blank" rel="noopener noreferrer">
+        Find this book on warriorcats.com ↗
+      </a>
+    </p>
     <nav class="toc" aria-label="Sections">
-      ${toc.map(([id, label]) => `<a href="#sec-${id}">${esc(label)}</a>`).join("")}
+      ${toc.map(([id, label]) => `<a href="#sec-${id}" class="toc-link" data-target="sec-${id}">${esc(label)}</a>`).join("")}
     </nav>`;
 
   const quotes = a.quoteCards
@@ -156,10 +169,23 @@ export function initPanel() {
     if (e.key === "Escape" && panel.classList.contains("open")) store.clear();
   });
 
-  // Chooser clicks (event delegation).
+  // Chooser clicks + in-drawer table-of-contents smooth-scroll (event
+  // delegation). The TOC links are intercepted so their "#sec-..." hrefs never
+  // reach the URL hash router (which would treat them as book ids).
   body.addEventListener("click", (e) => {
     const btn = e.target.closest(".chooser-item");
-    if (btn) store.selectBook(btn.dataset.bookId);
+    if (btn) {
+      store.selectBook(btn.dataset.bookId);
+      return;
+    }
+    const toc = e.target.closest(".toc-link");
+    if (toc) {
+      e.preventDefault();
+      document.getElementById(toc.dataset.target)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
   });
 
   store.subscribe((s) => {

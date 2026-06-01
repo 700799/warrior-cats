@@ -37,11 +37,27 @@ order**. Dawn of the Clans, though published fifth, is the earliest story in the
 saga (the founding of the Clans), so it sorts first in the "All" view and shows
 saga order #1–6.
 
-All eight main arcs are now complete, and the **Super Editions** are being added
-in batches (Firestar's Quest, Bluestar's Prophecy, SkyClan's Destiny,
-Crookedstar's Promise, Yellowfang's Secret so far). Remaining Super Editions and
-the **Novellas** appear in the filter bar marked "soon" and are added in
-subsequent updates. Each new batch is a single `data/books/*.js` file.
+All eight main arcs and **all 17 Super Editions** are complete, and the
+**Novellas** are being added in batches (12 so far — 77 books). Remaining
+novellas are added in later updates.
+
+A clickable **Book Map** (button in the header) shows every book as a node
+threaded in saga order; tap a node to read it — a reliable, touch-friendly
+companion to the 3D map.
+
+Beyond browsing by arc, the filter bar includes curated **"Best of" categories**
+(Top 5 Rated, Most Humorous, Most Suspenseful, Most Unique, Best Plot) — each a
+ranked, annotated editorial list. Category data lives in `data/categories.js`.
+
+The site ships extensive **SEO**: descriptive title/meta/keywords, Open Graph and
+Twitter cards, JSON-LD structured data (WebSite, BookSeries, study-guide), a
+crawlable hidden index of every book's summary, `robots.txt` (welcoming AI
+crawlers), and a generated `sitemap.xml`.
+
+Each book's drawer opens with a **hand-coded SVG illustration** (vector cats in
+an action pose that ties into the story, tinted to the book's Clan colour) and a
+**"Find this book on warriorcats.com" link**. The landing view shows an
+illustrated **cover splash**. Art lives in `js/art.js` (no external image files).
 
 Super Editions slot into their true chronological place in the saga (via
 fractional `timelineOrder` values), so the "Saga order" shown for each book is a
