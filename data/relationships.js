@@ -1052,5 +1052,110 @@ export const RELATIONSHIPS = {
       { a: "tigerheart", b: "spire", type: "ally" },
       { a: "tigerstar1", b: "tigerheart", type: "family" }
     ]
+  },
+  "se-riverstars-home": {
+    nodes: [
+      { id: "riverstar", name: "River Ripple", clan: "RiverClan", role: "Founder & first leader" },
+      { id: "graywing", name: "Gray Wing", clan: "Moor Group", role: "Fellow founder" },
+      { id: "clearsky", name: "Clear Sky", clan: "Forest Group", role: "Fellow founder" },
+      { id: "nightheart_dotc", name: "Night & Dew", clan: "RiverClan", role: "Early RiverClan cats" }
+    ],
+    links: [
+      { a: "graywing", b: "riverstar", type: "ally" },
+      { a: "clearsky", b: "riverstar", type: "ally" },
+      { a: "riverstar", b: "nightheart_dotc", type: "mentor" }
+    ]
+  },
+  "se-leopardstars-honor": {
+    nodes: [
+      { id: "leopardstar", name: "Leopardfur", clan: "RiverClan", role: "Warrior → Leader" },
+      { id: "crookedstar", name: "Crookedstar", clan: "RiverClan", role: "Leader" },
+      { id: "tigerstar", name: "Tigerstar", clan: "ShadowClan", role: "Ally (disastrous)" },
+      { id: "graystripe", name: "Graystripe", clan: "ThunderClan", role: "Blamed rival" },
+      { id: "whiteclaw", name: "Whiteclaw", clan: "RiverClan", role: "Clanmate" }
+    ],
+    links: [
+      { a: "crookedstar", b: "leopardstar", type: "mentor" },
+      { a: "leopardstar", b: "tigerstar", type: "ally" },
+      { a: "leopardstar", b: "graystripe", type: "rival" },
+      { a: "leopardstar", b: "tigerstar", type: "rival" }
+    ]
+  },
+  "se-onestars-confession": {
+    nodes: [
+      { id: "onestar", name: "Onestar", clan: "WindClan", role: "Warrior → Leader" },
+      { id: "smoke", name: "Smoke", clan: "Kittypet", role: "Secret love" },
+      { id: "darktail", name: "Darktail", clan: "Loner / Rogue", role: "Abandoned son" },
+      { id: "whitetail", name: "Whitetail", clan: "WindClan", role: "Mate" },
+      { id: "firestar", name: "Firestar", clan: "ThunderClan", role: "Old friend" }
+    ],
+    links: [
+      { a: "onestar", b: "smoke", type: "mate" },
+      { a: "onestar", b: "darktail", type: "family" },
+      { a: "onestar", b: "darktail", type: "rival" },
+      { a: "onestar", b: "whitetail", type: "mate" },
+      { a: "onestar", b: "firestar", type: "ally" }
+    ]
+  },
+  "se-crowfeathers-trial": {
+    nodes: [
+      { id: "crowfeather", name: "Crowfeather", clan: "WindClan", role: "Warrior" },
+      { id: "breezepelt", name: "Breezepelt", clan: "WindClan", role: "Son (ex-Dark Forest)" },
+      { id: "nightcloud", name: "Nightcloud", clan: "WindClan", role: "Former mate (mother)" },
+      { id: "leafpool_mem", name: "Leafpool", clan: "ThunderClan", role: "Lost love" },
+      { id: "feathertail_mem", name: "Feathertail", clan: "StarClan", role: "Lost love" }
+    ],
+    links: [
+      { a: "crowfeather", b: "breezepelt", type: "family" },
+      { a: "crowfeather", b: "nightcloud", type: "family" },
+      { a: "nightcloud", b: "breezepelt", type: "family" },
+      { a: "crowfeather", b: "breezepelt", type: "rival" },
+      { a: "crowfeather", b: "leafpool_mem", type: "mate" },
+      { a: "crowfeather", b: "feathertail_mem", type: "mate" }
+    ]
+  },
+  "se-squirrelflights-hope": {
+    nodes: [
+      { id: "squirrelflight", name: "Squirrelflight", clan: "ThunderClan", role: "Deputy" },
+      { id: "bramblestar", name: "Bramblestar", clan: "ThunderClan", role: "Leader (mate)" },
+      { id: "leafpool", name: "Leafpool", clan: "ThunderClan", role: "Sister" },
+      { id: "firestar_mem", name: "Firestar", clan: "StarClan", role: "Father (memory)" }
+    ],
+    links: [
+      { a: "squirrelflight", b: "bramblestar", type: "mate" },
+      { a: "squirrelflight", b: "bramblestar", type: "rival" },
+      { a: "squirrelflight", b: "leafpool", type: "family" },
+      { a: "firestar_mem", b: "squirrelflight", type: "family" }
+    ]
+  },
+  "se-graystripes-vow": {
+    nodes: [
+      { id: "graystripe", name: "Graystripe", clan: "ThunderClan", role: "Elder" },
+      { id: "stormfur", name: "Stormfur", clan: "Tribe", role: "Son" },
+      { id: "squirrelflight", name: "Squirrelflight", clan: "ThunderClan", role: "Acting leader" },
+      { id: "firestar_mem", name: "Firestar", clan: "StarClan", role: "Oldest friend (memory)" },
+      { id: "millie", name: "Millie", clan: "ThunderClan", role: "Mate" }
+    ],
+    links: [
+      { a: "graystripe", b: "stormfur", type: "family" },
+      { a: "graystripe", b: "millie", type: "mate" },
+      { a: "graystripe", b: "squirrelflight", type: "ally" },
+      { a: "graystripe", b: "firestar_mem", type: "ally" }
+    ]
+  },
+  "se-ivypools-heart": {
+    nodes: [
+      { id: "ivypool", name: "Ivypool", clan: "ThunderClan", role: "Deputy" },
+      { id: "bristlefrost", name: "Bristlefrost", clan: "ThunderClan", role: "Daughter (lost)" },
+      { id: "fernsong", name: "Fernsong", clan: "ThunderClan", role: "Mate" },
+      { id: "whistlepaw", name: "Whistlepaw", clan: "WindClan", role: "Vision-bearer" },
+      { id: "dovewing", name: "Dovewing", clan: "ShadowClan", role: "Sister" }
+    ],
+    links: [
+      { a: "ivypool", b: "bristlefrost", type: "family" },
+      { a: "ivypool", b: "fernsong", type: "mate" },
+      { a: "ivypool", b: "dovewing", type: "family" },
+      { a: "ivypool", b: "whistlepaw", type: "ally" }
+    ]
   }
 };

@@ -64,5 +64,28 @@ window.addEventListener("DOMContentLoaded", () => {
   initPills();
   initPanel();
   initCover();
+  buildSeoIndex();
   bootHashRouting();
 });
+
+// Build a crawlable, indexable list of every book with its plot summary, so
+// search engines and AI tools can discover the catalogue (the canvas/JS UI is
+// otherwise opaque to crawlers). Visually hidden; semantically rich.
+function buildSeoIndex() {
+  const mount = document.getElementById("seo-book-list");
+  if (!mount) return;
+  const ordered = Object.values(BOOK_BY_ID).sort((a, b) => a.timelineOrder - b.timelineOrder);
+  const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+  mount.innerHTML = ordered
+    .map((b) => {
+      const a = b.analysis || {};
+      const themes = (a.themes || []).map((t) => t.name).join(", ");
+      return `<article>
+        <h3>${esc(b.title)} (${esc(b.arc)}, ${esc(b.publicationYear)})</h3>
+        <p><strong>Point of view:</strong> ${esc(b.povCharacter)}.
+           <strong>Themes:</strong> ${esc(themes)}.</p>
+        <p>${esc(a.plotSummary || "")}</p>
+      </article>`;
+    })
+    .join("");
+}

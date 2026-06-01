@@ -560,5 +560,389 @@ export const superEditions = [
         { work: "Henry IV / Henry V", author: "William Shakespeare", text: "The transformation of a figure burdened by a troubled legacy into a worthy leader who redeems his inheritance through the assumption of a new role echoes Tigerheart's redemption of the Tigerstar name." }
       ]
     }
+  },
+
+  {
+    id: "se-riverstars-home",
+    title: "Riverstar's Home",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 65,
+    arcOrder: 15,
+    timelineOrder: 6.08, // founding era, just after the Clans are named
+    publicationYear: 2023,
+    povCharacter: "Riverstar (River Ripple)",
+    locationKey: "lake-riverclan",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "Set in the founding era of Dawn of the Clans, this novel tells the story of River Ripple, the solitary, peaceable cat who becomes Riverstar, founder and first leader of RiverClan. A loner content to live apart on his island, River Ripple is drawn, almost against his easygoing nature, into the work of gathering other water-loving cats and forging them into a Clan with its own identity, customs, and place among the newly founded communities of the lake. The novel explores his reluctance to lead and his distinctive vision: where the other founders embrace conflict and rigid hierarchy, River Ripple favors peace, independence, and a gentler way of being a Clan, and the book dramatizes how RiverClan's enduring character — its self-sufficiency, its love of comfort and water, its slight aloofness from the others — was shaped by its founder's temperament. As River Ripple navigates the tensions of the founding generation and the challenge of defining what kind of leader and Clan he will be, the novel fills in the origins of one of the five Clans and rounds out the founding mythology established in the prequel arc. It ends with RiverClan established under Riverstar and its founding character set for all the generations to come.",
+      themes: [
+        { name: "Reluctant Leadership", text: "River Ripple's drift from contented loner to Clan founder makes reluctant leadership the novel's central theme, exploring how a cat who never sought authority comes to define a community, and how leadership can suit even those who do not crave it." },
+        { name: "Founding a Character", text: "The novel develops the theme that a community's enduring nature is shaped by its founder, RiverClan's self-sufficiency and peaceable independence reflecting River Ripple's own temperament." },
+        { name: "Peace and Independence", text: "River Ripple's preference for peace over conflict frames the theme of an alternative way of being a Clan, a gentler vision set against the more warlike founders." }
+      ],
+      motifs: [
+        { name: "The Island and the Water", text: "River Ripple's island home and the water RiverClan loves recur as the novel's defining motifs, the territory and element that shape the Clan's identity." },
+        { name: "The Solitary Founder", text: "River Ripple's loner nature recurs as a motif of independence, the self-sufficiency that becomes RiverClan's enduring trait." },
+        { name: "Comfort and Plenty", text: "RiverClan's love of comfort and good living recurs as a motif of the Clan's distinctive character, rooted in its founder's easygoing temperament." }
+      ],
+      criticalAnalysis:
+        "Riverstar's Home completes the founding mythology of Dawn of the Clans by giving RiverClan's origin its own dedicated telling, centered on the appealingly atypical figure of River Ripple. The novel's chief value is the way it roots a Clan's enduring character in its founder's temperament: RiverClan's self-sufficiency, its love of water and comfort, and its faint aloofness from the other Clans are all traced to the peaceable, independent loner who reluctantly became Riverstar, a satisfying piece of world-building that deepens a Clan the saga has always treated as somewhat apart. River Ripple is a refreshing protagonist among the founders — gentle, content, and reluctant to lead — and his alternative vision of Clanhood, favoring peace and independence over conflict and hierarchy, offers a quiet counterpoint to the more warlike founding figures. As one of the most recent Super Editions and a deep-history prequel, the novel is removed from the saga's main characters and ongoing stakes, and its low-conflict, character-driven story is gentler than most, which may make it feel minor to readers invested in the central drama. But for those who value the saga's mythology, it is a welcome and rounding addition, completing the set of Clan-founding stories and illuminating the origins of RiverClan's distinctive way of being.",
+      characterAnalysis: [
+        { name: "River Ripple / Riverstar", text: "The peaceable, independent loner who reluctantly becomes RiverClan's founder and first leader, River Ripple shapes his Clan's enduring character — its self-sufficiency, love of water, and gentle independence — through his own easygoing temperament." },
+        { name: "The Founding Cats of RiverClan", text: "The water-loving cats River Ripple gathers into a Clan, together embodying RiverClan's distinctive identity and the community the founder reluctantly forges." },
+        { name: "The Other Founders", text: "Gray Wing, Clear Sky, and the other founding leaders of Dawn of the Clans, against whose more warlike visions River Ripple's peaceable alternative is defined." }
+      ],
+      studyQuestions: [
+        "River Ripple never sought to lead. How does the novel explore reluctant leadership and the idea that authority can suit even those who do not crave it?",
+        "How does the novel root RiverClan's enduring character in its founder's temperament?",
+        "River Ripple favors peace and independence over conflict. How does his vision offer an alternative way of being a Clan?",
+        "Why is it significant that the saga gives each of the five Clans its own founding story?",
+        "How does River Ripple's gentle, low-conflict story differ from most Super Editions, and what does it add to the founding mythology?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is River Ripple himself: among a generation of ambitious, conflict-prone founders, RiverClan's originator is a contented, peaceable loner who has to be drawn into leadership almost against his nature. That one of the five Clans was founded by a cat who never wanted power, and that RiverClan's enduring independence and love of comfort flow directly from his easygoing temperament, offers a quietly subversive vision of how communities and their characters are made — not always by hunger for authority, but sometimes by the gentle disposition of a reluctant founder.",
+      quoteCards: [
+        { quote: "I never wished to lead — only to live in peace by the water. Perhaps that is the very Clan we should be.", speaker: "Riverstar", context: "River Ripple's reluctant embrace of leadership and the peaceable character he gives RiverClan." }
+      ],
+      timelinePlacement:
+        "Riverstar's Home is set in the founding era alongside Dawn of the Clans, telling the origin of RiverClan and its first leader. It rounds out the founding mythology of the prequel arc, completing the set of Clan-founding stories (alongside Moth Flight's Vision for the medicine cats), and deepens the deep history that all later arcs inherit.",
+      comparisons: [
+        { work: "Cincinnatus (Roman legend)", author: "Roman tradition (Livy)", text: "The figure who is called from a quiet, self-sufficient life to take up leadership reluctantly, and whose character shapes the community he serves, parallels River Ripple's reluctant founding of RiverClan." },
+        { work: "The Wind in the Willows", author: "Kenneth Grahame", text: "The gentle, comfort-loving, water-centered sensibility and the celebration of a peaceable life by the river resonate with River Ripple's temperament and the character he gives RiverClan." }
+      ]
+    }
+  },
+
+  {
+    id: "se-leopardstars-honor",
+    title: "Leopardstar's Honor",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 64,
+    arcOrder: 14,
+    timelineOrder: 6.55, // RiverClan, spanning into the original arc
+    publicationYear: 2021,
+    povCharacter: "Leopardstar (Leopardfur)",
+    locationKey: "forest-riverclan",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "This novel chronicles the life of Leopardstar, the proud and fiercely ambitious RiverClan leader, from her days as the warrior Leopardfur. Devoted above all to RiverClan's strength and honor, Leopardfur rises through dedication and force of will, becoming deputy under Crookedstar and eventually leader. The book reframes events familiar from the original arc and Crookedstar's Promise from RiverClan's perspective, including her conviction that ThunderClan — and Graystripe in particular — was responsible for poisoning the river, and her fateful, much-criticized decision to ally RiverClan with the tyrant Tigerstar, forming TigerClan in the lead-up to the events of The Darkest Hour. The novel explores the pride, the blind spots, and the genuine love of her Clan that drove Leopardstar's choices, including the alliance with Tigerstar that nearly destroyed her, and it traces her reckoning with her mistakes and her efforts to restore RiverClan's honor in the aftermath. Interwoven is her private love for the warrior to whom she is devoted, adding emotional depth to a leader often seen only from the outside. The novel ends having recontextualized Leopardstar's controversial choices and rounded her into a fully realized, flawed, and sympathetic leader.",
+      themes: [
+        { name: "Pride and Its Blind Spots", text: "Leopardstar's fierce pride in RiverClan makes pride and its dangers the novel's central theme, dramatizing how devotion to a Clan's honor can blind a leader to error, most disastrously in her alliance with Tigerstar." },
+        { name: "Loyalty and Misjudgment", text: "Leopardstar's conviction about ThunderClan's guilt and her fateful choices develop the theme of loyalty leading to misjudgment, the way fierce partisanship can distort a leader's perception of the truth." },
+        { name: "Reckoning and Honor", text: "Leopardstar's efforts to restore RiverClan after her mistakes frame the theme of reckoning, the work of reclaiming honor after grievous error." }
+      ],
+      motifs: [
+        { name: "Honor", text: "RiverClan's honor recurs as Leopardstar's governing value, the ideal that drives her finest and her most disastrous choices." },
+        { name: "The Tigerstar Alliance", text: "Leopardstar's fateful alliance with Tigerstar recurs as the motif of her greatest misjudgment, the partnership that nearly destroys RiverClan." },
+        { name: "The Poisoned River", text: "The poisoning of the river and Leopardstar's blame of ThunderClan recur as a motif of partisan misperception, the way her loyalty distorts her reading of events." }
+      ],
+      criticalAnalysis:
+        "Leopardstar's Honor deepens a figure from the original arc often seen only as a proud antagonist, reframing the RiverClan leader's controversial choices — above all her alliance with Tigerstar — from the inside and rounding her into a flawed, sympathetic, fully realized leader. The novel's chief achievement is perspective: by retelling events familiar from the original arc and Crookedstar's Promise through Leopardstar's eyes, it reveals the pride, the genuine love of her Clan, and the partisan blind spots that drove decisions the saga had presented as simply misguided or villainous, complicating the reader's judgment of her. The exploration of her conviction that ThunderClan poisoned the river, and her fateful embrace of Tigerstar, dramatizes how loyalty and pride can distort a leader's perception, a thoughtful study of how good intentions and fierce devotion can lead to catastrophe. The addition of her private love deepens a character the main arc kept at a distance. As a recent Super Edition revisiting well-trodden ground, the novel risks feeling like a recapitulation for readers who know the original arc, and its protagonist's outcome is constrained by established canon, but its sympathetic, interior reframing of a controversial leader, and its insight into the dangers of pride and partisanship, make it a substantial and rewarding character study.",
+      characterAnalysis: [
+        { name: "Leopardstar / Leopardfur", text: "RiverClan's proud, ambitious leader, devoted to her Clan's honor; the novel reframes her controversial choices — especially the alliance with Tigerstar — from within, revealing the pride and partisan blind spots that drove her, and rounding her into a sympathetic, flawed figure." },
+        { name: "Crookedstar", text: "The RiverClan leader Leopardfur serves as deputy, whose own tragic story (told in Crookedstar's Promise) intersects with hers, and whom her partisanship helps sway against ThunderClan." },
+        { name: "Tigerstar", text: "The tyrant whose alliance with Leopardstar — her gravest misjudgment — nearly destroys RiverClan, the embodiment of how her pride and loyalty led her into catastrophe." },
+        { name: "Graystripe", text: "The ThunderClan warrior (and former RiverClan resident) whom Leopardstar blames for poisoning the river, the focus of her partisan misperception." }
+      ],
+      studyQuestions: [
+        "Leopardstar's pride in RiverClan drives her finest and worst choices. How does the novel dramatize the dangers of pride and its blind spots?",
+        "How does retelling familiar events from Leopardstar's perspective complicate the reader's judgment of her?",
+        "Leopardstar's loyalty distorts her reading of the poisoned river and her embrace of Tigerstar. How does the novel explore loyalty leading to misjudgment?",
+        "How does the addition of her private love deepen a character the main arc kept at a distance?",
+        "How does the novel frame Leopardstar's reckoning with her mistakes and her effort to restore RiverClan's honor?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the interior reframing of Leopardstar's alliance with Tigerstar, the choice that defines her as a near-villain in the original arc: by showing the pride, the genuine love of RiverClan, and the partisan conviction that led her into that disastrous partnership, the novel transforms a seemingly inexplicable betrayal into an understandable, tragic error. That a leader's fiercest devotion to her Clan's honor is precisely what blinds her and nearly destroys it gives the book a genuinely tragic insight into how good intentions, twisted by pride, can lead to catastrophe.",
+      quoteCards: [
+        { quote: "Everything I did, I did for RiverClan's honor — and that is how honor itself can lead a leader astray.", speaker: "Leopardstar", context: "Her reckoning with the pride and partisanship that drove her fateful alliance with Tigerstar." }
+      ],
+      timelinePlacement:
+        "Leopardstar's Honor spans the generation before and during The Prophecies Begin, retelling RiverClan's role in the original arc — including the Tigerstar alliance and TigerClan — from its leader's perspective. It complements Crookedstar's Promise and recontextualizes the events of The Darkest Hour, deepening the RiverClan history the early saga assumes.",
+      comparisons: [
+        { work: "Macbeth", author: "William Shakespeare", text: "The tragic descent of a proud, capable figure whose ambition and a fateful alliance with evil lead to catastrophe and a reckoning, parallels Leopardstar's pride and her disastrous bond with Tigerstar." },
+        { work: "Wide Sargasso Sea", author: "Jean Rhys", text: "The retelling of a familiar story from the interior perspective of a figure previously seen only from outside, complicating the reader's judgment, parallels the novel's sympathetic reframing of Leopardstar." }
+      ]
+    }
+  },
+
+  {
+    id: "se-onestars-confession",
+    title: "Onestar's Confession",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 63,
+    arcOrder: 13,
+    timelineOrder: 6.75, // WindClan, spans prequel era into the lake era
+    publicationYear: 2022,
+    povCharacter: "Onestar (Onewhisker)",
+    locationKey: "forest-windclan",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "Framed as a confession from beyond death, this novel follows Onestar — first the warrior Onewhisker — across his long life, centering on the secret that haunted him: that as a young cat he fathered a kit, Darkkit, with a kittypet named Smoke, a son he abandoned and who grew into the monstrous rogue Darktail. The book traces Onewhisker's rise from an ordinary WindClan warrior and friend of Firestar to the leadership of WindClan as Onestar, shadowed always by paranoia and guilt: fear that his secret will be exposed, that his mate Whitetail or his Clan will learn the truth, and dread of the cruel son he abandoned. As Darktail's menace grows and finally descends upon the Clans in the events of A Vision of Shadows, Onestar is forced to confront the consequences of his long-ago abandonment, and the novel builds toward his sacrifice — giving his life to ensure Darktail's death — as an attempt to atone for the wrong he set in motion. Narrated with the rue of a cat reckoning with his life from the afterlife, the novel reframes Onestar's pride and prickliness as the armor of a guilty, frightened cat, and it deepens the tragedy of Darktail by revealing the abandonment at its root.",
+      themes: [
+        { name: "Guilt and Confession", text: "The framing of the novel as a confession makes guilt its central theme, the lifelong burden of a secret sin and the reckoning that comes only in death, as Onestar at last confronts the consequences of abandoning his son." },
+        { name: "Abandonment and Its Consequences", text: "Onestar's abandonment of Darkkit and the monster he becomes develop the theme that a parent's failure can have catastrophic consequences, the rejected son's cruelty rooted in the father's neglect." },
+        { name: "Atonement Through Sacrifice", text: "Onestar's death to ensure Darktail's defeat frames the theme of atonement, the attempt to redeem a lifelong wrong through a final, redemptive sacrifice." }
+      ],
+      motifs: [
+        { name: "The Hidden Secret", text: "Onestar's concealed fatherhood recurs as the novel's governing motif, the secret whose weight shapes his paranoid, guilty life." },
+        { name: "Father and Abandoned Son", text: "The relationship between Onestar and the son he abandoned recurs as the motif at the heart of the tragedy, the neglect that creates a monster." },
+        { name: "Confession from the Afterlife", text: "The narration from beyond death recurs as a motif of reckoning, the rue and honesty of a cat at last confessing the truth of his life." }
+      ],
+      criticalAnalysis:
+        "Onestar's Confession is among the most thematically rich recent Super Editions, recasting a sometimes-unsympathetic figure from the lake-era arcs as a tragic, guilt-ridden cat and supplying the devastating backstory behind the villain Darktail. The novel's framing device — a confession narrated from the afterlife — gives the book an unusual tone of rue and honesty, allowing Onestar to reckon with his life's defining failure, the abandonment of the son who became a monster. Its most consequential contribution is the revelation that Darktail, the tyrant of A Vision of Shadows, is Onestar's abandoned son, a disclosure that River of Fire only began to develop and that this novel explores in full, rooting the saga's recent villainy in a father's neglect and lending Darktail a genuinely tragic dimension. By reframing Onestar's pride and prickliness as the defensive armor of a frightened, guilty cat, the book deepens a character the main arcs kept at arm's length, and his redemptive sacrifice to destroy Darktail gains poignancy as an attempt to atone for the wrong he set in motion. As a Super Edition spanning a long stretch of saga history, the novel can feel sprawling, but its psychological depth, its tragic father-son core, and its illumination of Darktail's origins make it a powerful and substantial entry.",
+      characterAnalysis: [
+        { name: "Onestar / Onewhisker", text: "WindClan's leader, recast here as a guilt-ridden cat haunted by the secret son he abandoned; his paranoia and pride are reframed as the armor of a frightened cat, and his sacrifice to destroy Darktail is his attempt at atonement." },
+        { name: "Darktail", text: "Onestar's abandoned son, the monstrous rogue whose cruelty is rooted in his father's neglect; the novel reveals the abandonment at the heart of his villainy, lending the A Vision of Shadows tyrant a tragic dimension." },
+        { name: "Smoke", text: "The kittypet with whom Onewhisker fathered Darkkit, the mother of the abandoned son, whose relationship with Onestar is the secret that haunts his life." },
+        { name: "Whitetail", text: "Onestar's mate, from whom he conceals his secret, embodying the fear of exposure that shadows his life." }
+      ],
+      studyQuestions: [
+        "The novel is framed as a confession from the afterlife. How does this device shape the book's tone and Onestar's reckoning with his life?",
+        "Onestar abandons his son, who becomes a monster. How does the novel develop the theme that a parent's failure can have catastrophic consequences?",
+        "How does revealing Darktail as Onestar's abandoned son root the saga's recent villainy in a father's neglect and lend Darktail tragic depth?",
+        "How does the novel reframe Onestar's pride and prickliness as the armor of a guilty, frightened cat?",
+        "Onestar sacrifices himself to destroy Darktail. How does the novel frame this as an attempt at atonement?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the confessional framing that recasts a whole life: narrating from the afterlife, Onestar lays bare the secret — his abandoned son Darktail — that turned his pride into armor and his life into a vigil of guilt. That the prickly, defensive WindClan leader of the lake-era arcs was, all along, a frightened cat haunted by the monster he fathered and failed, transforms both Onestar and Darktail retroactively, rooting one of the saga's most ruthless villains in a father's neglect and giving the entire Darktail catastrophe a tragic, intimate origin.",
+      quoteCards: [
+        { quote: "I abandoned my son, and the forest paid for it. Let this confession, at least, be the truth I never dared to speak in life.", speaker: "Onestar", context: "His afterlife reckoning with the abandonment of Darktail and the catastrophe it brought upon the Clans." }
+      ],
+      timelinePlacement:
+        "Onestar's Confession spans from the prequel era (after Tallstar's Revenge) through the events of A Vision of Shadows' Shattered Sky, narrated as a confession from the afterlife. It supplies the full backstory for Darktail, deepening the villain of A Vision of Shadows and recontextualizing Onestar's role across the lake-era arcs, and it complements River of Fire's revelation of Darktail's parentage.",
+      comparisons: [
+        { work: "The Kite Runner", author: "Khaled Hosseini", text: "A guilt-ridden narrator's confession of a defining failure and the long shadow it casts, building toward an attempt at redemption, parallels Onestar's confessional reckoning with his abandonment of Darktail." },
+        { work: "Frankenstein", author: "Mary Shelley", text: "The tragedy of a creator-father whose abandonment of the being he brought into the world produces a vengeful monster, and his reckoning with that responsibility, resonates deeply with Onestar and Darktail." }
+      ]
+    }
+  },
+
+  {
+    id: "se-crowfeathers-trial",
+    title: "Crowfeather's Trial",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 61,
+    arcOrder: 11,
+    timelineOrder: 30.6, // lake era, after the Great Battle, before A Vision of Shadows
+    publicationYear: 2018,
+    povCharacter: "Crowfeather",
+    locationKey: "lake-windclan",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "Set in the aftermath of the Great Battle, this novel follows Crowfeather, the prickly, grief-hardened WindClan warrior whose forbidden loves and losses — Feathertail, Leafpool, and the secret fatherhood of the Three — have left him bitter and emotionally walled-off. The book centers on his fraught relationship with his son Breezepelt, who fought for the Dark Forest in the Great Battle and is now distrusted and resented by his Clanmates, and on Crowfeather's reluctant, painful efforts to understand and reconcile with the son he had long neglected. When stoats invade WindClan's tunnels and Crowfeather's former mate Nightcloud goes missing during the crisis, Crowfeather and Breezepelt are forced to work together to confront the threat and rescue her, an ordeal that slowly thaws the ice between father and son. The novel is a study of grief, regret, and the hard work of repairing a damaged relationship, as Crowfeather confronts his own failures as a mate and father and learns, haltingly, to open his guarded heart. It ends with a tentative reconciliation between Crowfeather and Breezepelt and a measure of healing for one of the saga's most emotionally closed-off characters.",
+      themes: [
+        { name: "Reconciliation Between Father and Son", text: "Crowfeather and Breezepelt's fraught relationship makes reconciliation the novel's central theme, the difficult, halting work of repairing a bond damaged by years of neglect, distrust, and the son's wartime betrayal." },
+        { name: "Grief and the Guarded Heart", text: "Crowfeather's bitterness, rooted in his many losses, develops the theme of grief that hardens into emotional self-protection, and the struggle to open a heart walled off by sorrow." },
+        { name: "Regret and Responsibility", text: "Crowfeather's reckoning with his failures as a mate and father frames the theme of regret, the confrontation with one's own responsibility for a broken relationship." }
+      ],
+      motifs: [
+        { name: "The Tunnels and Stoats", text: "The stoat invasion of WindClan's tunnels recurs as the novel's external crisis, the shared ordeal that forces father and son together." },
+        { name: "The Guarded Heart", text: "Crowfeather's emotional walls recur as a motif of grief-hardened self-protection, the ice the novel slowly thaws." },
+        { name: "Father and Son", text: "The fraught bond between Crowfeather and Breezepelt recurs as the novel's emotional core, the relationship the crisis works to repair." }
+      ],
+      criticalAnalysis:
+        "Crowfeather's Trial deepens one of the saga's most emotionally closed-off figures, using a contained external crisis — a stoat invasion of WindClan's tunnels — as the occasion for the real drama, the halting reconciliation between Crowfeather and his estranged, distrusted son Breezepelt. The novel's chief strength is its emotional honesty: Crowfeather, hardened by the losses of Feathertail and Leafpool and the secret fatherhood of the Three, is a study in grief that has curdled into bitterness and self-protection, and the book does not pretend his wounds heal easily, charting instead the slow, painful, incomplete work of opening a guarded heart. The fraught relationship with Breezepelt — a son who fought for the Dark Forest and is resented by his Clan — gives the novel genuine stakes of forgiveness and responsibility, and Crowfeather's reckoning with his own failures as a mate and father lends it real moral weight. The stoat crisis, while serviceable as a plot engine, is clearly secondary to the character work, and readers seeking high adventure may find the external stakes modest. But as a study of grief, regret, and the difficult repair of a damaged bond, the novel is one of the more emotionally mature Super Editions, granting a measure of healing to a character the main arcs left raw.",
+      characterAnalysis: [
+        { name: "Crowfeather", text: "The prickly, grief-hardened WindClan warrior whose losses have walled off his heart; the novel charts his reluctant, painful reconciliation with his son and his reckoning with his failures as a mate and father, granting him halting healing." },
+        { name: "Breezepelt", text: "Crowfeather's son, distrusted for having fought for the Dark Forest in the Great Battle; his fraught relationship with his neglectful father is the novel's emotional core, and their reconciliation its central arc." },
+        { name: "Nightcloud", text: "Crowfeather's former mate and Breezepelt's mother, whose disappearance during the stoat crisis forces father and son to work together to rescue her." },
+        { name: "The Memory of Feathertail and Leafpool", text: "Crowfeather's lost loves, whose deaths and partings shaped the grief that hardened him, haunting the novel and explaining his guarded heart." }
+      ],
+      studyQuestions: [
+        "Crowfeather and Breezepelt's reconciliation is halting and incomplete. Why does the novel refuse to let their bond heal easily?",
+        "How does the novel develop the theme of grief that hardens into emotional self-protection?",
+        "Breezepelt fought for the Dark Forest. How do the stakes of forgiveness and responsibility shape the father-son relationship?",
+        "How does Crowfeather's reckoning with his failures as a mate and father lend the novel moral weight?",
+        "How does the stoat crisis function as an occasion for the novel's real, emotional drama?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novel's unflinching honesty about a difficult reconciliation: rather than granting Crowfeather and Breezepelt an easy healing, it charts the slow, painful, and incomplete thawing of a bond damaged by years of neglect and a son's wartime betrayal. That the saga is willing to spend a whole book on the hard, halting work of a grief-hardened father learning to open his heart to a son he failed — without pretending the wounds fully close — gives the novel an emotional maturity rare in the series and grants real depth to one of its most guarded characters.",
+      quoteCards: [
+        { quote: "I have lost so much that I forgot how to hold on to anything — even my own son.", speaker: "Crowfeather", context: "His reckoning with the grief-hardened heart that drove him to neglect Breezepelt, as the two begin to reconcile." }
+      ],
+      timelinePlacement:
+        "Crowfeather's Trial is set in the lake territories after the Great Battle of Omen of the Stars and before A Vision of Shadows. It deepens Crowfeather and Breezepelt in the aftermath of the Dark Forest war, addressing the fallout of Breezepelt's wartime allegiance, and it sits among the lake-era character studies alongside Bramblestar's Storm.",
+      comparisons: [
+        { work: "A River Runs Through It", author: "Norman Maclean", text: "The depiction of an emotionally reserved family bond, the difficulty of reaching an estranged relative, and the grief and regret beneath a guarded surface, resonates with Crowfeather's halting reconciliation with his son." },
+        { work: "The Road", author: "Cormac McCarthy", text: "The intense, fraught father-son relationship tested by external danger, through which love is haltingly expressed despite a hardened exterior, parallels the bond between Crowfeather and Breezepelt." }
+      ]
+    }
+  },
+
+  {
+    id: "se-squirrelflights-hope",
+    title: "Squirrelflight's Hope",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 62,
+    arcOrder: 12,
+    timelineOrder: 36.4, // lake era, around the end of A Vision of Shadows
+    publicationYear: 2019,
+    povCharacter: "Squirrelflight",
+    locationKey: "lake-thunderclan",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "Set in the lake era as the Clans adjust to a five-Clan world, this novel centers on Squirrelflight, the ThunderClan deputy and mate of Bramblestar, as she grapples with the difficult position of serving a leader who is also her partner and who does not always heed her counsel. When tensions rise over how the Clans should respond to shared threats and the question of cooperation among the five Clans, Squirrelflight champions a bolder, more collaborative vision than the cautious, sometimes dismissive Bramblestar will accept, and the strain tests both their working partnership and their bond as mates. The novel follows Squirrelflight as she undertakes initiatives to foster inter-Clan cooperation and to prove the value of her judgment, navigating the frustration of being underestimated by the cat closest to her and asserting her own agency and worth. Interwoven are questions of family, legacy, and Squirrelflight's long, complicated history — her raising of the Three, her relationship with her sister Leafpool — that inform her hopes for the Clans' future. The novel ends with Squirrelflight having asserted her voice and her vision, and with her partnership with Bramblestar tested but ultimately deepened by the reckoning.",
+      themes: [
+        { name: "Partnership and Being Heard", text: "Squirrelflight's struggle to be heeded by Bramblestar makes partnership and the fight to be heard the novel's central theme, exploring the difficulty of being both a deputy and a mate, and the frustration of having one's judgment dismissed by the cat closest to one." },
+        { name: "Agency and Self-Worth", text: "Squirrelflight's assertion of her own vision develops the theme of agency, a long-undervalued cat claiming her voice and proving her worth on her own terms." },
+        { name: "Cooperation and the Future", text: "Squirrelflight's championing of inter-Clan collaboration frames the theme of a hopeful vision for the Clans' future, the bolder cooperation she believes the five-Clan world requires." }
+      ],
+      motifs: [
+        { name: "Hope", text: "The title's hope recurs as Squirrelflight's governing quality, her optimistic vision for cooperation and the Clans' future." },
+        { name: "Deputy and Mate", text: "Squirrelflight's dual role recurs as a motif of the tension between professional and personal partnership, the difficulty of serving a leader who is also her mate." },
+        { name: "Asserting a Voice", text: "Squirrelflight's struggle to be heeded recurs as a motif of claiming agency, the long-undervalued cat finding and asserting her voice." }
+      ],
+      criticalAnalysis:
+        "Squirrelflight's Hope gives one of the saga's most beloved and long-running characters her own dedicated telling, centering the ThunderClan deputy's struggle to be heeded by Bramblestar and to assert her own vision for the Clans' future. The novel's most resonant theme is the difficulty of Squirrelflight's dual position — both deputy and mate to the same cat — and the frustration of having her judgment dismissed by the partner closest to her, a relationship dynamic the book treats with real insight, dramatizing the fight to be heard and valued as an equal. Squirrelflight's championing of bolder inter-Clan cooperation gives the novel a forward-looking optimism that contrasts with Bramblestar's caution, and her assertion of agency makes the book a satisfying spotlight on a character often defined in relation to others — her father Firestar, her mate, her sister, the Three she raised. The interweaving of her complicated history deepens the portrait. As a lake-era character study, the novel's stakes are relational and political rather than epic, and its conflict — a strained partnership — is quieter than most Super Editions, which may make it feel low-key to readers seeking adventure. But its thoughtful treatment of partnership, agency, and a long-undervalued character's claiming of her voice makes it a rewarding and resonant entry, particularly given the impostor crisis that will soon test Squirrelflight and Bramblestar in The Broken Code.",
+      characterAnalysis: [
+        { name: "Squirrelflight", text: "The ThunderClan deputy and Bramblestar's mate, long defined in relation to others; the novel gives her a dedicated spotlight as she struggles to be heeded, asserts her own bolder vision for the Clans, and claims her agency and worth." },
+        { name: "Bramblestar", text: "Squirrelflight's mate and leader, whose caution and tendency to dismiss her counsel create the central strain; their tested partnership is the novel's emotional core." },
+        { name: "Leafpool", text: "Squirrelflight's sister, whose bond and shared history (including the secret of the Three) inform Squirrelflight's hopes and her sense of family and legacy." },
+        { name: "The Five Clans", text: "The collective whose cooperation Squirrelflight champions, the forward-looking vision of inter-Clan collaboration that drives her initiatives." }
+      ],
+      studyQuestions: [
+        "Squirrelflight is both deputy and mate to Bramblestar. How does the novel explore the difficulty of being heard in this dual role?",
+        "How does the novel develop the theme of agency as a long-undervalued character claims her voice?",
+        "Squirrelflight champions bolder inter-Clan cooperation. How does her hopeful vision contrast with Bramblestar's caution?",
+        "How does the interweaving of Squirrelflight's complicated history deepen the portrait?",
+        "How does the novel set up the test that the impostor crisis of The Broken Code will pose for Squirrelflight and Bramblestar?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novel's honest treatment of Squirrelflight's dual bind: she must serve as deputy to the very cat who is her mate, and the book draws genuine drama from the frustration of having her judgment dismissed by the partner who should value it most. That the saga devotes a whole novel to a long-undervalued character's fight to be heard and to assert her own vision — rather than to a battle or a quest — gives the book a quiet, contemporary resonance, and it foregrounds the partnership that the impostor of The Broken Code will soon exploit and nearly destroy.",
+      quoteCards: [
+        { quote: "I am his deputy and his mate, but I am also myself — and my voice deserves to be heard, not just heeded when it suits him.", speaker: "Squirrelflight", context: "Her assertion of agency in the strained partnership with Bramblestar that the novel explores." }
+      ],
+      timelinePlacement:
+        "Squirrelflight's Hope is set in the lake territories around the period of A Vision of Shadows, as the five-Clan world takes shape. It deepens Squirrelflight and her partnership with Bramblestar, and it directly sets up the relationship that the impostor crisis of The Broken Code — in which Ashfur targets Squirrelflight — will test and nearly destroy.",
+      comparisons: [
+        { work: "A Doll's House", author: "Henrik Ibsen", text: "The drama of a long-underestimated partner asserting her own agency and voice within a relationship that has not treated her as an equal resonates with Squirrelflight's struggle to be heard by Bramblestar." },
+        { work: "Middlemarch", author: "George Eliot", text: "The depiction of a capable, idealistic figure navigating the frustrations of a marriage in which her aspirations and judgment are undervalued parallels Squirrelflight's partnership and her hopeful vision." }
+      ]
+    }
+  },
+
+  {
+    id: "se-graystripes-vow",
+    title: "Graystripe's Vow",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 66,
+    arcOrder: 16,
+    timelineOrder: 42.4, // immediately after The Broken Code
+    publicationYear: 2020,
+    povCharacter: "Graystripe",
+    locationKey: "lake-thunderclan",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "Set in the unsettled aftermath of the impostor crisis of The Broken Code, this novel follows Graystripe — Firestar's oldest friend, now an aging ThunderClan elder — as he wrestles with his place in a Clan and a world that have changed beyond recognition. With the false Bramblestar defeated and ThunderClan dividing under Squirrelflight's uncertain acting leadership, the loyal but weary Graystripe feels increasingly out of step and out of place. When a group of disaffected cats decides to leave ThunderClan, Graystripe — torn between his lifelong loyalty to the Clan and his sense that he no longer belongs — makes the surprising choice to go with them, embarking on a journey that takes him to the mountains, where he reunites with his son Stormfur and the Tribe of Rushing Water, the kin he had lost touch with across the years and arcs. The journey becomes a reckoning with aging, change, loyalty, and family, as Graystripe confronts what he owes his Clan, his kin, and himself in the twilight of a long and storied life. The novel honors one of the saga's most enduring and beloved characters, and it ends with Graystripe having found a renewed sense of purpose and belonging, reconciling his loyalties old and new.",
+      themes: [
+        { name: "Aging and Belonging", text: "Graystripe's sense of being out of step makes aging and belonging the novel's central theme, exploring how a beloved elder finds his place in a world that has changed beyond recognition, and what loyalty and home mean late in a long life." },
+        { name: "Loyalty Old and New", text: "Graystripe's torn allegiances develop the theme of competing loyalties — to ThunderClan, to his kin, to himself — and the difficult reconciliation of bonds old and new." },
+        { name: "Family and Reunion", text: "Graystripe's reunion with Stormfur and the Tribe frames the theme of family across distance and time, the reconnection with kin lost across the arcs." }
+      ],
+      motifs: [
+        { name: "The Aging Elder", text: "Graystripe's age and weariness recur as a motif of a life in its twilight, the beloved character reckoning with change and his place in it." },
+        { name: "The Journey to the Mountains", text: "Graystripe's journey to the Tribe recurs as a motif of homecoming and reunion, the path to the kin he had lost touch with." },
+        { name: "The Vow", text: "Graystripe's vow — his enduring loyalty and the promises that bind him — recurs as the title's motif, the commitments he must reconcile." }
+      ],
+      criticalAnalysis:
+        "Graystripe's Vow is a tender, valedictory tribute to one of the saga's most enduring and beloved characters, Firestar's lifelong friend, set in the unsettled aftermath of The Broken Code and centered on the unusual, poignant theme of aging within a long-running series. The novel's chief strength is its willingness to engage with what most adventure fiction avoids: the experience of a beloved elder who feels out of step in a changed world, and the questions of belonging, loyalty, and purpose that confront a cat in the twilight of a long life. Graystripe's surprising choice to leave ThunderClan with the disaffected, and his journey to reunite with his son Stormfur and the Tribe, gives the book an emotional throughline of family and reconnection that ties together threads across many arcs, rewarding longtime readers with a reunion that honors the saga's history. The reckoning with aging and change lends the novel an elegiac, reflective tone unusual in the series. As a recent Super Edition, its stakes are personal and quiet rather than epic, and its reflective pace may feel slow to readers seeking action, but its heartfelt treatment of a cherished character's late-life search for belonging, and its reconciliation of his loyalties old and new, make it a warm and resonant tribute, a fitting honor for a character who has been with the saga nearly from its beginning.",
+      characterAnalysis: [
+        { name: "Graystripe", text: "Firestar's oldest friend, now an aging ThunderClan elder feeling out of step in a changed world; the novel follows his late-life reckoning with belonging, loyalty, and family, and his journey to reunite with his kin, granting him renewed purpose." },
+        { name: "Stormfur", text: "Graystripe's son, living with the Tribe of Rushing Water, whose reunion with his father is the emotional heart of the journey and a reconnection of kin lost across the arcs." },
+        { name: "Squirrelflight", text: "ThunderClan's uncertain acting leader in the aftermath of the impostor crisis, whose dividing Clan deepens Graystripe's sense of being out of place." },
+        { name: "The Tribe of Rushing Water", text: "The mountain community where Graystripe finds his son and kin, the destination of his journey and a place of reunion and belonging." }
+      ],
+      studyQuestions: [
+        "Graystripe feels out of step in a changed world. How does the novel engage with the unusual theme of aging within a long-running series?",
+        "Graystripe is torn between loyalty to ThunderClan and his sense that he no longer belongs. How does the novel reconcile his competing loyalties?",
+        "How does Graystripe's reunion with Stormfur and the Tribe tie together threads across many arcs?",
+        "What gives the novel its elegiac, reflective tone, and how does that distinguish it from most Super Editions?",
+        "Why is it fitting that the saga devotes a late-life tribute to one of its oldest and most beloved characters?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novel's willingness to dwell on aging — a theme most adventure series avoid entirely. By centering a beloved elder who feels out of step in a world transformed beyond recognition, and following his late-life search for where he still belongs, the book grants Graystripe, one of the saga's oldest companions, a reflective, valedictory dignity. That the series pauses amid its ongoing dramas to honor a cherished character's twilight, and to reunite him with the kin he had lost across the arcs, gives the novel a warmth and emotional depth that reward the saga's longtime readers.",
+      quoteCards: [
+        { quote: "I have outlived so many friends and so many homes — but loyalty, I have learned, can find a new place to belong.", speaker: "Graystripe", context: "His late-life reckoning with aging, change, and belonging as he journeys to reunite with his kin." }
+      ],
+      timelinePlacement:
+        "Graystripe's Vow is set immediately after The Broken Code, in the unsettled aftermath of the impostor crisis as ThunderClan divides under Squirrelflight's acting leadership. It honors Firestar's oldest friend in the twilight of his life, reuniting him with Stormfur and the Tribe, and it sits in the lake era just before A Starless Clan, reflecting on the changes the saga has undergone.",
+      comparisons: [
+        { work: "The Old Man and the Sea", author: "Ernest Hemingway", text: "The reflective portrait of an aging figure reckoning with his place and purpose in the twilight of a long life resonates with Graystripe's late-life journey." },
+        { work: "King Lear", author: "William Shakespeare", text: "The depiction of an elder confronting a changed world, divided loyalties, and the search for where he still belongs in his final years echoes the elegiac concerns of Graystripe's Vow." }
+      ]
+    }
+  },
+
+  {
+    id: "se-ivypools-heart",
+    title: "Ivypool's Heart",
+    arc: "Super Editions",
+    arcKey: "super",
+    pubOrder: 67,
+    arcOrder: 17,
+    timelineOrder: 42.6, // after The Broken Code (Bristlefrost's death), around A Starless Clan
+    publicationYear: 2024,
+    povCharacter: "Ivypool",
+    locationKey: "lake-thunderclan",
+    accentColor: "#b8902f",
+    type: "superEdition",
+    analysis: {
+      plotSummary:
+        "Set in the grief-shadowed aftermath of The Broken Code, this novel follows Ivypool — the former Dark Forest spy turned loyal warrior — as she struggles to move on from the devastating loss of her daughter Bristlefrost, who sacrificed not only her life but the very existence of her spirit to destroy Ashfur. Newly named deputy of ThunderClan, Ivypool finds the honor hollow in the depths of her grief, unable to find meaning in her duties while mourning a daughter she cannot even hope to meet again in StarClan. When a WindClan medicine-cat apprentice, Whistlepaw, receives a disturbing vision portending disaster for all the Clans, a patrol of cats from across the Clans is chosen to undertake a perilous quest to investigate, and Ivypool joins them. The arduous journey — beset by hunger and savage dogs — leads the cats to a Twoleg den caging a series of strange animals, two of whom prove to have surprising ties to the Clans, and the quest becomes a mission to right a generations-old wrong by helping these creatures find their true home. To complete it, and to ensure a future for the Clans, Ivypool must at last let go of her grief and her past. The novel is a study of mourning and redemption, and it ends with Ivypool having begun to heal, having honored her daughter's sacrifice by choosing to live for the future rather than the past.",
+      themes: [
+        { name: "Grief and Letting Go", text: "Ivypool's mourning of Bristlefrost makes grief and the struggle to let go the novel's central theme, exploring a parent's bottomless loss — made worse by the impossibility of any reunion in StarClan — and the difficult work of moving on without forgetting." },
+        { name: "Redemption and Living for the Future", text: "Ivypool's journey develops the theme of redemption through choosing the future, the former spy honoring her daughter's sacrifice by letting go of the past to ensure the Clans' future." },
+        { name: "Righting an Old Wrong", text: "The quest to help the caged animals find their home frames the theme of righting a generations-old wrong, the redemptive mission that gives Ivypool's grief a purpose." }
+      ],
+      motifs: [
+        { name: "The Lost Daughter", text: "Bristlefrost's absence — and the impossibility of meeting her even in death — recurs as the novel's defining grief, the loss Ivypool must learn to carry." },
+        { name: "The Quest", text: "The perilous journey to investigate Whistlepaw's vision recurs as a motif of redemptive purpose, the mission that draws Ivypool out of her grief." },
+        { name: "Caged Creatures", text: "The strange animals caged in the Twoleg den recur as a motif of the displaced and the wronged, the beings Ivypool's quest must help find their true home." }
+      ],
+      criticalAnalysis:
+        "Ivypool's Heart, one of the most recent Super Editions, gives the former Dark Forest spy her own dedicated telling, centering on the rawest possible grief — the loss of her daughter Bristlefrost, whose total self-annihilation in The Broken Code denied Ivypool even the consolation of a reunion in StarClan. The novel's chief strength is its unflinching engagement with mourning: Ivypool's hollow deputyship and her inability to find meaning amid her loss are rendered with real emotional honesty, and the book does not rush her healing, treating grief as a weight to be carried rather than a problem to be solved. The quest structure — a perilous journey to investigate a portentous vision, leading to caged animals with ties to the Clans — provides momentum and a redemptive purpose, externalizing Ivypool's inner work of letting go through a mission to right a generations-old wrong. The framing of redemption as choosing to live for the future rather than the past honors Bristlefrost's sacrifice and gives the novel a hopeful arc out of devastation. As a recent entry tied closely to The Broken Code, the novel depends somewhat on that arc for its emotional context, and its quest's stakes are less central than the saga's main dramas, but its mature, honest treatment of grief and its redemptive journey make it a powerful and affecting study, granting one of the saga's most compelling characters a hard-won measure of healing.",
+      characterAnalysis: [
+        { name: "Ivypool", text: "The former Dark Forest spy turned loyal warrior and new ThunderClan deputy, hollowed by grief over her daughter Bristlefrost; the novel follows her struggle to let go of the past and her redemptive journey toward healing and living for the future." },
+        { name: "Bristlefrost (in memory)", text: "Ivypool's daughter, whose total sacrifice in The Broken Code — annihilating even her spirit — denies Ivypool any reunion in StarClan, the bottomless loss the novel's grief centers on." },
+        { name: "Whistlepaw", text: "The WindClan medicine-cat apprentice whose disturbing vision launches the quest, the catalyst for the journey that draws Ivypool out of her grief." },
+        { name: "The Caged Creatures", text: "The strange animals found in the Twoleg den, two with surprising ties to the Clans, whom the quest must help find their true home, righting a generations-old wrong." }
+      ],
+      studyQuestions: [
+        "Ivypool grieves a daughter she cannot even meet again in StarClan. How does the novel render this bottomless loss and the struggle to let go?",
+        "How does the novel frame redemption as choosing to live for the future rather than the past?",
+        "How does the quest externalize Ivypool's inner work of grief and letting go?",
+        "The quest rights a generations-old wrong. How does this redemptive mission give Ivypool's grief a purpose?",
+        "Why is it significant that the novel refuses to rush Ivypool's healing, treating grief as a weight to be carried?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the uniquely cruel nature of Ivypool's grief: because Bristlefrost annihilated the very existence of her spirit to destroy Ashfur, Ivypool is denied even the consolation that every other grieving cat in the saga can hope for — a reunion in StarClan. That the novel builds its study of mourning around a loss so total it forecloses the afterlife itself, and then charts a path toward healing not through reunion but through choosing to live for the future, gives the book an unusual emotional depth and makes Ivypool's hard-won redemption a genuinely moving honor to her daughter's sacrifice.",
+      quoteCards: [
+        { quote: "I cannot follow her even to StarClan — so I must honor her the only way left to me: by living for the future she died to save.", speaker: "Ivypool", context: "Her reckoning with the total loss of Bristlefrost and her choice to let go of grief and live for the Clans' future." }
+      ],
+      timelinePlacement:
+        "Ivypool's Heart is set after The Broken Code, in the grief-shadowed aftermath of Bristlefrost's sacrifice, around the period of A Starless Clan. As one of the most recent Super Editions, it deepens Ivypool and addresses the fallout of the impostor crisis's devastating loss, and its quest to right a generations-old wrong connects to the saga's deep history and ongoing concerns.",
+      comparisons: [
+        { work: "A Grief Observed", author: "C. S. Lewis", text: "The unflinching, honest exploration of profound grief and the slow, non-linear struggle to find meaning and faith after a devastating loss resonates deeply with Ivypool's mourning of Bristlefrost." },
+        { work: "The Lovely Bones", author: "Alice Sebold", text: "The depiction of a family reckoning with the loss of a daughter and the long work of learning to live with grief and toward the future parallels Ivypool's redemptive journey." }
+      ]
+    }
   }
 ];

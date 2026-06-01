@@ -7,6 +7,7 @@
 import { ARCS } from "../arcs.js";
 import { LOCATIONS } from "../locations.js";
 import { RELATIONSHIPS } from "../relationships.js";
+import { CATEGORIES } from "../categories.js";
 import { prophecies } from "./arc-prophecies.js";
 import { newProphecy } from "./arc-new-prophecy.js";
 import { powerOfThree } from "./arc-power-of-three.js";
@@ -106,6 +107,13 @@ export function validateBooks() {
         console.assert(ids.has(lk.a) && ids.has(lk.b),
           `${where}: relationship link references unknown node (${lk.a} -> ${lk.b})`);
       }
+    }
+  }
+
+  // Curated categories: every pick must reference a real book.
+  for (const cat of CATEGORIES) {
+    for (const pick of cat.picks) {
+      console.assert(BOOK_BY_ID[pick.id], `Category "${cat.name}": unknown book id "${pick.id}"`);
     }
   }
 }

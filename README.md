@@ -37,13 +37,17 @@ order**. Dawn of the Clans, though published fifth, is the earliest story in the
 saga (the founding of the Clans), so it sorts first in the "All" view and shows
 saga order #1–6.
 
-All eight main arcs are now complete, and the **Super Editions** are being added
-in batches (10 so far: Firestar's Quest, Bluestar's Prophecy, SkyClan's Destiny,
-Crookedstar's Promise, Yellowfang's Secret, Tallstar's Revenge, Bramblestar's
-Storm, Moth Flight's Vision, Hawkwing's Journey, Tigerheart's Shadow). Remaining
-Super Editions and the **Novellas** appear in the filter bar marked "soon" and
-are added in subsequent updates. Each new batch is a single `data/books/*.js`
-file.
+All eight main arcs and **all 17 Super Editions** are now complete (65 books).
+The **Novellas** appear in the filter bar marked "soon" and will be added later.
+
+Beyond browsing by arc, the filter bar includes curated **"Best of" categories**
+(Top 5 Rated, Most Humorous, Most Suspenseful, Most Unique, Best Plot) — each a
+ranked, annotated editorial list. Category data lives in `data/categories.js`.
+
+The site ships extensive **SEO**: descriptive title/meta/keywords, Open Graph and
+Twitter cards, JSON-LD structured data (WebSite, BookSeries, study-guide), a
+crawlable hidden index of every book's summary, `robots.txt` (welcoming AI
+crawlers), and a generated `sitemap.xml`.
 
 Each book's drawer opens with a **hand-coded SVG illustration** (vector cats in
 an action pose that ties into the story, tinted to the book's Clan colour) and a
