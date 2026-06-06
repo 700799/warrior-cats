@@ -1,31 +1,49 @@
-// "Pages": Timeline, Clans, and Characters — each a clean, vertical, high-
-// contrast document shown in a full-screen overlay, navigated from the top bar.
-// Plus the deep character profiles with 1–5 ratings, arcs, comparisons, and
-// clickable most/least-similar cross-links.
+// Tabbed full-page views: Books, 3D Map, Saga Map, Timeline, Clans, Characters.
+// A tiny router shows exactly one full-page view at a time (Books is default),
+// so the book list gets the whole screen. Timeline/Clans/Characters render into
+// one full-page container; the deep character profiles include 1–5 ratings,
+// arcs, comparisons, and clickable most/least-similar cross-links.
 
 import { store } from "./store.js";
 import { BOOKS, SAGA_RANK } from "./../data/books/index.js";
 import { CLANS } from "../data/clans.js";
 import { CHARACTERS, CHARACTER_BY_ID } from "../data/characters.js";
 import { openBookMap } from "./bookmap.js";
+import { resizeMap } from "./scene.js";
 
 const esc = (s) =>
   String(s).replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
   );
 
-let overlay, content, titleEl;
+let navEl, viewBooks, viewMap, viewPage;
 
-function open(title, html) {
-  titleEl.textContent = title;
-  content.innerHTML = html;
-  content.scrollTop = 0;
-  overlay.hidden = false;
+function showView(key) {
+  for (const el of document.querySelectorAll(".view")) el.hidden = true;
+  navEl.querySelectorAll(".nav-btn").forEach((b) =>
+    b.classList.toggle("active", b.dataset.view === key));
+
+  if (key === "books") {
+    viewBooks.hidden = false;
+  } else if (key === "map") {
+    viewMap.hidden = false;
+    resizeMap();
+  } else {
+    viewPage.hidden = false;
+    if (key === "timeline") renderPage("Timeline of the Saga", timelineHtml());
+    else if (key === "clans") renderPage("The Clans", clansHtml());
+    else if (key === "characters") renderPage("Characters", charactersHtml());
+  }
+  window.scrollTo(0, 0);
 }
-function close() { overlay.hidden = true; }
+
+function renderPage(title, html) {
+  viewPage.innerHTML =
+    `<h2 class="page-title">${esc(title)}</h2><div class="page-content">${html}</div>`;
+}
 
 // ---------- Timeline ----------
-function eraOf(rank, t) {
+function eraOf(t) {
   if (t < 7) return "I · The Founding of the Clans";
   if (t < 13) return "II · The Forest Era — The Prophecies Begin";
   if (t < 19) return "III · The Great Journey — The New Prophecy";
@@ -40,7 +58,7 @@ function timelineHtml() {
   let html = `<p class="page-lead">Every book in the order the story happens — from the founding of the Clans to the present day. Tap any entry to read its full analysis.</p>`;
   let era = null;
   for (const b of ordered) {
-    const e = eraOf(SAGA_RANK[b.id], b.timelineOrder);
+    const e = eraOf(b.timelineOrder);
     if (e !== era) { era = e; html += `<h3 class="tl-era">${esc(era)}</h3>`; }
     html += `<button class="tl-item" data-book-id="${esc(b.id)}" style="--accent:${b.accentColor}">
       <span class="tl-rank">${SAGA_RANK[b.id]}</span>
@@ -75,7 +93,6 @@ function clansHtml() {
 
 // ---------- Characters ----------
 function charactersHtml() {
-  // group by clan (first-seen order)
   const order = [];
   const byClan = new Map();
   for (const ch of CHARACTERS) {
@@ -115,11 +132,9 @@ function characterDetailHtml(ch) {
     return `<button class="sim-chip" data-char-id="${esc(s.id)}">
       <strong>${esc(t ? t.name : s.id)}</strong><span>${esc(s.why)}</span></button>`;
   };
-
   const quotes = (ch.quotes || []).map((q) =>
     `<figure class="char-quote"><blockquote>“${esc(q.quote)}”</blockquote>
      <figcaption>${esc(q.context)}</figcaption></figure>`).join("");
-
   const questions = ch.studyQuestions.map((q) => `<li>${esc(q)}</li>`).join("");
 
   return `<button class="page-back" data-back="characters">← All characters</button>
@@ -127,78 +142,64 @@ function characterDetailHtml(ch) {
       <p class="char-d-clan">${esc(ch.clan)} · ${esc(ch.role)} · ${esc(ch.era)}</p>
       <h2 class="char-d-name">${esc(ch.name)}</h2>
       <p class="char-d-tag">${esc(ch.tagline)}</p>
-
       <h3>Ratings</h3>
       <div class="rate-grid">${ratings}</div>
-
       <h3>Character arc</h3><p>${esc(ch.arc)}</p>
       <h3>Strengths</h3><p>${esc(ch.strengths)}</p>
       <h3>Weaknesses</h3><p>${esc(ch.weaknesses)}</p>
       <h3>Fears</h3><p>${esc(ch.fears)}</p>
-
       <h3>Most like…</h3>
       <p class="famous"><strong>A famous look-alike:</strong> ${esc(ch.famous.name)} — ${esc(ch.famous.why)}</p>
       <div class="sim-grid">${ch.mostSimilar.map(simLink).join("")}</div>
-
       <h3>Least like…</h3>
       <div class="sim-grid">${ch.leastSimilar.map(simLink).join("")}</div>
-
       <h3>Study questions</h3><ol class="char-q">${questions}</ol>
-
       ${quotes ? `<h3>Best quotes</h3>${quotes}` : ""}
     </div>`;
 }
 
 function openCharacter(id) {
   const ch = CHARACTER_BY_ID[id];
-  if (ch) open("Character: " + ch.name, characterDetailHtml(ch));
+  if (ch) renderPage("Character: " + ch.name, characterDetailHtml(ch));
+  window.scrollTo(0, 0);
 }
 
 export function initPages() {
-  // Nav buttons in the top bar.
-  const nav = document.getElementById("page-nav");
-  const buttons = [
-    ["🗺 3D Map", () => document.querySelector(".map-section")?.scrollIntoView({ behavior: "smooth" })],
-    ["🕸 Saga Map", () => openBookMap()],
-    ["📜 Timeline", () => open("Timeline of the Saga", timelineHtml())],
-    ["🐾 Clans", () => open("The Clans", clansHtml())],
-    ["😺 Characters", () => open("Characters", charactersHtml())]
+  navEl = document.getElementById("page-nav");
+  viewBooks = document.getElementById("content");
+  viewMap = document.getElementById("view-map");
+  viewPage = document.getElementById("view-page");
+
+  const tabs = [
+    ["📚 Books", "books"],
+    ["🗺 3D Map", "map"],
+    ["🕸 Saga Map", "sagamap"],
+    ["📜 Timeline", "timeline"],
+    ["🐾 Clans", "clans"],
+    ["😺 Characters", "characters"]
   ];
-  for (const [label, fn] of buttons) {
+  for (const [label, key] of tabs) {
     const b = document.createElement("button");
     b.className = "nav-btn";
     b.type = "button";
     b.textContent = label;
-    b.addEventListener("click", fn);
-    nav?.appendChild(b);
+    b.dataset.view = key;
+    b.addEventListener("click", () => {
+      if (key === "sagamap") { openBookMap(); return; }
+      showView(key);
+    });
+    navEl.appendChild(b);
   }
 
-  // Overlay.
-  overlay = document.createElement("div");
-  overlay.id = "page-overlay";
-  overlay.className = "page-overlay";
-  overlay.hidden = true;
-  overlay.innerHTML =
-    `<div class="page-card" role="dialog" aria-modal="true" aria-labelledby="page-title">
-       <button class="page-close" aria-label="Close">×</button>
-       <h2 id="page-title" class="page-title"></h2>
-       <div id="page-content" class="page-content"></div>
-     </div>`;
-  document.body.appendChild(overlay);
-  content = overlay.querySelector("#page-content");
-  titleEl = overlay.querySelector("#page-title");
-
-  overlay.querySelector(".page-close").addEventListener("click", close);
-  overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !overlay.hidden) close(); });
-
-  // Delegated clicks inside pages.
-  content.addEventListener("click", (e) => {
+  // Delegated clicks within the full-page container.
+  viewPage.addEventListener("click", (e) => {
     const book = e.target.closest("[data-book-id]");
-    if (book) { store.selectBook(book.dataset.bookId); close(); return; }
+    if (book) { store.selectBook(book.dataset.bookId); return; }
     const charChip = e.target.closest("[data-char-id]");
     if (charChip) { openCharacter(charChip.dataset.charId); return; }
     const back = e.target.closest("[data-back]");
-    if (back) { open("Characters", charactersHtml()); return; }
+    if (back) { renderPage("Characters", charactersHtml()); window.scrollTo(0, 0); return; }
   });
+
+  showView("books"); // default
 }

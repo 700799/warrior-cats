@@ -192,12 +192,12 @@ export function initPanel() {
     if (s.selectedBookId && BOOK_BY_ID[s.selectedBookId]) {
       const book = BOOK_BY_ID[s.selectedBookId];
       if (!panel.classList.contains("open")) lastFocused = document.activeElement;
-      body.innerHTML = renderBook(book);
+      body.innerHTML = `<div class="reading">${renderBook(book)}</div>`;
       mountGraph(book);
       openDrawer(book.accentColor);
     } else if (s.chooserBookIds && s.chooserBookIds.length > 1) {
       if (!panel.classList.contains("open")) lastFocused = document.activeElement;
-      body.innerHTML = renderChooser(s.chooserBookIds, s.selectedLocation);
+      body.innerHTML = `<div class="reading">${renderChooser(s.chooserBookIds, s.selectedLocation)}</div>`;
       openDrawer(LOCATIONS[s.selectedLocation]?.color);
     } else {
       closeDrawer();

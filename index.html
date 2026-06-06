@@ -84,17 +84,17 @@
     <nav id="page-nav" class="page-nav" aria-label="Pages"></nav>
   </header>
 
-  <!-- 3D world, now a CONTAINED banner section (not a background) -->
-  <section class="map-section" aria-label="3D map of the Clan territories">
+  <!-- 3D world — its own tab (hidden until selected), so it never crowds the books -->
+  <section class="map-section view" id="view-map" aria-label="3D map of the Clan territories" hidden>
     <canvas id="renderCanvas" aria-hidden="true" touch-action="none"></canvas>
     <p class="map-hint">Tap a glowing label on the 3D map to open the books set there — or use <strong>Saga Map</strong> above for a full clickable index.</p>
     <p id="webgl-fallback" hidden role="status">
-      The 3D map could not load, but every book is still fully available below.
+      The 3D map could not load, but every book is still fully available in the Books tab.
     </p>
   </section>
 
-  <!-- Main content: filters + book list, in a single vertical column -->
-  <main id="content">
+  <!-- Books tab (default): filters + book list, full vertical space -->
+  <main id="content" class="view">
     <section id="pills">
       <h2 class="section-title">Browse the books</h2>
       <nav id="arc-pills" class="arc-pills" aria-label="Filter by series arc"></nav>
@@ -108,10 +108,15 @@
     </section>
   </main>
 
-  <!-- Slide-in reading drawer (the analysis "pop-up") -->
+  <!-- Full-page container for Timeline / Clans / Characters tabs -->
+  <section id="view-page" class="view view-page" hidden aria-label="Page"></section>
+
+  <!-- Full-page reading view (book analysis) -->
   <aside id="panel" class="panel" role="dialog" aria-modal="true"
          aria-labelledby="panel-title" aria-hidden="true">
-    <button id="panel-close" class="panel-close" aria-label="Close analysis">×</button>
+    <div class="panel-bar">
+      <button id="panel-close" class="panel-back" aria-label="Back to books">← Back to books</button>
+    </div>
     <div id="panel-body" class="panel-body" tabindex="-1"></div>
   </aside>
 

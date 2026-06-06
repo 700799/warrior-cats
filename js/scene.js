@@ -98,12 +98,20 @@ function buildPines(scene) {
   return root;
 }
 
+let mapEngine = null;
+// Resize the Babylon canvas to its container — called when the Map tab is shown
+// (the canvas must be visible/sized for resize to take effect).
+export function resizeMap() {
+  if (mapEngine) requestAnimationFrame(() => mapEngine.resize());
+}
+
 export function createWorld(canvas) {
   const engine = new BABYLON.Engine(canvas, true, {
     preserveDrawingBuffer: true,
     stencil: true,
     antialias: true
   });
+  mapEngine = engine;
   const scene = new BABYLON.Scene(engine);
   scene.clearColor = BABYLON.Color4.FromHexString("#16222cff");
 
