@@ -93,17 +93,9 @@ function legend() {
 
 let overlay;
 function close() { if (overlay) overlay.hidden = true; }
+export function openBookMap() { if (overlay) overlay.hidden = false; }
 
 export function initBookMap() {
-  // Toggle button in the masthead.
-  const masthead = document.querySelector(".masthead");
-  const btn = document.createElement("button");
-  btn.id = "open-bookmap";
-  btn.className = "bookmap-btn";
-  btn.type = "button";
-  btn.textContent = "🕸 Book Map";
-  masthead?.appendChild(btn);
-
   // Overlay.
   overlay = document.createElement("div");
   overlay.id = "bookmap";
@@ -121,7 +113,6 @@ export function initBookMap() {
   overlay.querySelector(".bookmap-legend-mount").appendChild(legend());
   overlay.querySelector(".bookmap-scroll").appendChild(buildSvg());
 
-  btn.addEventListener("click", () => { overlay.hidden = false; });
   overlay.querySelector(".bookmap-close").addEventListener("click", close);
   overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
   document.addEventListener("keydown", (e) => {

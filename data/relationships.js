@@ -1334,5 +1334,87 @@ export const RELATIONSHIPS = {
       { a: "dovewing", b: "bumblestripe", type: "rival" },
       { a: "dovewing", b: "lionblaze", type: "ally" }
     ]
+  },
+  "nov-shadowstars-life": {
+    nodes: [
+      { id: "shadowstar", name: "Shadowstar", clan: "ShadowClan", role: "First leader" },
+      { id: "sunshadow", name: "Sun Shadow", clan: "ShadowClan", role: "Deputy (dies)" },
+      { id: "quickwater", name: "Quick Water", clan: "SkyClan", role: "Secret killer" }
+    ],
+    links: [
+      { a: "shadowstar", b: "sunshadow", type: "ally" },
+      { a: "shadowstar", b: "quickwater", type: "rival" }
+    ]
+  },
+  "nov-redtails-debt": {
+    nodes: [
+      { id: "redtail", name: "Redtail", clan: "ThunderClan", role: "Deputy (murdered)" },
+      { id: "tigerclaw", name: "Tigerclaw", clan: "ThunderClan", role: "Warrior (kills him)" },
+      { id: "oakheart", name: "Oakheart", clan: "RiverClan", role: "Deputy (accident)" },
+      { id: "ravenpaw", name: "Ravenpaw", clan: "ThunderClan", role: "Witness" },
+      { id: "bluestar", name: "Bluestar", clan: "ThunderClan", role: "Leader" }
+    ],
+    links: [
+      { a: "tigerclaw", b: "redtail", type: "rival" },
+      { a: "redtail", b: "oakheart", type: "rival" },
+      { a: "redtail", b: "ravenpaw", type: "mentor" },
+      { a: "bluestar", b: "redtail", type: "ally" }
+    ]
+  },
+  "nov-mothwings-secret": {
+    nodes: [
+      { id: "mothwing", name: "Mothwing", clan: "RiverClan", role: "Medicine apprentice" },
+      { id: "hawkfrost", name: "Hawkfrost", clan: "RiverClan", role: "Brother (forges omen)" },
+      { id: "tadpole", name: "Tadpole", clan: "Loner / Rogue", role: "Brother (drowned)" },
+      { id: "mudfur", name: "Mudfur", clan: "RiverClan", role: "Mentor" },
+      { id: "sasha", name: "Sasha", clan: "Loner / Rogue", role: "Mother" }
+    ],
+    links: [
+      { a: "mothwing", b: "hawkfrost", type: "family" },
+      { a: "mothwing", b: "tadpole", type: "family" },
+      { a: "sasha", b: "mothwing", type: "family" },
+      { a: "mudfur", b: "mothwing", type: "mentor" }
+    ]
+  },
+  "nov-pebbleshines-kits": {
+    nodes: [
+      { id: "pebbleshine", name: "Pebbleshine", clan: "SkyClan", role: "Warrior (mother, dies)" },
+      { id: "hawkwing", name: "Hawkwing", clan: "SkyClan", role: "Mate" },
+      { id: "kits", name: "Twig & Violet", clan: "SkyClan", role: "Newborn kits" },
+      { id: "milo", name: "Milo & Olive", clan: "Kittypet", role: "Helpers" },
+      { id: "bug", name: "Bug", clan: "Kittypet", role: "Farm cat" }
+    ],
+    links: [
+      { a: "pebbleshine", b: "hawkwing", type: "mate" },
+      { a: "pebbleshine", b: "kits", type: "family" },
+      { a: "pebbleshine", b: "milo", type: "ally" },
+      { a: "pebbleshine", b: "bug", type: "ally" }
+    ]
+  },
+  "nov-trees-roots": {
+    nodes: [
+      { id: "tree", name: "Tree", clan: "Loner / Rogue", role: "Loner (sees the dead)" },
+      { id: "root", name: "Root", clan: "Loner / Rogue", role: "Father (dies)" },
+      { id: "pebbleshine", name: "Pebbleshine", clan: "SkyClan", role: "Cat he helps" }
+    ],
+    links: [
+      { a: "root", b: "tree", type: "family" },
+      { a: "tree", b: "pebbleshine", type: "ally" }
+    ]
+  },
+  "nov-tawnypelts-clan": {
+    nodes: [
+      { id: "tawnypelt", name: "Tawnypelt", clan: "ShadowClan", role: "Deputy (steps down)" },
+      { id: "tigerstar1", name: "Tigerstar (I)", clan: "Dark Forest", role: "Father (legacy)" },
+      { id: "brambleclaw", name: "Brambleclaw", clan: "ThunderClan", role: "Brother" },
+      { id: "shadowkit", name: "Shadowkit", clan: "ShadowClan", role: "Grandson (visions)" },
+      { id: "dovewing", name: "Dovewing", clan: "ShadowClan", role: "Companion" }
+    ],
+    links: [
+      { a: "tigerstar1", b: "tawnypelt", type: "family" },
+      { a: "tawnypelt", b: "brambleclaw", type: "family" },
+      { a: "tawnypelt", b: "shadowkit", type: "family" },
+      { a: "tawnypelt", b: "dovewing", type: "ally" }
+    ]
   }
 };

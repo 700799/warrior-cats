@@ -1,7 +1,7 @@
 // Renders a per-book relationship graph as a dependency-free SVG into a DOM
-// container. Nodes are cats (coloured by Clan, labelled with their role);
-// edges are relationships (coloured by type). Layout groups cats into columns
-// by Clan so the affiliations read clearly, and hovering a cat highlights its
+// container. VERTICAL layout (mobile-friendly): cats are full-width chips
+// stacked top-to-bottom under Clan headers, and relationship links curve down a
+// gutter on the right, coloured by type. Hovering/focusing a cat highlights its
 // ties. Data comes from data/relationships.js.
 
 const SVGNS = "http://www.w3.org/2000/svg";
@@ -50,47 +50,44 @@ export function renderRelationshipGraph(container, data) {
   container.textContent = "";
   if (!data || !data.nodes || data.nodes.length === 0) return;
 
-  // --- group nodes into columns by Clan (preserving first-seen order) ---
+  // --- group nodes by Clan (preserving first-seen order) ---
   const clanOrder = [];
   const byClan = new Map();
   for (const n of data.nodes) {
-    if (!byClan.has(n.clan)) {
-      byClan.set(n.clan, []);
-      clanOrder.push(n.clan);
-    }
+    if (!byClan.has(n.clan)) { byClan.set(n.clan, []); clanOrder.push(n.clan); }
     byClan.get(n.clan).push(n);
   }
 
-  // --- geometry ---
-  const W = 640;
+  // --- vertical geometry ---
+  const W = 560;          // viewBox width; scales to the container
   const pad = 14;
-  const headerH = 24;
-  const chipW = Math.min(150, Math.max(96, (W - pad * 2) / clanOrder.length - 14));
-  const chipH = 38;
-  const chipGap = 16;
-  const maxRows = Math.max(...clanOrder.map((c) => byClan.get(c).length));
-  const contentTop = pad + headerH + 8;
-  const contentH = maxRows * chipH + (maxRows - 1) * chipGap;
-  const legendH = 26;
-  const H = contentTop + contentH + 22 + legendH + pad;
-  const colW = (W - pad * 2) / clanOrder.length;
+  const gutter = 84;      // right-hand lane for the link arcs
+  const headerH = 22;
+  const chipH = 44;
+  const chipGap = 10;
+  const groupGap = 12;
+  const chipX = pad;
+  const chipW = W - pad * 2 - gutter;
+  const rightX = chipX + chipW;       // where links anchor
 
-  // assign positions
-  const pos = new Map(); // id -> {x, y, clan}
+  // Lay out top-to-bottom: a header per Clan, then its cats stacked.
+  const pos = new Map();              // id -> {y, clan}
+  const headers = [];                 // {clan, y}
+  let cursor = pad;
   clanOrder.forEach((clan, ci) => {
-    const cx = pad + colW * ci + colW / 2;
-    const rows = byClan.get(clan);
-    const blockH = rows.length * chipH + (rows.length - 1) * chipGap;
-    const startY = contentTop + (contentH - blockH) / 2;
-    rows.forEach((n, ri) => {
-      const y = startY + ri * (chipH + chipGap) + chipH / 2;
-      pos.set(n.id, { x: cx, y, clan });
-    });
+    if (ci > 0) cursor += groupGap;
+    headers.push({ clan, y: cursor });
+    cursor += headerH + 6;
+    for (const n of byClan.get(clan)) {
+      pos.set(n.id, { y: cursor + chipH / 2, clan: n.clan });
+      cursor += chipH + chipGap;
+    }
   });
+  const contentBottom = cursor + 6;
 
   // --- svg scaffold ---
   const svg = el("svg", {
-    viewBox: `0 0 ${W} ${H}`,
+    viewBox: `0 0 ${W} ${contentBottom + 56}`,
     class: "relgraph-svg",
     role: "img",
     "aria-label": "Relationship map of the cats in this book, grouped by Clan."
@@ -106,42 +103,38 @@ export function renderRelationshipGraph(container, data) {
   defs.appendChild(marker);
   svg.appendChild(defs);
 
-  // --- column headers (double as the Clan legend) ---
-  clanOrder.forEach((clan, ci) => {
-    const cx = pad + colW * ci + colW / 2;
+  // --- Clan headers ---
+  for (const { clan, y } of headers) {
     const g = el("g");
     g.appendChild(el("rect", {
-      x: cx - chipW / 2, y: pad, width: chipW, height: headerH - 4, rx: 6,
+      x: chipX, y, width: chipW + gutter, height: headerH, rx: 6,
       fill: clanColor(clan), opacity: "0.9"
     }));
     const t = el("text", {
-      x: cx, y: pad + (headerH - 4) / 2, class: "relgraph-header",
-      "text-anchor": "middle", "dominant-baseline": "central"
+      x: chipX + 10, y: y + headerH / 2, class: "relgraph-header",
+      "dominant-baseline": "central"
     });
     t.textContent = clan;
     g.appendChild(t);
     svg.appendChild(g);
-  });
+  }
 
-  // --- links (drawn first, behind nodes) ---
+  // --- links (drawn behind chips, curving down the right gutter) ---
   const linkLayer = el("g");
   const usedTypes = new Set();
   (data.links || []).forEach((lk, i) => {
     const a = pos.get(lk.a);
     const b = pos.get(lk.b);
-    if (!a || !b) return; // skip dangling
+    if (!a || !b) return;
     const style = REL_STYLE[lk.type] || REL_STYLE.ally;
     usedTypes.add(lk.type in REL_STYLE ? lk.type : "ally");
 
-    const dx = b.x - a.x;
-    const dy = b.y - a.y;
-    const len = Math.hypot(dx, dy) || 1;
-    const off = Math.min(70, Math.max(20, len * 0.16)) * (i % 2 ? 1 : -1);
-    const mx = (a.x + b.x) / 2 + (-dy / len) * off;
-    const my = (a.y + b.y) / 2 + (dx / len) * off;
-
+    const dist = Math.abs(b.y - a.y);
+    const bulge = Math.min(gutter - 8, 16 + dist * 0.12 + (i % 3) * 9);
+    const cx = rightX + bulge;
+    const my = (a.y + b.y) / 2;
     const path = el("path", {
-      d: `M ${a.x} ${a.y} Q ${mx} ${my} ${b.x} ${b.y}`,
+      d: `M ${rightX} ${a.y} Q ${cx} ${my} ${rightX} ${b.y}`,
       class: "relgraph-link",
       fill: "none",
       stroke: style.color,
@@ -160,25 +153,23 @@ export function renderRelationshipGraph(container, data) {
   });
   svg.appendChild(linkLayer);
 
-  // --- nodes ---
+  // --- node chips (full-width, left-aligned text) ---
   const nodeLayer = el("g");
   data.nodes.forEach((n) => {
     const p = pos.get(n.id);
     const g = el("g", { class: "relgraph-node", "data-id": n.id, tabindex: "0" });
     g.appendChild(el("rect", {
-      x: p.x - chipW / 2, y: p.y - chipH / 2, width: chipW, height: chipH, rx: 8,
-      fill: clanColor(n.clan), "fill-opacity": "0.18",
+      x: chipX, y: p.y - chipH / 2, width: chipW, height: chipH, rx: 9,
+      fill: clanColor(n.clan), "fill-opacity": "0.20",
       stroke: clanColor(n.clan), "stroke-width": "2"
     }));
-    const name = el("text", {
-      x: p.x, y: p.y - 5, class: "relgraph-name", "text-anchor": "middle"
-    });
+    // a colour swatch and the connector node on the right edge
+    g.appendChild(el("circle", { cx: rightX, cy: p.y, r: 4, fill: clanColor(n.clan) }));
+    const name = el("text", { x: chipX + 12, y: p.y - 4, class: "relgraph-name" });
     name.textContent = n.name;
     g.appendChild(name);
     if (n.role) {
-      const role = el("text", {
-        x: p.x, y: p.y + 9, class: "relgraph-role", "text-anchor": "middle"
-      });
+      const role = el("text", { x: chipX + 12, y: p.y + 12, class: "relgraph-role" });
       role.textContent = n.role;
       g.appendChild(role);
     }
@@ -189,31 +180,30 @@ export function renderRelationshipGraph(container, data) {
   });
   svg.appendChild(nodeLayer);
 
-  // --- relationship-type legend ---
-  const legendY = H - pad - legendH / 2;
-  let lx = pad;
+  // --- relationship-type legend (wraps across up to two lines) ---
   const legend = el("g");
+  let lx = pad, ly = contentBottom + 16;
   for (const type of Object.keys(REL_STYLE)) {
     if (!usedTypes.has(type)) continue;
     const s = REL_STYLE[type];
+    const itemW = 30 + s.label.length * 6.4 + 18;
+    if (lx + itemW > W - pad) { lx = pad; ly += 20; }
     legend.appendChild(el("line", {
-      x1: lx, y1: legendY, x2: lx + 24, y2: legendY,
+      x1: lx, y1: ly, x2: lx + 24, y2: ly,
       stroke: s.color, "stroke-width": "2.5", "stroke-dasharray": s.dash,
       "marker-end": s.directed ? "url(#rg-arrow)" : ""
     }));
-    const t = el("text", {
-      x: lx + 30, y: legendY, class: "relgraph-legend", "dominant-baseline": "central"
-    });
+    const t = el("text", { x: lx + 30, y: ly, class: "relgraph-legend", "dominant-baseline": "central" });
     t.textContent = s.label;
     legend.appendChild(t);
-    lx += 30 + s.label.length * 6.6 + 22;
+    lx += itemW;
   }
   svg.appendChild(legend);
 
   container.appendChild(svg);
 
   // --- hover / focus highlighting ---
-  const adjacency = new Map(); // id -> Set(neighbour ids)
+  const adjacency = new Map();
   (data.links || []).forEach((lk) => {
     if (!pos.has(lk.a) || !pos.has(lk.b)) return;
     (adjacency.get(lk.a) || adjacency.set(lk.a, new Set()).get(lk.a)).add(lk.b);

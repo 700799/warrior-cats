@@ -657,5 +657,329 @@ export const novellas = [
         { work: "Flowers for Algernon", author: "Daniel Keyes", text: "The poignant exploration of identity and loss as an extraordinary mental gift fades, leaving the protagonist to reckon with who they are without it, parallels Dovewing's fading power." }
       ]
     }
+  },
+
+  {
+    id: "nov-shadowstars-life",
+    title: "Shadowstar's Life",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 84,
+    arcOrder: 15,
+    timelineOrder: 6.15, // founding era — first leader of ShadowClan
+    publicationYear: 2018,
+    povCharacter: "Shadowstar (Tall Shadow)",
+    locationKey: "forest-shadowclan",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "Set in the founding era of the Clans, this novella follows Shadowstar — once Tall Shadow, now the first leader of ShadowClan — in the perilous early days of her new Clan. When Shadowstar and her deputy Sun Shadow are attacked and killed by dogs while returning from a Gathering, Shadowstar glimpses a pair of amber eyes watching from the trees and, restored by one of her nine lives, becomes consumed by suspicion that the attack was no accident. She comes to believe that Quick Water, a SkyClan cat, deliberately led the dogs to them, but when she accuses her, the other Clans — and even ThunderClan, which takes Quick Water in — dismiss Shadowstar as paranoid, leaving her isolated in her conviction. Driven by fear for her young Clan and her certainty of the threat, Shadowstar ultimately attacks SkyClan to confront Quick Water, and the two fatally wound each other; in her dying moments Quick Water confesses that she had indeed been trying to kill Shadowstar, vindicating the leader's suspicions too late. The novella is a tense, tragic study of paranoia, isolation, and the precarious early days of Clan leadership.",
+      themes: [
+        { name: "Paranoia and Vindication", text: "Shadowstar's consuming suspicion makes paranoia the novella's central theme, dramatizing the agony of a leader certain of a threat no one else will believe — and the tragedy of being vindicated too late." },
+        { name: "Isolation of Leadership", text: "Shadowstar's loneliness in her conviction develops the theme of the isolation of leadership, the burden of a leader dismissed and disbelieved by all around her." },
+        { name: "The Precarious Founding", text: "The dangers of the early Clan days frame the theme of the precarious founding, the fragility of a new Clan and the fear that drives its first leader." }
+      ],
+      motifs: [
+        { name: "Amber Eyes in the Trees", text: "The watching amber eyes recur as the novella's defining image, the hidden threat that fuels Shadowstar's suspicion." },
+        { name: "Dogs", text: "The dog attack recurs as the motif of sudden, deadly violence, the catastrophe that sets the tragedy in motion." },
+        { name: "Disbelief", text: "The other Clans' dismissal of Shadowstar recurs as a motif of isolation, the disbelief that drives her to desperate action." }
+      ],
+      criticalAnalysis:
+        "Shadowstar's Life extends the founding mythology of Dawn of the Clans with a tense, tragic portrait of ShadowClan's first leader, and it gives that Clan's reputation for suspicion and darkness a poignant origin. The novella's chief strength is its study of paranoia and vindication: Shadowstar's certainty that Quick Water led the dogs to her is dismissed by every other cat as paranoia, and the novella wrings real tragedy from her isolation in a conviction that proves, too late, to be correct — Quick Water's dying confession vindicates a leader already destroyed by her certainty. This grim arc roots ShadowClan's enduring wariness and the other Clans' distrust of it in a founding injustice, a satisfying piece of deep-history world-building. The compact length suits the taut, downward tragedy. As a founding-era companion, the novella is removed from the saga's main characters, and its bleakness is unrelenting, but its sympathetic treatment of a disbelieved leader and its origin for ShadowClan's character make it a worthwhile and affecting entry in the founding cycle.",
+      characterAnalysis: [
+        { name: "Shadowstar", text: "ShadowClan's first leader, consumed by suspicion after a deadly dog attack; her isolation in a conviction no one believes, and her vindication too late, give ShadowClan's wary character a tragic origin." },
+        { name: "Quick Water", text: "The SkyClan cat Shadowstar suspects of leading the dogs to her; her dying confession vindicates Shadowstar's paranoia, confirming the hidden threat too late." },
+        { name: "Sun Shadow", text: "Shadowstar's deputy, killed in the dog attack, whose death deepens the leader's fear and isolation." }
+      ],
+      studyQuestions: [
+        "Shadowstar is vindicated too late. How does the novella wring tragedy from a leader certain of a threat no one believes?",
+        "How does the novella develop the theme of the isolation of leadership?",
+        "How does Shadowstar's story root ShadowClan's enduring wariness in a founding injustice?",
+        "How does the precariousness of the early Clan days drive the novella's fear and tragedy?",
+        "Does Quick Water's confession redeem Shadowstar's paranoia, or only deepen the tragedy? Defend your view."
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novella's cruel vindication: Shadowstar is dismissed as paranoid by every cat, attacks SkyClan in desperation, and only learns she was right when her enemy confesses with her dying breath. That ShadowClan's first leader is destroyed not by being wrong but by being correct and disbelieved gives the founding of the Clan a tragic, ironic origin and roots its enduring reputation for suspicion in a genuine, unheeded threat.",
+      quoteCards: [
+        { quote: "They called me paranoid — and now, as we both die, you tell me I was right all along.", speaker: "Shadowstar", context: "Her vindication, too late, as the dying Quick Water confesses she had indeed been trying to kill her." }
+      ],
+      timelinePlacement:
+        "Shadowstar's Life is set in the founding era alongside Dawn of the Clans, following ShadowClan's first leader. It completes the set of Clan-founding stories and gives ShadowClan's wary character a tragic origin, deepening the prequel mythology that all later arcs inherit.",
+      comparisons: [
+        { work: "Othello", author: "William Shakespeare", text: "The tragedy of a figure consumed by a suspicion that drives them to destructive action, vindicated or undone too late, resonates with Shadowstar's paranoia and its fatal end." },
+        { work: "The Crucible", author: "Arthur Miller", text: "The dynamic of a community dismissing or disbelieving a warning until catastrophe confirms it parallels the other Clans' dismissal of Shadowstar." }
+      ]
+    }
+  },
+
+  {
+    id: "nov-redtails-debt",
+    title: "Redtail's Debt",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 82,
+    arcOrder: 13,
+    timelineOrder: 6.5, // ends at the inciting events of Into the Wild
+    publicationYear: 2018,
+    povCharacter: "Redtail",
+    locationKey: "forest-thunderclan",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "This novella tells the story of Redtail, the ThunderClan deputy whose murder sets the entire original arc in motion, ending at the fateful battle that opens Into the Wild. As a young apprentice, Redpaw is saved from a hawk by the warrior Tigerclaw, and the rescue leaves him feeling permanently indebted, driving him to seek Tigerclaw's respect and approval throughout his life even as Tigerclaw's ambition and cruelty become ever clearer. Redtail rises to become ThunderClan's deputy, and the novella culminates at Sunningrocks, where, in a skirmish with RiverClan, Redtail accidentally kills the RiverClan deputy Oakheart during the fighting. Horrified by the bloodshed, Redtail halts the battle and orders the RiverClan patrol to retreat — and it is then that Tigerclaw, hungry for the deputyship and contemptuous of Redtail's mercy, turns on him and kills him, the murder that Ravenpaw witnesses and that drives the mystery of the original arc. The novella deepens a character defined in the main saga only by his death, exploring loyalty, indebtedness, and the tragedy of devotion to an unworthy cat.",
+      themes: [
+        { name: "Misplaced Loyalty and Debt", text: "Redtail's lifelong sense of obligation to Tigerclaw makes misplaced loyalty the novella's central theme, dramatizing the tragedy of devotion and gratitude given to a cat unworthy of it." },
+        { name: "Mercy and Its Cost", text: "Redtail's choice to halt the battle and spare RiverClan develops the theme of mercy and its cost, the decency that provokes his murder at the paws of the merciless Tigerclaw." },
+        { name: "The Seed of a Saga", text: "Redtail's murder frames the theme of origins, the single act that sets the entire original arc's mystery and conflict in motion." }
+      ],
+      motifs: [
+        { name: "The Debt", text: "Redtail's sense of obligation to Tigerclaw for saving his life recurs as the novella's defining motif, the gratitude that binds him to an unworthy cat." },
+        { name: "Sunningrocks", text: "The contested border of Sunningrocks recurs as the site of the novella's climax and Redtail's murder, the place where the saga's foundational crime occurs." },
+        { name: "The Witnessed Murder", text: "Redtail's killing by Tigerclaw, witnessed by Ravenpaw, recurs as the motif that seeds the original arc's central mystery." }
+      ],
+      criticalAnalysis:
+        "Redtail's Debt deepens a character the original arc knows only as a corpse — the murdered deputy whose death drives the mystery of Into the Wild — by giving him a full life defined by loyalty, indebtedness, and tragic decency. The novella's chief value is dramatic irony at the level of the whole saga: readers know Redtail dies at Tigerclaw's paws, and this story supplies the devastating backstory of his lifelong, misplaced devotion to the very cat who will murder him, rooted in a childhood debt of gratitude. By showing Redtail's decency — his horror at Oakheart's accidental death and his merciful halting of the battle — the novella makes his murder a tragedy of virtue punished, and it sharpens the contrast between his honor and Tigerclaw's ruthless ambition. Ending precisely at the inciting events of the original arc, the novella functions as a seamless prologue, enriching the foundational crime with the full humanity of its victim. Its compact length suits the focused, tragic arc, and its outcome is foreordained, but that inevitability is its engine, as the reader watches a good cat's loyalty lead him to his death. As a companion piece, it transforms the original arc's plot-device murder into a genuine tragedy.",
+      characterAnalysis: [
+        { name: "Redtail", text: "The ThunderClan deputy whose murder seeds the original arc, given a full life of loyalty and decency; his misplaced debt to Tigerclaw and his merciful halting of the Sunningrocks battle make his death a tragedy of virtue punished." },
+        { name: "Tigerclaw", text: "The ambitious warrior whose rescue of the young Redtail binds him in a lifelong debt, and who murders Redtail for the deputyship — the foundational crime of the original arc, seen here with its victim's full humanity." },
+        { name: "Oakheart", text: "The RiverClan deputy whom Redtail accidentally kills at Sunningrocks, the death that precipitates the battle's end and Redtail's murder." }
+      ],
+      studyQuestions: [
+        "Redtail feels indebted to Tigerclaw all his life. How does the novella dramatize the tragedy of misplaced loyalty and gratitude?",
+        "Redtail halts the battle out of mercy. How does the novella frame his decency as the cause of his murder?",
+        "How does knowing Redtail's fate from the original arc create dramatic irony throughout the novella?",
+        "How does the novella transform the original arc's plot-device murder into a genuine tragedy?",
+        "How does ending at the inciting events of Into the Wild make the novella a prologue to the whole saga?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the cruel irony of Redtail's debt: he spends his whole life seeking the approval of, and feeling indebted to, the very cat who will murder him for his position. That Redtail's lifelong, misplaced loyalty to Tigerclaw — born of a childhood rescue — leads him straight to his death at Tigerclaw's paws transforms the original arc's foundational crime into a genuine tragedy of devotion betrayed, and it gives the murdered deputy a humanity the main saga never affords him.",
+      quoteCards: [
+        { quote: "I owed him my life, and I gave him my loyalty — and he repaid me with my death.", speaker: "Redtail (in spirit)", context: "His reckoning with the misplaced debt to Tigerclaw that ended in his murder at Sunningrocks." }
+      ],
+      timelinePlacement:
+        "Redtail's Debt ends at the inciting events of Into the Wild — the Sunningrocks battle and Redtail's murder by Tigerclaw, the crime witnessed by Ravenpaw that drives the original arc's central mystery. It deepens the murdered deputy and serves as a direct prologue to The Prophecies Begin.",
+      comparisons: [
+        { work: "Of Mice and Men", author: "John Steinbeck", text: "The tragedy of loyalty and devotion bound to a relationship that leads inexorably to death, rendered with foreordained inevitability, resonates with Redtail's misplaced debt to Tigerclaw." },
+        { work: "Julius Caesar", author: "William Shakespeare", text: "The murder of a figure by an ambitious associate who craves his position, seeding a larger conflict, parallels Tigerclaw's killing of Redtail for the deputyship." }
+      ]
+    }
+  },
+
+  {
+    id: "nov-mothwings-secret",
+    title: "Mothwing's Secret",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 87,
+    arcOrder: 18,
+    timelineOrder: 12.4, // forest/lake transition era; Mothwing becomes a medicine apprentice
+    publicationYear: 2022,
+    povCharacter: "Mothwing",
+    locationKey: "forest-riverclan",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "This novella tells the youth of Mothwing, the RiverClan medicine cat whose private faithlessness becomes a recurring concern across the saga. Born to the rogue Sasha alongside her brothers Hawkfrost and Tadpole — the latter of whom drowned young — Mothwing grows up with little but her remaining brother Hawkfrost after their mother leaves, and the loss and abandonment of her early life shape her skepticism. As a young RiverClan cat, she is impressed by the skill and compassion the medicine cats Mudfur and Cinderpelt show in rescuing a Clanmate trapped in mud, and she asks Mudfur to train her as a medicine-cat apprentice, drawn to the healing arts even as she struggles to believe in StarClan. The novella's central secret is the deception by which her apprenticeship is secured: the omen Mudfur receives confirming her as his apprentice is fake — engineered by the scheming Hawkfrost — and when Mothwing learns the truth, she reluctantly agrees to keep the secret, beginning the life of a faithless medicine cat who serves her Clan devotedly while privately doubting the ancestors she is sworn to commune with. The novella deepens a quietly significant character, exploring faith, doubt, family, and the burden of a founding secret.",
+      themes: [
+        { name: "Faith and Doubt", text: "Mothwing's struggle to believe in StarClan makes faith and doubt the novella's central theme, exploring how a cat drawn to healing serves a spiritual role she cannot fully believe in." },
+        { name: "Loss and Family", text: "The deaths and abandonments of Mothwing's early life develop the theme of loss and family, the griefs that shape her skepticism and her bond with her brother." },
+        { name: "A Founding Deception", text: "The fake omen that secures Mothwing's apprenticeship frames the theme of a founding deception, the secret at the root of her vocation that she must carry." }
+      ],
+      motifs: [
+        { name: "The Fake Omen", text: "The forged sign that confirms Mothwing's apprenticeship recurs as the novella's defining secret, the deception at the root of her medicine-cat life." },
+        { name: "Doubt", text: "Mothwing's struggle with belief recurs as a motif throughout, the faithlessness that defines her unusual vocation." },
+        { name: "Siblings", text: "Mothwing's bond with the scheming Hawkfrost, and the loss of Tadpole, recur as motifs of family and the influences that shape her." }
+      ],
+      criticalAnalysis:
+        "Mothwing's Secret deepens one of the saga's quietly most interesting characters — the RiverClan medicine cat who serves faithfully without believing in StarClan — by giving her youth of loss, doubt, and a founding deception. The novella's chief value is its exploration of faith and doubt, a theme the saga would later dramatize at length in Mistystar's Omen, The Broken Code, and A Starless Clan, here traced to its origin in a young cat drawn to healing yet unable to believe, whose very apprenticeship rests on a fake omen forged by her brother Hawkfrost. This founding deception gives Mothwing's faithlessness a poignant root and complicates her devotion, and the loss and abandonment of her early life — the drowned brother, the departed mother — credibly shape her skepticism. The connection to the scheming Hawkfrost ties the novella to the darker currents of the lake-era arcs. Its compact length suits the focused character study, and while its stakes are intimate rather than dramatic, its thoughtful treatment of a faithless healer and its illumination of a recurring saga concern make it a worthwhile deepening of a subtle, significant character.",
+      characterAnalysis: [
+        { name: "Mothwing", text: "The RiverClan medicine cat who serves devotedly without believing in StarClan; the novella roots her faithlessness in early loss and a founding deception, deepening a quietly significant character and a recurring saga theme." },
+        { name: "Hawkfrost", text: "Mothwing's scheming brother, who forges the fake omen that secures her apprenticeship, tying the novella to the darker currents of the lake-era arcs and complicating Mothwing's vocation with deception." },
+        { name: "Mudfur", text: "The RiverClan medicine cat who trains Mothwing, deceived by the fake omen into accepting her, whose compassion draws her to the healing arts." }
+      ],
+      studyQuestions: [
+        "How does the novella explore faith and doubt through a healer who cannot believe in StarClan?",
+        "How do the losses of Mothwing's early life shape her skepticism?",
+        "How does the fake omen at the root of her apprenticeship complicate her devotion?",
+        "How does the novella connect to the saga's larger engagement with faith in Mistystar's Omen, The Broken Code, and A Starless Clan?",
+        "How does Mothwing's bond with the scheming Hawkfrost tie the novella to the saga's darker currents?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the founding deception at the root of Mothwing's vocation: the omen that confirms her as a medicine-cat apprentice is a forgery created by her brother Hawkfrost, so that the faithless healer's entire calling rests, from the start, on a lie about the very ancestors she cannot believe in. That Mothwing must carry this secret and serve devotedly despite both her doubt and the deception gives her quiet faithlessness a poignant, complicated origin and roots one of the saga's recurring themes in a single, intimate betrayal.",
+      quoteCards: [
+        { quote: "The sign that made me a medicine cat was a lie — and yet I will heal my Clan with all my heart, believe or not.", speaker: "Mothwing", context: "Her reluctant acceptance of the fake omen behind her apprenticeship and her devotion despite her doubt." }
+      ],
+      timelinePlacement:
+        "Mothwing's Secret is set in the era around the close of the original arc and the lake migration, tracing Mothwing's youth and her becoming a RiverClan medicine-cat apprentice. It roots the faithlessness explored in Mistystar's Omen and the later arcs, and connects to Hawkfrost's scheming across The New Prophecy.",
+      comparisons: [
+        { work: "Doubt: A Parable", author: "John Patrick Shanley", text: "The drama of faith, doubt, and deception within a religious vocation, and the burden of serving a role one cannot fully believe in, resonates with Mothwing's faithless calling." },
+        { work: "The Brothers Karamazov", author: "Fyodor Dostoevsky", text: "The exploration of belief and doubt, and of siblings shaped by loss into opposing relationships with faith and morality, parallels Mothwing and Hawkfrost." }
+      ]
+    }
+  },
+
+  {
+    id: "nov-pebbleshines-kits",
+    title: "Pebbleshine's Kits",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 85,
+    arcOrder: 16,
+    timelineOrder: 32.3, // concurrent with Hawkwing's Journey / early A Vision of Shadows
+    publicationYear: 2022,
+    povCharacter: "Pebbleshine",
+    locationKey: "gorge",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "This novella tells the heartbreaking story behind the lost sisters Twigbranch and Violetshine, following their mother Pebbleshine, a SkyClan warrior, in the days of the Clan's destruction. Separated from her Clan and her mate Hawkwing when she is carried away by a Twoleg monster while pregnant, Pebbleshine is stranded far from home and must survive among unfamiliar cats — a farm cat named Bug, and the kittypets Milo and Olive — as she searches desperately for a way back. Guided in her labor by a StarClan tom, she gives birth to two she-kits in a tunnel beneath a Thunderpath, but tragedy strikes: defending her newborns from a badger, Pebbleshine is struck and killed by a monster, dying before she can reunite them with their father. As a grieving ghost, she pleads with StarClan to remain near her kits, and she watches as a ginger medicine-cat apprentice and a silver-gray she-cat — Alderpaw and the cats of the lake — discover her abandoned kits, taking comfort in the knowledge that they will one day find Hawkwing and the Clans. The novella is a tender, tragic tale of a mother's love and sacrifice that supplies the origin of two central characters of A Vision of Shadows.",
+      themes: [
+        { name: "A Mother's Love and Sacrifice", text: "Pebbleshine's devotion to her kits makes maternal love and sacrifice the novella's central theme, the mother who gives her life defending her newborns and grieves, even in death, the reunion she cannot give them." },
+        { name: "Separation and Loss", text: "Pebbleshine's separation from her Clan and mate develops the theme of separation and loss, the displacement that strands her and dooms her family to be scattered." },
+        { name: "Love Beyond Death", text: "Pebbleshine's ghostly vigil over her kits frames the theme of love beyond death, the bond that persists past her dying and finds comfort in her kits' uncertain future." }
+      ],
+      motifs: [
+        { name: "The Monster", text: "The Twoleg monsters that carry Pebbleshine away and that kill her recur as the novella's agents of catastrophe, the impersonal forces that scatter her family." },
+        { name: "The Found Kits", text: "Pebbleshine's two she-kits recur as the motif of the lost sisters, the newborns whose discovery ties the novella to A Vision of Shadows." },
+        { name: "The Ghostly Vigil", text: "Pebbleshine's spirit watching over her kits recurs as a motif of love beyond death, the mother's vigil from StarClan." }
+      ],
+      criticalAnalysis:
+        "Pebbleshine's Kits supplies the tragic backstory behind two of A Vision of Shadows' most important characters — the lost sisters Twigbranch and Violetshine — by following their mother through separation, displacement, and a fatal sacrifice. The novella's chief power is emotional: by inhabiting Pebbleshine's desperate journey to return to her Clan, her labor among strangers, and her death defending her newborns, it transforms the main arc's abandoned kits into the heartbreaking legacy of a mother's love, deepening the sisters' story retroactively. The depiction of Pebbleshine's survival among unfamiliar cats broadens the saga's world beyond the Clans, and her guidance by StarClan and her ghostly vigil lend the tragedy a spiritual consolation. Coordinated with Hawkwing's Journey, which follows the father's side of the same catastrophe, the novella forms part of a larger mosaic illuminating SkyClan's destruction from multiple angles. Its compact length suits the focused, tender tragedy, and while it depends on A Vision of Shadows for its full resonance, its moving portrait of maternal sacrifice and its origin for the lost sisters make it one of the more affecting recent novellas.",
+      characterAnalysis: [
+        { name: "Pebbleshine", text: "The SkyClan warrior and mother of Twigbranch and Violetshine, separated from her Clan and mate and killed defending her newborns; her love, sacrifice, and ghostly vigil give the lost sisters a heartbreaking origin." },
+        { name: "Hawkwing", text: "Pebbleshine's mate, from whom she is separated, whose side of the catastrophe is told in Hawkwing's Journey; the reunion she dies grieving she cannot give their kits." },
+        { name: "Twigbranch and Violetshine (as newborns)", text: "Pebbleshine's two she-kits, the lost sisters of A Vision of Shadows, whose discovery the novella sets up and whose mother's love it reveals." }
+      ],
+      studyQuestions: [
+        "How does the novella transform A Vision of Shadows' abandoned kits into the legacy of a mother's love and sacrifice?",
+        "How does Pebbleshine's separation from her Clan and mate develop the theme of loss and displacement?",
+        "How does Pebbleshine's ghostly vigil frame the theme of love beyond death?",
+        "How does the novella coordinate with Hawkwing's Journey to illuminate SkyClan's destruction from multiple angles?",
+        "How does Pebbleshine's survival among unfamiliar cats broaden the saga's world?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is how the novella, paired with Hawkwing's Journey, tells one catastrophe from both a mother's and a father's side: where Hawkwing's story follows the father searching for his lost family, Pebbleshine's reveals the mother's fate — her sacrifice and death — that he never learns. That the saga illuminates the origin of the lost sisters through two complementary novellas, neither parent ever knowing the other's end, gives the tragedy of Twigbranch and Violetshine a mosaic depth and an almost unbearable poignancy.",
+      quoteCards: [
+        { quote: "I cannot bring you to your father, my kits — but I will watch over you from the stars until you find your way home.", speaker: "Pebbleshine", context: "Her dying plea to StarClan to remain near the newborn daughters she cannot reunite with Hawkwing and SkyClan." }
+      ],
+      timelinePlacement:
+        "Pebbleshine's Kits is set concurrently with Hawkwing's Journey and the early events of A Vision of Shadows, during SkyClan's destruction, and supplies the origin of the lost sisters Twigbranch and Violetshine. It is a direct companion to that arc and to Hawkwing's Journey, telling the mother's side of the family's scattering.",
+      comparisons: [
+        { work: "The Light Between Oceans", author: "M. L. Stedman", text: "The tragedy of an infant separated from her family by circumstance and the aching maternal love that surrounds her fate resonates with Pebbleshine's sacrifice and her lost kits." },
+        { work: "Beloved", author: "Toni Morrison", text: "The depiction of a mother's fierce, sacrificial love and a maternal spirit lingering past death over the children she could not protect parallels Pebbleshine's ghostly vigil." }
+      ]
+    }
+  },
+
+  {
+    id: "nov-trees-roots",
+    title: "Tree's Roots",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 86,
+    arcOrder: 17,
+    timelineOrder: 32.45, // concurrent with Pebbleshine's Kits; Tree before joining SkyClan
+    publicationYear: 2022,
+    povCharacter: "Tree (Earth)",
+    locationKey: "gorge",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "This novella tells the backstory of Tree, the unusual loner who can see and speak with the dead and who later joins SkyClan and becomes Violetshine's mate. Born as Earth and separated from the group of cats he grew up with, the young Tree is unable to survive alone and is rescued by a loner named Root, who is revealed to be his father; but Root is soon killed by a fox, and the devastated Tree resolves to remain a solitary loner forever, vowing never to grow attached to any cat again, to spare himself further loss. Eight moons later, guided by the lingering spirit of his father Root — whom Tree can see, as he sees all the dead — Tree encounters a heavily pregnant she-cat, Pebbleshine, and helps her escape a fox, an act of connection that begins to thaw his self-imposed isolation. Root's spirit counsels his son to find someone to share his life with rather than face the world alone, and the novella traces Tree's movement from grief-stricken solitude toward the possibility of belonging, illuminating the origins of his strange gift and his guarded heart before he finds his place in SkyClan.",
+      themes: [
+        { name: "Grief and Self-Protective Isolation", text: "Tree's vow of solitude after his father's death makes grief and self-protective isolation the novella's central theme, the loner who shields himself from attachment to avoid further loss." },
+        { name: "The Pull Toward Belonging", text: "Tree's encounter with Pebbleshine and his father's counsel develop the theme of the pull toward belonging, the gradual thawing of a guarded heart toward connection." },
+        { name: "Communion with the Dead", text: "Tree's ability to see and speak with spirits frames the theme of communion with the dead, the strange gift that both isolates him and connects him to his lost father." }
+      ],
+      motifs: [
+        { name: "The Loner's Vow", text: "Tree's resolve to remain solitary recurs as the novella's defining motif, the self-protective isolation grief drives him to." },
+        { name: "Root's Spirit", text: "The lingering ghost of Tree's father recurs as a motif of guidance and connection, the dead father who counsels his living son." },
+        { name: "Seeing the Dead", text: "Tree's gift of seeing spirits recurs as a motif of his strange nature, the power that sets him apart and links him to the lost." }
+      ],
+      criticalAnalysis:
+        "Tree's Roots supplies the backstory for one of the saga's most distinctive recent characters — the spirit-seeing loner who joins SkyClan — illuminating the grief and the gift that shape his guarded, unusual nature. The novella's chief strength is its tender study of self-protective isolation: Tree's vow to remain solitary after his father's death is a credible, sympathetic response to grief, and the novella charts the slow thawing of his guarded heart through his encounter with Pebbleshine and the counsel of his father's lingering spirit. The conceit of Tree being guided by the ghost of the father he can still see — because he sees all the dead — is poignant and original, making his gift both an isolating burden and a source of enduring connection to the lost. Coordinated with Pebbleshine's Kits, with which it shares the encounter between Tree and Pebbleshine, the novella forms part of the mosaic of SkyClan's scattered family. Its compact length suits the introspective character study, and while its stakes are quiet and it depends on the lake-era arcs for its full context, its sensitive treatment of grief, gift, and the pull toward belonging makes it a worthwhile deepening of a memorable character.",
+      characterAnalysis: [
+        { name: "Tree", text: "The spirit-seeing loner who later joins SkyClan, given a backstory of grief and isolation; the loss of his father and his self-protective vow of solitude shape his guarded heart before he finds belonging." },
+        { name: "Root", text: "Tree's father, who rescues him and is then killed by a fox; lingering as a spirit only Tree can see, Root counsels his son toward connection, the poignant guide of the novella." },
+        { name: "Pebbleshine", text: "The pregnant she-cat Tree helps escape a fox, the encounter (shared with her own novella) that begins to thaw his isolation and pull him toward belonging." }
+      ],
+      studyQuestions: [
+        "How does Tree's vow of solitude dramatize grief and self-protective isolation?",
+        "How does the counsel of Root's spirit and the encounter with Pebbleshine develop the pull toward belonging?",
+        "How does Tree's ability to see the dead function as both an isolating burden and a source of connection?",
+        "How does the novella coordinate with Pebbleshine's Kits to illuminate SkyClan's scattered family?",
+        "How does the novella set up Tree's eventual place in SkyClan and his bond with Violetshine?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the poignant conceit of Tree being guided by the ghost of his dead father: because Tree can see all the dead, the father he lost to a fox lingers as a spirit who counsels his grieving son toward connection. That Tree's isolating gift — the very power that sets him apart — is also what keeps his beloved father with him, and that the dead father urges his living son not to face the world alone, gives the novella a tender, original emotional core and roots Tree's strange nature in love as much as loss.",
+      quoteCards: [
+        { quote: "I see the dead, so I am never truly alone — and yet my father's spirit tells me that is not the same as living.", speaker: "Tree", context: "His reckoning with grief and isolation, guided by the lingering spirit of his father Root toward connection and belonging." }
+      ],
+      timelinePlacement:
+        "Tree's Roots is set concurrently with Pebbleshine's Kits, during the era of SkyClan's destruction in A Vision of Shadows, and illuminates the loner Tree before he joins SkyClan and becomes Violetshine's mate in The Raging Storm. It is a companion to Pebbleshine's Kits and deepens the spirit-seeing character who recurs into The Broken Code.",
+      comparisons: [
+        { work: "The Sixth Sense", author: "M. Night Shyamalan", text: "The depiction of a figure who can see and speak with the dead, isolated by the gift yet connected through it to the lost, resonates with Tree's spirit-seeing nature." },
+        { work: "A Monster Calls", author: "Patrick Ness", text: "The exploration of grief, the guidance of a presence connected to the dead, and the slow movement from self-protective isolation toward connection parallels Tree's emotional arc." }
+      ]
+    }
+  },
+
+  {
+    id: "nov-tawnypelts-clan",
+    title: "Tawnypelt's Clan",
+    arc: "Novellas",
+    arcKey: "novellas",
+    pubOrder: 83,
+    arcOrder: 14,
+    timelineOrder: 36.6, // lake era, around the start of The Broken Code (Shadowkit's visions)
+    publicationYear: 2018,
+    povCharacter: "Tawnypelt",
+    locationKey: "mountains",
+    accentColor: "#7a8a99",
+    type: "novella",
+    analysis: {
+      plotSummary:
+        "Set in the lake era as ShadowClan rebuilds, this novella follows the aging ShadowClan warrior Tawnypelt — daughter of the infamous Tigerstar and sister of Brambleclaw — as she wrestles with her place in her Clan and the long shadow of her father's legacy. Despite a lifetime of loyalty and capability, Tawnypelt still feels the suspicion and isolation that her notorious lineage has always brought her, and she questions whether she truly belongs and whether she still serves ShadowClan well. When her grandson Shadowkit, the young son of Tigerstar (the second), begins to receive troubling visions concerning the Tribe of Rushing Water, Tawnypelt and Dovewing undertake a journey to the mountains to bring him to the Tribe, where Tawnypelt must persuade the skeptical Tribe to heed the kit's warning of an impending storm. The journey and its challenges lead Tawnypelt to a clearer understanding of herself and her role, and she ultimately makes the hard, clear-eyed decision to step down as ShadowClan's deputy, recognizing that she is not the cat the Clan needs in that position. The novella is a reflective study of legacy, belonging, aging, and self-knowledge.",
+      themes: [
+        { name: "Legacy and Belonging", text: "Tawnypelt's struggle with her father's notorious legacy makes legacy and belonging the novella's central theme, the lifelong burden of suspicion borne by the daughter of a tyrant and her question of where she truly belongs." },
+        { name: "Self-Knowledge and Letting Go", text: "Tawnypelt's decision to step down as deputy develops the theme of self-knowledge, the clear-eyed recognition of one's own limits and the grace of letting go of a role." },
+        { name: "Aging and Place", text: "Tawnypelt's reflection on her role frames the theme of aging and place, the reckoning of a long-serving warrior with her changing usefulness to her Clan." }
+      ],
+      motifs: [
+        { name: "The Father's Shadow", text: "Tigerstar's notorious legacy recurs as the novella's defining burden, the lineage that has shadowed Tawnypelt's whole life." },
+        { name: "The Mountains and the Tribe", text: "The journey to the Tribe recurs as the motif of the quest that clarifies Tawnypelt's self-understanding, the familiar mountain setting of revelation." },
+        { name: "Stepping Down", text: "Tawnypelt's relinquishing of the deputyship recurs as a motif of self-knowledge and grace, the hard choice that resolves her arc." }
+      ],
+      criticalAnalysis:
+        "Tawnypelt's Clan deepens a long-running but rarely spotlighted character — the daughter of Tigerstar who chose ShadowClan over ThunderClan in the original arc — with a reflective, late-career study of legacy, belonging, and self-knowledge. The novella's chief strength is its honest treatment of the burden of lineage: despite decades of loyalty, Tawnypelt still bears the suspicion her father's name brings, and the novella takes seriously her question of whether she truly belongs and still serves her Clan well, a mature theme rare in the franchise. The journey to the Tribe with her visionary grandson Shadowkit (the future Shadowsight) provides momentum and ties the novella to the lake-era arcs, while Tawnypelt's clear-eyed decision to step down as deputy — recognizing she is not the cat ShadowClan needs — is a quietly powerful resolution that values self-knowledge and the grace of letting go over the usual narrative of proving oneself. Its compact length suits the introspective arc, and while its stakes are personal rather than epic, its thoughtful engagement with aging, legacy, and self-acceptance makes it a resonant, mature entry, granting a veteran character a dignified reckoning.",
+      characterAnalysis: [
+        { name: "Tawnypelt", text: "The aging ShadowClan warrior and daughter of Tigerstar, wrestling with her father's legacy and her place in her Clan; her journey and her clear-eyed choice to step down as deputy resolve her arc with self-knowledge and grace." },
+        { name: "Shadowkit / Shadowsight", text: "Tawnypelt's grandson, the visionary young son of the second Tigerstar, whose troubling visions of the Tribe set the journey in motion and tie the novella to The Broken Code." },
+        { name: "Dovewing", text: "Tawnypelt's companion on the journey to the Tribe, lending support to the mission and to Tawnypelt's reckoning." }
+      ],
+      studyQuestions: [
+        "How does Tawnypelt's lifelong burden of her father's legacy develop the theme of belonging?",
+        "Tawnypelt steps down as deputy, recognizing she is not the cat the Clan needs. How does the novella value self-knowledge and letting go?",
+        "How does the journey to the Tribe clarify Tawnypelt's understanding of herself and her role?",
+        "How does the novella treat aging and a veteran warrior's changing place in her Clan?",
+        "How does Shadowkit's role tie the novella to the events of The Broken Code?"
+      ],
+      mostIntriguing:
+        "The most intriguing element is the novella's unusual resolution: rather than the typical arc of a character proving their worth, Tawnypelt's story climaxes in her clear-eyed decision to step down as deputy, recognizing that she is not the cat ShadowClan needs in that role. That the saga frames the relinquishing of a position — the grace of self-knowledge and letting go — as a triumph rather than a failure gives the novella a mature, unexpected wisdom, granting a veteran character a dignified reckoning with legacy, aging, and her true place.",
+      quoteCards: [
+        { quote: "I have served ShadowClan all my life under my father's shadow — and serving it best now means knowing when to step aside.", speaker: "Tawnypelt", context: "Her clear-eyed decision to step down as deputy, valuing self-knowledge over proving herself." }
+      ],
+      timelinePlacement:
+        "Tawnypelt's Clan is set in the lake era around the start of The Broken Code, when her grandson Shadowkit (the future Shadowsight) begins to have visions. It deepens Tawnypelt, ties to the Tribe of Rushing Water, and connects to the impostor arc through Shadowsight, granting a veteran character a reflective late-career reckoning.",
+      comparisons: [
+        { work: "King Lear", author: "William Shakespeare", text: "The reckoning of an aging figure with legacy, place, and the relinquishing of power and role resonates with Tawnypelt's late-career reflection and her choice to step down." },
+        { work: "Gilead", author: "Marilynne Robinson", text: "The reflective, late-life reckoning with legacy, belonging, and self-knowledge, rendered with quiet wisdom, parallels the introspective tone of Tawnypelt's arc." }
+      ]
+    }
   }
 ];
